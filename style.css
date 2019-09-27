@@ -1,48 +1,72 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700&display=swap");
 * {
   box-sizing: border-box; }
 
 body {
-  margin: 0;
-  font-family: "Open Sans", sans-serif; }
-  body nav {
-    height: 100px;
-    background-color: #fff;
-    color: blue;
+  margin: 0; }
+
+nav {
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; }
+  nav img {
+    width: 80px;
+    height: auto; }
+
+.links {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600px;
+  text-decoration: none; }
+  .links ul {
     display: flex;
-    justify-content: center;
-    align-items: space-between; }
-    body nav .logo {
-      margin: 20px 100px 20px 20px; }
-    body nav div {
-      margin: 20px;
-      background-color: pink;
-      display: flex;
-      justify-content: flex-end;
-      align-items: space-between; }
-  body header {
-    display: flex;
-    justify-content: flex-start; }
-    body header div {
-      padding: 80px;
-      height: 400px;
-      background-color: #1445b3;
-      color: #fff;
-      font-family: "Open Sans", sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex: 1; }
-      body header div button {
-        height: 50px;
-        width: 80%;
-        color: #fff;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        background-color: #1445b3;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center; }
-    body header .imagenheader {
-      width: 10px;
-      height: auto; }
+    list-style-type: none; }
+  .links li {
+    list-style-type: none;
+    padding: 10px; }
+  .links i {
+    display: none;
+    color: #031880; }
+
+#menu {
+  background-color: rgba(19, 39, 57, 0.8);
+  color: #ffffff;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  height: 100%;
+  transition: all 0.5s; }
+  #menu li {
+    list-style-type: none;
+    font-family: "Open Sans", sans-serif;
+    line-height: 35px; }
+  #menu a {
+    color: #fff;
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+    line-height: 35px; }
+
+#overly {
+  background-color: rgba(19, 39, 57, 0.8);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: none; }
+
+@media (max-width: 800px) {
+  .links li {
+    display: none; }
+  .links i {
+    display: block; } }
+
+#menu:target {
+  left: 0px; }
+
+#overly:target {
+  display: block; }
+
+li:hover {
+  color: #1868cf; }
