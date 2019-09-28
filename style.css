@@ -72,7 +72,7 @@ body {
   body header {
     height: 700px;
     display: flex;
-    justify-content: flex-start; }
+    align-items: center; }
     body header div {
       background-color: #1445b3;
       color: #fff;
@@ -93,9 +93,16 @@ body {
         border-radius: 15px;
         display: flex;
         justify-content: center; }
+    body header .solutions {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    body header .botones {
+      width: 50%; }
     body header .imagenheader {
-      width: 70px;
-      height: auto; }
+      height: 100%;
+      width: auto; }
       body header .imagenheader img {
-        height: 100%;
+        height: 50%;
         width: auto; }
