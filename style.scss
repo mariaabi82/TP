@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap');
 
 * {
     box-sizing: border-box;
@@ -43,6 +43,7 @@ body{
     
     .links {
         font-family: $secondary-font-family;
+        color: $text-color;
         font-weight: 600px;
         text-decoration: none;
         ul {
@@ -128,20 +129,27 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
-            flex: 1;
 
-            h1 {
-                font-weight: 700;
+            div {
+                margin-left: 70px;
+                margin-right: 50px;
+                h1 {
+                    
+                    font-size: 300%;
+                
+                }
             }
 
-
             button{
-                height: 50px;
-                width: 80%;
+                margin: 30px;
+                padding: 10px;
+                width: 300px;
+                height: auto;
                 color: $text-color-button;
                 font-family: $secondary-font-family;
                 font-weight: 400;
                 background-color: $background-color-button;
+                border: 2px solid white; 
                 border-radius: 15px;
                 display: flex;
                 justify-content: center;
@@ -162,11 +170,15 @@ body{
         .imagenheader {
             height: 100%;
             width: auto;
+            padding-left: 20px;
+            padding-right: 20px;
             img {
                 height: 50%;
                 width: auto;
             }
         }
+
+        
        
     }
 
