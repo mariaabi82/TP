@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 * {
@@ -12,63 +13,41 @@ $text-color-header: #fff;
 
 $background-color-button: #1445b3;
 $text-color-button: #fff;
-
-$main-font-family: 'Open Sans', sans-serif;
-
+/*--------------------- FONTS -----------------------*/
+$font-p: 'Open Sans', sans-serif;
+$font-title: “Montserrat”, sans-serif;
+/*--------------------- FONTS -----------------------*/
 
 body{
     margin: 0;
-    font-family: $main-font-family;
+    
 
-    nav {
-        height: 100px;
-        background-color: $background-color-nav;
-        color: blue;
-        display: flex;
-        justify-content: center;
-        align-items: space-between;
-        }
-
-        .logo-Ada {
-            height: 100%;
-            width: auto;
-            margin: 20px 100px 20px 20px;
-            max-width: 100%;
-            height: auto;
-            
-        }
-
-        div {
-            margin: 20px;
-            background-color: pink;
-            display: flex;
-            justify-content: flex-end;
-            align-items: space-between;
-        }
-    }
-
+    
+    /*--------------------- HEADER -----------------------*/
     header {
+        height: 700px;
         display: flex;
-        
         justify-content: flex-start;
 
         div {
-            padding: 80px;
-            height: 400px;
             background-color: $background-color-header;
             color: $text-color-header;
-            font-family: $main-font-family;
+            font-family: $font-title;
             display: flex;
             justify-content: center;
             align-items: center;
             flex: 1;
+
+            h2 {
+                font-weight: 700;
+            }
 
 
             button{
                 height: 50px;
                 width: 80%;
                 color: $text-color-button;
-                font-family: $main-font-family;
+                font-family: $font-p;
                 font-weight: 400;
                 background-color: $background-color-button;
                 border-radius: 15px;
@@ -78,9 +57,16 @@ body{
         }
 
         .imagenheader {
-            width: 10px;
+          
+            width: 70px;
             height: auto;
-            
+            img {
+                height: 100%;
+                width: auto;
+            }
         }
        
+    }
+
+   /*--------------------- HEADER -----------------------*/
 }
