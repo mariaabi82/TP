@@ -4,6 +4,7 @@
   box-sizing: border-box; }
 
 /*-------------- FONTS ---------------*/
+/*-------------  BUTTONS ---------------*/
 /*-------------  NAV ---------------*/
 /*-------------  MENU ---------------*/
 /*-------------  HEADER ---------------*/
@@ -73,7 +74,7 @@ body {
   body li:hover {
     color: #1868cf; }
   body header {
-    height: 700px;
+    height: 500px;
     display: flex;
     align-items: center; }
     body header div {
@@ -91,28 +92,36 @@ body {
       body header div button {
         margin: 30px;
         padding: 10px;
-        width: 300px;
+        width: 400px;
         height: auto;
         color: #fff;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
+        font-family: "Open Sans", sans-serif;
         background-color: #1445b3;
         border: 2px solid white;
-        border-radius: 15px;
+        border-radius: 20px;
         display: flex;
-        justify-content: center; }
+        align-items: center; }
+      body header div button:first-child {
+        background: #007bff;
+        border: 2px solid #007bff; }
+      body header div button:hover {
+        background-color: #1445b3;
+        border: 2px solid #fff;
+        transition: 0.7s; }
     body header .solutions {
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center; }
     body header .botones {
-      width: 50%; }
+      width: 50%;
+      display: flex;
+      justify-content: center; }
     body header .imagenheader {
       height: 100%;
       width: auto;
       padding-left: 20px;
-      padding-right: 20px; }
+      padding-right: 70px; }
       body header .imagenheader img {
         height: 50%;
         width: auto; }
