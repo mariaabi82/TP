@@ -4,16 +4,22 @@
 * {
     box-sizing: border-box;
 }
-
+/*-------------- FONTS ---------------*/
+$main-font-family: 'Open Sans', sans-serif;
+$secondary-font-family: 'Montserrat', sans-serif;
+/*-------------  NAV ---------------*/
 $background-color-nav: #fff;
+$text-color: #031880;
+/*-------------  HEADER ---------------*/
 $background-color-header: #1445b3;
 $text-color-header: #fff;
 $background-color-button: #1445b3;
 $text-color-button: #fff;
-/*--------------------- FONTS -----------------------*/
-$main-font-family: 'Open Sans', sans-serif;
-$secondary-font-family: 'Montserrat', sans-serif;
-/*--------------------- FONTS -----------------------*/
+
+
+
+
+
 
 body{
     margin: 0;
