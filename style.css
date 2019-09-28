@@ -3,12 +3,8 @@
 * {
   box-sizing: border-box; }
 
-<<<<<<< HEAD
 /*--------------------- FONTS -----------------------*/
 /*--------------------- FONTS -----------------------*/
-=======
-/*-------------------- NAV ------------------------*/
->>>>>>> 05ca173d98cc25f6b290e5cdb3f148c1425f7fb2
 body {
   margin: 0;
   /*--------------------- EMPIEZA NAV -----------------------*/
@@ -62,7 +58,6 @@ body {
     width: 100%;
     height: 100%;
     display: none; }
-<<<<<<< HEAD
   @media (max-width: 800px) {
     body .links li {
       display: none; }
@@ -104,18 +99,3 @@ body {
       body header .imagenheader img {
         height: 100%;
         width: auto; }
-=======
-  .links i {
-    display: block; } }
-
-#menu:target {
-  left: 0px; }
-
-#overly:target {
-  display: block; }
-
-li:hover {
-  color: #1868cf; }
-
-/*-------------------- NAV ------------------------*/
->>>>>>> 05ca173d98cc25f6b290e5cdb3f148c1425f7fb2
