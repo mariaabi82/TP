@@ -10,6 +10,10 @@ $secondary-font-family: 'Montserrat', sans-serif;
 /*-------------  NAV ---------------*/
 $background-color-nav: #fff;
 $text-color: #031880;
+/*-------------  MENU ---------------*/
+$background-color-menu: rgba(19, 39, 57, 0.8);
+$text-color-menu: #ffffff;
+$text-color-hover: #1868cf;
 /*-------------  HEADER ---------------*/
 $background-color-header: #1445b3;
 $text-color-header: #fff;
@@ -51,15 +55,15 @@ body{
         }
         i {
             display: none;
-            color: #031880;
+            color: $text-color;
         }
     }
       
     
     
     #menu {
-        background-color: rgba(19, 39, 57, 0.8);
-        color: #ffffff;
+        background-color: $background-color-menu;
+        color: $text-color-menu;
         width: 200px;
         position: absolute;
         top: 0;
@@ -80,7 +84,7 @@ body{
     }
     
     #overly {
-        background-color: rgba(19, 39, 57, 0.8);
+        background-color: $background-color-menu;
         position: absolute;
         top: 0px;
         width: 100%;
@@ -106,7 +110,7 @@ body{
     }
     
     li:hover {
-        color: #1868cf;
+        color: $text-color-hover; 
     }
      /*---------------------  TERMINA NAV -----------------------*/
 

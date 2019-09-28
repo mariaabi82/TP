@@ -3,8 +3,9 @@
 * {
   box-sizing: border-box; }
 
-/*--------------------- FONTS -----------------------*/
-/*--------------------- FONTS -----------------------*/
+/*-------------- FONTS ---------------*/
+/*-------------  NAV ---------------*/
+/*-------------  HEADER ---------------*/
 body {
   margin: 0;
   /*--------------------- EMPIEZA NAV -----------------------*/
@@ -81,7 +82,7 @@ body {
       justify-content: center;
       align-items: center;
       flex: 1; }
-      body header div h2 {
+      body header div h1 {
         font-weight: 700; }
       body header div button {
         height: 50px;
