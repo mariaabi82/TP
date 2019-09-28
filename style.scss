@@ -6,24 +6,106 @@
 }
 
 $background-color-nav: #fff;
-
-
 $background-color-header: #1445b3;
 $text-color-header: #fff;
-
 $background-color-button: #1445b3;
 $text-color-button: #fff;
 /*--------------------- FONTS -----------------------*/
-$font-p: 'Open Sans', sans-serif;
-$font-title: “Montserrat”, sans-serif;
+$main-font-family: 'Open Sans', sans-serif;
+$secondary-font-family: 'Montserrat', sans-serif;
 /*--------------------- FONTS -----------------------*/
 
 body{
     margin: 0;
     
+    /*--------------------- EMPIEZA NAV -----------------------*/
+    nav {
+        padding: 20px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $background-color-nav;
+        img {
+            width: 80px;
+            height: auto;
+        }
+    }
+    
+    .links {
+        font-family: $secondary-font-family;
+        font-weight: 600px;
+        text-decoration: none;
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+        li {
+            list-style-type: none;
+            padding: 10px;
+        }
+        i {
+            display: none;
+            color: #031880;
+        }
+    }
+      
+    
+    
+    #menu {
+        background-color: rgba(19, 39, 57, 0.8);
+        color: #ffffff;
+        width: 200px;
+        position: absolute;
+        top: 0;
+        left: -200px;
+        height: 100%;
+        transition: all 0.5s;
+        li {
+          list-style-type: none;
+          font-family: $main-font-family;
+          line-height: 35px;
+        } 
+        a {
+          color: $background-color-nav;
+          list-style-type: none;
+          font-family: $secondary-font-family;
+          line-height: 35px;
+        }
+    }
+    
+    #overly {
+        background-color: rgba(19, 39, 57, 0.8);
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    
+    @media (max-width: 800px) {
+        .links li {
+          display: none;
+        }
+        .links i {
+          display: block;
+        }
+    }
+    
+    #menu:target {
+        left: 0px; 
+    }
+    
+    #overly:target {
+        display: block;
+    }
+    
+    li:hover {
+        color: #1868cf;
+    }
+     /*---------------------  TERMINA NAV -----------------------*/
 
     
-    /*--------------------- HEADER -----------------------*/
+    /*---------------------  EMPIEZA HEADER -----------------------*/
     header {
         height: 700px;
         display: flex;
@@ -32,11 +114,14 @@ body{
         div {
             background-color: $background-color-header;
             color: $text-color-header;
-            font-family: $font-title;
+            font-family: $main-font-family;
             display: flex;
             justify-content: center;
             align-items: center;
             flex: 1;
+
+
+  
 
             h2 {
                 font-weight: 700;
@@ -47,7 +132,7 @@ body{
                 height: 50px;
                 width: 80%;
                 color: $text-color-button;
-                font-family: $font-p;
+                font-family: $secondary-font-family;
                 font-weight: 400;
                 background-color: $background-color-button;
                 border-radius: 15px;
@@ -68,5 +153,6 @@ body{
        
     }
 
-   /*--------------------- HEADER -----------------------*/
+   /*--------------------- TERMINA HEADER -----------------------*/
 }
+
