@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -130,7 +131,7 @@ body {
 
     /*---------------------  EMPIEZA HEADER -----------------------*/
     header {
-        
+
         height: 600px;
         display: flex;
         align-items: center;
@@ -142,19 +143,20 @@ body {
         align-items: center;
     }
 
-    h2{
-
-        font-size: 48px;
-        font-weight: 700px;
-
-    }
-
     .solutions {
 
         width: 500px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 20px;
+    }
+
+    h2 {
+
+        font-size: 48px;
+        font-weight: 700px;
+
     }
 
     .botones {
@@ -193,17 +195,16 @@ body {
         transition: 0.7s;
     }
 
-.imagenheader {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 400px;
-    padding-left: 20px;
-    padding-right: 70px;
+    .imagenheader {
+        display: flex;
+        align-items: center;
+        width: 400px;
+        padding-left: 20px;
+        padding-right: 70px;
 
-    img {
-        height: 50%;
-        width: auto;
+        img {
+            height: 50%;
+            width: auto;
+        }
     }
-}
 }
