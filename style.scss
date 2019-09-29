@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 * {
     box-sizing: border-box;
 }
+
 /*-------------- FONTS ---------------*/
-$main-font-family: 'Open Sans', sans-serif;
-$secondary-font-family: 'Montserrat', sans-serif;
+$main-font-family: 'Open Sans',
+sans-serif;
+$secondary-font-family: 'Montserrat',
+sans-serif;
 /*-------------  BUTTONS ---------------*/
 $background-color-button: #1445b3;
 $text-color-button: #fff;
@@ -27,9 +29,9 @@ $text-color-header: #fff;
 
 
 
-body{
+body {
     margin: 0;
-    
+
     /*--------------------- EMPIEZA NAV -----------------------*/
     nav {
         padding: 20px 60px;
@@ -37,33 +39,37 @@ body{
         justify-content: space-between;
         align-items: center;
         background-color: $background-color-nav;
+
         img {
             width: 80px;
             height: auto;
         }
     }
-    
+
     .links {
         font-family: $secondary-font-family;
         color: $text-color;
         font-weight: 600px;
         text-decoration: none;
+
         ul {
             display: flex;
             list-style-type: none;
         }
+
         li {
             list-style-type: none;
             padding: 10px;
         }
+
         i {
             display: none;
             color: $text-color;
         }
     }
-      
-    
-    
+
+
+
     #menu {
         background-color: $background-color-menu;
         color: $text-color-menu;
@@ -73,19 +79,21 @@ body{
         left: -200px;
         height: 100%;
         transition: all 0.5s;
+
         li {
-          list-style-type: none;
-          font-family: $main-font-family;
-          line-height: 35px;
-        } 
+            list-style-type: none;
+            font-family: $main-font-family;
+            line-height: 35px;
+        }
+
         a {
-          color: $background-color-nav;
-          list-style-type: none;
-          font-family: $secondary-font-family;
-          line-height: 35px;
+            color: $background-color-nav;
+            list-style-type: none;
+            font-family: $secondary-font-family;
+            line-height: 35px;
         }
     }
-    
+
     #overly {
         background-color: $background-color-menu;
         position: absolute;
@@ -94,125 +102,108 @@ body{
         height: 100%;
         display: none;
     }
-    
+
     @media (max-width: 800px) {
         .links li {
-          display: none;
+            display: none;
         }
+
         .links i {
-          display: block;
+            display: block;
         }
     }
-    
+
     #menu:target {
-        left: 0px; 
+        left: 0px;
     }
-    
+
     #overly:target {
         display: block;
     }
-    
-    li:hover {
-        color: $text-color-hover; 
-    }
-     /*---------------------  TERMINA NAV -----------------------*/
 
-    
+    li:hover {
+        color: $text-color-hover;
+    }
+
+    /*---------------------  TERMINA NAV -----------------------*/
+
+
     /*---------------------  EMPIEZA HEADER -----------------------*/
     header {
-        height: 500px;
+        
+        height: 600px;
         display: flex;
         align-items: center;
-
-        div {
-            background-color: $background-color-header;
-            color: $text-color-header;
-            font-family: $main-font-family;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            div {
-                margin-left: 70px;
-                margin-right: 50px;
-                h1 {
-                    
-                    font-size: 300%;
-                
-                }
-            }
-
-            button {
-                
-                margin: 30px;
-                padding: 10px;
-                width: 400px;
-                height: auto;
-                color: $text-color-button;
-                font-family: $main-font-family;
-                background-color: $background-color-button;
-                border: 2px solid white; 
-                border-radius: 20px;
-                display: flex;
-                align-items: center;
-                
-            }
-
-            button:first-child {
-                background: $first-button-color;
-                border: 2px solid $first-button-color;
-                
-            }
-            button:hover {
-                background-color: $background-color-button;
-                border: 2px solid #fff;
-                transition: 0.7s;
-            }
-        }
-
-        .solutions {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .botones {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .imagenheader {
-            height: 100%;
-            width: auto;
-            padding-left: 20px;
-            padding-right: 70px;
-            img {
-                height: 50%;
-                width: auto;
-            }
-        }
-
-        
-       
+        background-color: $background-color-header;
+        color: $text-color-header;
+        font-family: $main-font-family;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-   /*--------------------- TERMINA HEADER -----------------------*/
+    h2{
 
-  /*--------------------- EMPIEZA ABOUT US -----------------------*/
-    div {
-        background-color: $background-color-nav;
-        height: 1200px;
-        box-shadow: rgba($color: #b8b8b8, $alpha: 1.0, 0, 0.5)
+        font-size: 48px;
+        font-weight: 700px;
+
+    }
+
+    .solutions {
+
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .botones {
+
+        display: flex;
+
+    }
+
+    .botones button {
+
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 600;
+        color: $text-color-button;
+        font-family: $main-font-family;
+        background-color: $background-color-button;
+        border: 2px solid white;
+        border-radius: 20px;
+        display: flex;
+        padding: 10px 32px;
+        margin: 0px 30px 0px 0px;
+
     }
 
 
+    button:first-child {
+        background: $first-button-color;
+        border: 2px solid $first-button-color;
 
+    }
 
+    button:hover {
+        background-color: $background-color-button;
+        border: 2px solid #fff;
+        transition: 0.7s;
+    }
 
+.imagenheader {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 70px;
 
-
-
+    img {
+        height: 50%;
+        width: auto;
+    }
 }
-
+}
