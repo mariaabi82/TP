@@ -151,7 +151,7 @@ button:hover {
 
 /*--------------------- EMPIEZA ABOUT US -----------------------*/
 #about-us {
-  padding: 50px;
+  padding: 60px 80px;
   background-color: #fff;
   height: 1200px; }
   #about-us h5 {
@@ -179,8 +179,16 @@ button:hover {
     width: 550px;
     height: auto; }
     #about-us .image-about-us img {
-      width: 600px;
-      height: auto; }
+      width: 550px;
+      height: auto;
+      margin: 40px; }
+
+@media (max-width: 900px) {
+  .about-1 {
+    display: flex;
+    flex-direction: column-reverse; }
+  #about-us .iconos {
+    width: 100%; } }
 
 /*--------------------- TERMINA ABOUT US -----------------------*/
 /*--------------------- EMPIEZA FOOTER -----------------------*/
