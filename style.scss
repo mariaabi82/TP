@@ -207,7 +207,7 @@ body {
         padding-right: 70px;
 
         img {
-            height: 50%;
+            height: 300px;
             width: auto;
         }
     }
@@ -221,6 +221,9 @@ footer {
     padding: 30px;
     font-size: 14px;
     text-align: justify;
+    background-color: #00428a;
+     color: #fff;
+     font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -312,14 +315,12 @@ ul {
     padding-inline-start: 0px;
 }
 
-li,
-a {
+li, a{
     line-height: 24px;
     list-style: none;
     color: #fff;
-    text-decoration: none;
+    text-decoration:none;
 }
-
 a:hover {
     color: lightskyblue;
     transition: 0.5;
@@ -350,4 +351,5 @@ a:hover {
     font-size: 10px;
     margin: 0;
 }
-/*--------footer-----*/ 
+
+/*--------footer-----*/
