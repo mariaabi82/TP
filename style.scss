@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
 
 * {
@@ -24,10 +24,42 @@ $text-color-hover: #1868cf;
 /*-------------  HEADER ---------------*/
 $background-color-header: #1445b3;
 $text-color-header: #fff;
+/*--------------------- MIXIN -----------------------*/
+@mixin section-title {
+font-family: $secondary-font-family;
+color: #283d50;
+font-size: 35px;
+text-align: center;
+font-weight: 500;
+}
 
+@mixin secondary-title {
+font-family: $secondary-font-family;
+color: #283d50;
+font-size: 18px;
+font-weight: 700;
+}
+
+@mixin section-subtitle {
+font-family: $secondary-font-family;
+font-weight: 300;
+font-size: 15px;
+text-align: center;
+}
+
+@mixin section-text {
+font-family: $secondary-font-family;
+font-weight: 300;
+font-size: 17px;
+}
+
+/*--------------------- EMPIEZA BODY -----------------------*/
 
 body {
     margin: 0;
+    h2 {
+        @include section-title;
+    }
 }
 
 /*--------------------- EMPIEZA NAV -----------------------*/
@@ -197,11 +229,39 @@ button:hover {
 /*--------------------- EMPIEZA ABOUT US -----------------------*/
 
 #about-us {
+    padding: 50px;
     background-color: $background-color-nav;
     height: 1200px;
-    p {
-        font-family: $secondary-font-family;
+    h5 {
+        @include section-subtitle;
     }
+    h4 {
+        @include secondary-title;
+    }
+    p {
+        @include section-text;
+    }
+
+    .about-1 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .iconos {
+        width: 40%;
+        h5 {
+            text-align: start;
+        }
+    }
+    
+    .image-about-us {
+        width: 550px;
+        height: auto;
+        img {
+            width: 600px;
+            height: auto;
+        }
+    }
+  
 }
 /*--------------------- TERMINA ABOUT US -----------------------*/
 
