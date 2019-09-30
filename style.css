@@ -217,9 +217,9 @@ button:hover {
     font-size: 10px; }
 
 .imagen {
-  width: 250px;
-  height: 250px;
-  background-size: auto 250px;
+  width: 300px;
+  height: 300px;
+  background-size: auto 300px;
   justify-content: center;
   margin: 25px;
   border-radius: 50%;
@@ -246,7 +246,7 @@ button:hover {
   height: 100%;
   color: #fff;
   background: linear-gradient(rgba(0, 62, 128, 0.7), rgba(0, 62, 128, 0.7));
-  transform: translateY(250px); }
+  transform: translateY(300px); }
 
 .social {
   display: flex;
@@ -255,6 +255,11 @@ button:hover {
 .imagen:hover .overlay {
   transform: translateY(0px);
   transition: 0.6s; }
+
+@media (max-width: 1000px) {
+  .img-container {
+    display: flex;
+    flex-wrap: wrap; } }
 
 /*--------------------- TERMINA TEAM -----------------------*/
 footer {
