@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap");
 * {
   box-sizing: border-box; }
@@ -8,115 +8,185 @@
 /*-------------  NAV ---------------*/
 /*-------------  MENU ---------------*/
 /*-------------  HEADER ---------------*/
+/*--------------------- MIXIN -----------------------*/
+/*--------------------- EMPIEZA BODY -----------------------*/
 body {
-  margin: 0;
-  /*--------------------- EMPIEZA NAV -----------------------*/
-  /*---------------------  TERMINA NAV -----------------------*/
-  /*---------------------  EMPIEZA HEADER -----------------------*/ }
-  body nav {
-    padding: 20px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff; }
-    body nav img {
-      width: 80px;
-      height: auto; }
-  body .links {
+  margin: 0; }
+  body h2 {
     font-family: "Montserrat", sans-serif;
-    color: #031880;
+    color: #283d50;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500; }
+
+/*--------------------- EMPIEZA NAV -----------------------*/
+nav {
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; }
+  nav img {
+    width: 80px;
+    height: auto; }
+  nav .links {
+    font-family: "Montserrat", sans-serif;
     font-weight: 600px;
     text-decoration: none; }
-    body .links ul {
+    nav .links ul {
       display: flex;
       list-style-type: none; }
-    body .links li {
+    nav .links li {
       list-style-type: none;
-      padding: 10px; }
-    body .links i {
+      padding: 10px;
+      color: #031880; }
+    nav .links i {
       display: none;
       color: #031880; }
-  body #menu {
-    background-color: rgba(19, 39, 57, 0.8);
-    color: #ffffff;
-    width: 200px;
-    position: absolute;
-    top: 0;
-    left: -200px;
-    height: 100%;
-    transition: all 0.5s; }
-    body #menu li {
-      list-style-type: none;
-      font-family: "Open Sans", sans-serif;
-      line-height: 35px; }
-    body #menu a {
-      color: #fff;
-      list-style-type: none;
-      font-family: "Montserrat", sans-serif;
-      line-height: 35px; }
-  body #overly {
-    background-color: rgba(19, 39, 57, 0.8);
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 100%;
+
+#menu {
+  background-color: rgba(19, 39, 57, 0.8);
+  color: #ffffff;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  height: 100%;
+  transition: all 0.5s; }
+  #menu li {
+    list-style-type: none;
+    font-family: "Open Sans", sans-serif;
+    line-height: 35px; }
+  #menu a {
+    color: #fff;
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+    line-height: 35px; }
+
+@media (max-width: 800px) {
+  .links li {
     display: none; }
-  @media (max-width: 800px) {
-    body .links li {
-      display: none; }
-    body .links i {
-      display: block; } }
-  body #menu:target {
-    left: 0px; }
-  body #overly:target {
-    display: block; }
-  body li:hover {
-    color: #1868cf; }
-  body header {
-    height: 600px;
-    display: flex;
-    align-items: center;
-    background-color: #1445b3;
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  body .solutions {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px; }
-  body h2 {
-    font-size: 48px;
-    font-weight: 700px; }
-  body .subrayado {
+  .links i {
+    display: block; } }
+
+#menu:target {
+  left: 0px; }
+
+#overly:target {
+  display: block; }
+
+li:hover {
+  color: #1868cf; }
+
+/*---------------------  TERMINA NAV -----------------------*/
+/*---------------------  EMPIEZA HEADER -----------------------*/
+header {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  background-color: #1445b3;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; }
+
+.solutions {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px; }
+  .solutions h1 {
+    font-weight: 800px;
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif; }
+  .solutions span {
+    color: #84b1ec;
     text-decoration-line: underline; }
-  body .botones {
-    display: flex; }
-  body .botones button {
-    width: 160px;
-    height: 40px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
-    background-color: #1445b3;
-    border: 2px solid white;
-    border-radius: 20px;
+
+.botones {
+  display: flex; }
+
+.botones button {
+  width: 160px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  background-color: #1445b3;
+  border: 2px solid white;
+  border-radius: 20px;
+  display: flex;
+  padding: 10px 32px;
+  margin: 0px 30px 0px 0px; }
+
+button:first-child {
+  background: #007bff;
+  border: 2px solid #007bff; }
+
+button:hover {
+  background-color: #1445b3;
+  border: 2px solid #fff;
+  transition: 0.7s; }
+
+.imagenheader {
+  width: 600px;
+  height: auto; }
+  .imagenheader img {
+    width: 600px;
+    height: auto; }
+
+@media (max-width: 900px) {
+  header {
     display: flex;
-    padding: 10px 32px;
-    margin: 0px 30px 0px 0px; }
-  body button:first-child {
-    background: #007bff;
-    border: 2px solid #007bff; }
-  body button:hover {
-    background-color: #1445b3;
-    border: 2px solid #fff;
-    transition: 0.7s; }
-  body .imagenheader {
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: auto;
+    padding: 50px; }
+    header h1 {
+      text-align: center; } }
+
+/*--------------------- EMPIEZA ABOUT US -----------------------*/
+#about-us {
+  padding: 60px 80px;
+  background-color: #fff;
+  height: 1200px; }
+  #about-us h5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center; }
+  #about-us h4 {
+    font-family: "Montserrat", sans-serif;
+    color: #283d50;
+    font-size: 18px;
+    font-weight: 700; }
+  #about-us p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 17px; }
+  #about-us .about-1 {
     display: flex;
+    justify-content: space-around; }
+  #about-us .iconos {
+    width: 40%; }
+    #about-us .iconos h5 {
+      text-align: start; }
+  #about-us .image-about-us {
+    width: 550px;
+    height: auto; }
+    #about-us .image-about-us img {
+      width: 550px;
+      height: auto;
+      margin: 40px; }
+
+@media (max-width: 900px) {
+  .about-1 {
+    display: flex;
+<<<<<<< HEAD
     align-items: center;
     width: 400px;
     padding-left: 20px;
@@ -126,6 +196,14 @@ body {
       width: auto; }
 
 /*-------footer-------*/
+=======
+    flex-direction: column-reverse; }
+  #about-us .iconos {
+    width: 100%; } }
+
+/*--------------------- TERMINA ABOUT US -----------------------*/
+/*--------------------- EMPIEZA FOOTER -----------------------*/
+>>>>>>> 5448cd2852118deb7e14c6ab48e3b8e3c9da3db1
 footer {
   display: flex;
   justify-content: space-evenly;
@@ -235,4 +313,4 @@ a:hover {
   font-size: 10px;
   margin: 0; }
 
-/*--------footer-----*/
+/*--------------------- TERMINA FOOTER -----------------------*/
