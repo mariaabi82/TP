@@ -13,7 +13,8 @@ body {
   /*--------------------- EMPIEZA NAV -----------------------*/
   /*---------------------  TERMINA NAV -----------------------*/
   /*---------------------  EMPIEZA HEADER -----------------------*/
-  /*--------------------- TERMINA HEADER -----------------------*/ }
+  /*--------------------- TERMINA HEADER -----------------------*/
+  /*--------------------- EMPIEZA ABOUT US -----------------------*/ }
   body nav {
     padding: 20px 60px;
     display: flex;
@@ -125,3 +126,8 @@ body {
       body header .imagenheader img {
         height: 50%;
         width: auto; }
+  body #about-us {
+    background-color: #fff;
+    height: 1200px; }
+    body #about-us p {
+      font-family: "Montserrat", sans-serif; }
