@@ -186,24 +186,12 @@ button:hover {
 @media (max-width: 900px) {
   .about-1 {
     display: flex;
-<<<<<<< HEAD
-    align-items: center;
-    width: 400px;
-    padding-left: 20px;
-    padding-right: 70px; }
-    body .imagenheader img {
-      height: 300px;
-      width: auto; }
-
-/*-------footer-------*/
-=======
     flex-direction: column-reverse; }
   #about-us .iconos {
     width: 100%; } }
 
 /*--------------------- TERMINA ABOUT US -----------------------*/
 /*--------------------- EMPIEZA FOOTER -----------------------*/
->>>>>>> 5448cd2852118deb7e14c6ab48e3b8e3c9da3db1
 footer {
   display: flex;
   justify-content: space-evenly;

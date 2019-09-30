@@ -24,39 +24,41 @@ $text-color-hover: #1868cf;
 /*-------------  HEADER ---------------*/
 $background-color-header: #1445b3;
 $text-color-header: #fff;
+
 /*--------------------- MIXIN -----------------------*/
 @mixin section-title {
-font-family: $secondary-font-family;
-color: #283d50;
-font-size: 35px;
-text-align: center;
-font-weight: 500;
+    font-family: $secondary-font-family;
+    color: #283d50;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
 }
 
 @mixin secondary-title {
-font-family: $secondary-font-family;
-color: #283d50;
-font-size: 18px;
-font-weight: 700;
+    font-family: $secondary-font-family;
+    color: #283d50;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 @mixin section-subtitle {
-font-family: $secondary-font-family;
-font-weight: 300;
-font-size: 15px;
-text-align: center;
+    font-family: $secondary-font-family;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
 }
 
 @mixin section-text {
-font-family: $secondary-font-family;
-font-weight: 300;
-font-size: 17px;
+    font-family: $secondary-font-family;
+    font-weight: 300;
+    font-size: 17px;
 }
 
 /*--------------------- EMPIEZA BODY -----------------------*/
 
 body {
     margin: 0;
+
     h2 {
         @include section-title;
     }
@@ -70,27 +72,31 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: $background-color-nav;
+
     img {
         width: 80px;
         height: auto;
     }
 
     .links {
-    font-family: $secondary-font-family;
-    font-weight: 600px;
-    text-decoration: none;
+        font-family: $secondary-font-family;
+        font-weight: 600px;
+        text-decoration: none;
+
         ul {
-        display: flex;
-        list-style-type: none;
+            display: flex;
+            list-style-type: none;
         }
+
         li {
-        list-style-type: none;
-        padding: 10px;
-        color: $text-color;
+            list-style-type: none;
+            padding: 10px;
+            color: $text-color;
         }
+
         i {
-        display: none;
-        color: $text-color;
+            display: none;
+            color: $text-color;
         }
     }
 }
@@ -104,11 +110,13 @@ nav {
     left: -200px;
     height: 100%;
     transition: all 0.5s;
-     li {
+
+    li {
         list-style-type: none;
         font-family: $main-font-family;
         line-height: 35px;
     }
+
     a {
         color: $background-color-nav;
         list-style-type: none;
@@ -122,6 +130,7 @@ nav {
     .links li {
         display: none;
     }
+
     .links i {
         display: block;
     }
@@ -162,14 +171,16 @@ header {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+
     h1 {
-       font-weight: 800px; 
-       font-size: 50px;
-       font-family: $secondary-font-family;
+        font-weight: 800px;
+        font-size: 50px;
+        font-family: $secondary-font-family;
     }
+
     span {
-    color: #84b1ec;
-    text-decoration-line: underline;
+        color: #84b1ec;
+        text-decoration-line: underline;
     }
 }
 
@@ -207,6 +218,7 @@ button:hover {
 .imagenheader {
     width: 600px;
     height: auto;
+
     img {
         width: 600px;
         height: auto;
@@ -215,14 +227,15 @@ button:hover {
 
 @media (max-width: 900px) {
     header {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    height: auto;
-    padding: 50px;
-    h1 {
-        text-align: center;
-    }
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: auto;
+        padding: 50px;
+
+        h1 {
+            text-align: center;
+        }
     }
 }
 
@@ -232,12 +245,15 @@ button:hover {
     padding: 60px 80px;
     background-color: $background-color-nav;
     height: 1200px;
+
     h5 {
         @include section-subtitle;
     }
+
     h4 {
         @include secondary-title;
     }
+
     p {
         @include section-text;
     }
@@ -246,22 +262,25 @@ button:hover {
         display: flex;
         justify-content: space-around;
     }
+
     .iconos {
         width: 40%;
+
         h5 {
             text-align: start;
         }
     }
-    
+
     .image-about-us {
         width: 550px;
         height: auto;
+
         img {
             width: 550px;
             height: auto;
             margin: 40px;
         }
-    } 
+    }
 }
 
 @media (max-width: 900px) {
@@ -269,6 +288,7 @@ button:hover {
         display: flex;
         flex-direction: column-reverse;
     }
+
     #about-us .iconos {
         width: 100%;
     }
@@ -285,8 +305,8 @@ footer {
     font-size: 14px;
     text-align: justify;
     background-color: #00428a;
-     color: #fff;
-     font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -378,12 +398,14 @@ ul {
     padding-inline-start: 0px;
 }
 
-li, a{
+li,
+a {
     line-height: 24px;
     list-style: none;
     color: #fff;
-    text-decoration:none;
+    text-decoration: none;
 }
+
 a:hover {
     color: lightskyblue;
     transition: 0.5;
@@ -412,4 +434,5 @@ a:hover {
     font-size: 10px;
     margin: 0;
 }
+
 /*--------------------- TERMINA FOOTER -----------------------*/
