@@ -8,6 +8,7 @@
 /*-------------  NAV ---------------*/
 /*-------------  MENU ---------------*/
 /*-------------  HEADER ---------------*/
+/*-------------  SERVICES ---------------*/
 /*--------------------- MIXIN -----------------------*/
 /*--------------------- EMPIEZA BODY -----------------------*/
 body {
@@ -208,6 +209,47 @@ button:hover {
     width: 100%; } }
 
 /*--------------------- TERMINA ABOUT US -----------------------*/
+/*--------------------- EMPIEZA SERVICES -------------*/
+.services-cards {
+  height: 900px;
+  width: auto;
+  padding: 40px;
+  background-color: #c6e3f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .services-cards h2 {
+    font-family: "Open Sans", sans-serif; }
+  .services-cards p {
+    font-family: "Montserrat", sans-serif; }
+  .services-cards .groupofcards {
+    height: 600px;
+    width: fit-content;
+    padding: 30px 20px 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .services-cards .card {
+    width: 425px;
+    height: 168px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    display: flex;
+    direction: column; }
+    .services-cards .card img {
+      height: 30px;
+      width: auto; }
+  .services-cards .card:hover {
+    transform: translateY(-10px);
+    transition: 0.20s; }
+    .services-cards .card:hover h3 {
+      color: #1445b3; }
+
+/*--------------------- TERMINA SERVICES -------------*/
 /*--------------------- EMPIEZA TEAM -----------------------*/
 #team {
   display: flex;
@@ -274,6 +316,7 @@ button:hover {
     flex-wrap: wrap; } }
 
 /*--------------------- TERMINA TEAM -----------------------*/
+/*--------------------- EMPIEZA FOOTER -----------------------*/
 footer {
   display: flex;
   justify-content: space-evenly;
