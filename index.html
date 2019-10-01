@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Headertp</title>
+    <title>Borradortp</title>
 </head>
 
 <body>
@@ -82,7 +82,7 @@
                 et dolore magna aliqua.</h5>
 
             <div class="about-1">
-                
+
                 <div class="iconos">
                     <div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -105,7 +105,7 @@
                             nobis
                             est eligendi</h5>
                     </div>
-                    
+
                 </div>
 
                 <div class="image-about-us">
@@ -251,28 +251,52 @@
         <!-------------------- CLIENTS ------------------------>
 
         <!-------------------- CONTACT US ------------------------>
-        <container id="contact-us">
+        <section class="contact">
             <h2>Contact Us</h2>
-            <div>
-                <iframe src="" frameborder="0"></iframe>
+            <div id="location">
+                <div class="columna1">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"></iframe>
+
+                </div>
+                <div class="columna2">
+                    <div class="lista2">
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> A108 Adam Street, NY 535022</li>
+                            <li><i class="far fa-envelope"></i> info@example.com</li>
+                            <li><i class="fas fa-phone-alt"></i> +1 5589 55488 55</li>
+                        </ul>
+                    </div>
+
+                    <form action="/contacto" method="post" id="form2">
+                        <div class="personal">
+                            <input required type="text" placeholder="Your Name">
+
+                            <input required type="email" placeholder="Your Mail">
+                        </div>
+                        <div class="adicional">
+                            <input type="text" placeholder="Subject">
+
+                            <textarea name="" id="" cols="30" rows="10">Message
+
+                            </textarea>
+                        </div>
+                        <div> <input type="submit" value="Send Message">
+                        </div>
+
+
+                    </form>
+
+                </div>
             </div>
-            <div>
-                Dirección
-                Correo
-                Teléfono
-            </div>
-            <div>
-                Formulario
-            </div>
-        </container>
+
+
+
+        </section>
         <!-------------------- CONTACT US ------------------------>
 
         <!-------------------- FOOTER ------------------------>
-        <container>
-            Agregar último código de footer
-        </container>
 
-        <!-------------------- FOOTER ------------------------>
 
         <footer>
             <div class="container">
@@ -328,6 +352,8 @@
             </div>
 
         </footer>
+
+        <!-------------------- FOOTER ------------------------>
     </body>
 
 </html>

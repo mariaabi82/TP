@@ -1,423 +1,543 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
-
-* {
-    box-sizing: border-box;
-}
-
-/*-------------- FONTS ---------------*/
-$main-font-family: 'Open Sans',
-sans-serif;
-$secondary-font-family: 'Montserrat',
-sans-serif;
-/*-------------  BUTTONS ---------------*/
-$background-color-button: #1445b3;
-$text-color-button: #fff;
-$first-button-color: #007bff;
-/*-------------  NAV ---------------*/
-$background-color-nav: #fff;
-$text-color: #031880;
-/*-------------  MENU ---------------*/
-$background-color-menu: rgba(19, 39, 57, 0.8);
-$text-color-menu: #ffffff;
-$text-color-hover: #1868cf;
-/*-------------  HEADER ---------------*/
-$background-color-header: #1445b3;
-$text-color-header: #fff;
-
-/*--------------------- MIXIN -----------------------*/
-@mixin section-title {
-    font-family: $secondary-font-family;
-    color: #283d50;
-    font-size: 35px;
-    text-align: center;
-    font-weight: 500;
-}
-
-@mixin secondary-title {
-    font-family: $secondary-font-family;
-    color: #283d50;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-@mixin section-subtitle {
-    font-family: $secondary-font-family;
-    font-weight: 300;
-    font-size: 15px;
-    text-align: center;
-}
-
-@mixin section-text {
-    font-family: $secondary-font-family;
-    font-weight: 300;
-    font-size: 17px;
-}
-
-/*--------------------- EMPIEZA BODY -----------------------*/
-
-body {
-    margin: 0;
-
-    h2 {
-        @include section-title;
-    }
-}
-
-/*--------------------- EMPIEZA NAV -----------------------*/
-
-nav {
-    padding: 20px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $background-color-nav;
-
-    img {
-        width: 80px;
-        height: auto;
-    }
-
-    .links {
-        font-family: $secondary-font-family;
-        font-weight: 600px;
-        text-decoration: none;
-
-        ul {
-            display: flex;
-            list-style-type: none;
-        }
-
-        li {
-            list-style-type: none;
-            padding: 10px;
-            color: $text-color;
-        }
-
-        i {
-            display: none;
-            color: $text-color;
-        }
-    }
-}
-
-#menu {
-    background-color: $background-color-menu;
-    color: $text-color-menu;
-    width: 200px;
-    position: absolute;
-    top: 0;
-    left: -200px;
-    height: 100%;
-    transition: all 0.5s;
-
-    li {
-        list-style-type: none;
-        font-family: $main-font-family;
-        line-height: 35px;
-    }
-
-    a {
-        color: $background-color-nav;
-        list-style-type: none;
-        font-family: $secondary-font-family;
-        line-height: 35px;
-    }
-}
-
-
-@media (max-width: 800px) {
-    .links li {
-        display: none;
-    }
-
-    .links i {
-        display: block;
-    }
-}
-
-#menu:target {
-    left: 0px;
-}
-
-#overly:target {
-    display: block;
-}
-
-li:hover {
-    color: $text-color-hover;
-}
-
-/*---------------------  TERMINA NAV -----------------------*/
-
-/*---------------------  EMPIEZA HEADER -----------------------*/
-
-header {
-    height: 600px;
-    display: flex;
-    align-items: center;
-    background-color: $background-color-header;
-    color: $text-color-header;
-    font-family: $main-font-family;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.solutions {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-
-    h1 {
-        font-weight: 800px;
-        font-size: 50px;
-        font-family: $secondary-font-family;
-    }
-
-    span {
-        color: #84b1ec;
-        text-decoration-line: underline;
-    }
-}
-
-.botones {
-    display: flex;
-}
-
-.botones button {
-    width: 160px;
-    height: 40px;
-    font-size: 14px;
-    font-weight: 600;
-    color: $text-color-button;
-    font-family: $main-font-family;
-    background-color: $background-color-button;
-    border: 2px solid white;
-    border-radius: 20px;
-    display: flex;
-    padding: 10px 32px;
-    margin: 0px 30px 0px 0px;
-}
-
-button:first-child {
-    background: $first-button-color;
-    border: 2px solid $first-button-color;
-}
-
-
-button:hover {
-    background-color: $background-color-button;
-    border: 2px solid #fff;
-    transition: 0.7s;
-}
-
-.imagenheader {
-    width: 600px;
-    height: auto;
-
-    img {
-        width: 600px;
-        height: auto;
-    }
-}
-
-@media (max-width: 900px) {
-    header {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        height: auto;
-        padding: 50px;
-
-        h1 {
-            text-align: center;
-        }
-    }
-}
-
-/*--------------------- EMPIEZA ABOUT US -----------------------*/
-
-#about-us {
-    padding: 60px 80px;
-    background-color: $background-color-nav;
-    height: 1200px;
-
-    h5 {
-        @include section-subtitle;
-    }
-
-    h4 {
-        @include secondary-title;
-    }
-
-    p {
-        @include section-text;
-    }
-
-    .about-1 {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .iconos {
-        width: 40%;
-
-        h5 {
-            text-align: start;
-        }
-    }
-
-    .image-about-us {
-        width: 550px;
-        height: auto;
-
-        img {
-            width: 550px;
-            height: auto;
-            margin: 40px;
-        }
-    }
-}
-
-@media (max-width: 900px) {
-    .about-1 {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    #about-us .iconos {
-        width: 100%;
-    }
-}
-
-
-/*--------------------- TERMINA ABOUT US -----------------------*/
-
-/*--------------------- EMPIEZA FOOTER -----------------------*/
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 30px;
-    font-size: 14px;
-    text-align: justify;
-    background-color: #00428a;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.container>div {
-    margin: 15px;
-}
-
-.wayne {
-    width: 350px;
-    margin-top: 0px;
-}
-
-h1 {
-    letter-spacing: 0px;
-    font-size: 34px;
-    font-weight: normal;
-}
-
-.useful-links {
-    width: 180px;
-
-}
-
-.social {
-    width: 250px;
-
-}
-
-.suscription {
-    width: 300px;
-}
-
-span {
-    font-weight: bold;
-}
-
-i {
-    color: #fff;
-    border-radius: 50%;
-}
-
-.fab {
-    padding: 8px;
-    margin: 2px;
-    border-radius: 50%;
-    background-color: #007bff;
-    color: #fff;
-}
-
-form {
-    display: flex;
-    margin: 0;
-
-}
-
-input[type=email] {
-    border: none;
-    width: 65%;
-    height: 35px;
-    font-size: 16px;
-    line-height: 16px;
-    padding: 0;
-}
-
-input[type="submit"] {
-    background: #007bff;
-    border: none;
-    width: 35%;
-    height: 35px;
-    text-align: center;
-    font-size: 14px;
-    color: #fff;
-    transition: 0.5s;
-    cursor: pointer;
-    padding: 0;
-}
-
-i:hover {
-    background-color: #0669d3;
-    transition: 0.5;
-}
-
-ul {
-    padding-inline-start: 0px;
-}
-
-li,
-a {
-    line-height: 24px;
-    list-style: none;
-    color: #fff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: lightskyblue;
-    transition: 0.5;
-}
-
-@media(max-width: 600px) {
-    .container {
-        flex-direction: column;
-    }
-}
-
-/* @media (max-width: 1000px) {
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
+
+  * {
+      box-sizing: border-box;
+  }
+
+  /*-------------- FONTS ---------------*/
+  $main-font-family: 'Open Sans',
+  sans-serif;
+  $secondary-font-family: 'Montserrat',
+  sans-serif;
+  /*-------------  BUTTONS ---------------*/
+  $background-color-button: #1445b3;
+  $text-color-button: #fff;
+  $first-button-color: #007bff;
+  /*-------------  NAV ---------------*/
+  $background-color-nav: #fff;
+  $text-color: #031880;
+  /*-------------  MENU ---------------*/
+  $background-color-menu: rgba(19, 39, 57, 0.8);
+  $text-color-menu: #ffffff;
+  $text-color-hover: #1868cf;
+  /*-------------  HEADER ---------------*/
+  $background-color-header: #1445b3;
+  $text-color-header: #fff;
+  /*-------------  SERVICES ---------------*/
+  $background-color-services: #c6e3f2;
+  $background-color-cards: #fff;
+  $h3-hover: #1445b3;
+
+  /*--------------------- MIXIN -----------------------*/
+  @mixin section-title {
+      font-family: $secondary-font-family;
+      color: #283d50;
+      font-size: 35px;
+      text-align: center;
+      font-weight: 500;
+  }
+
+  @mixin secondary-title {
+      font-family: $secondary-font-family;
+      color: #283d50;
+      font-size: 18px;
+      font-weight: 700;
+  }
+
+  @mixin section-subtitle {
+      font-family: $secondary-font-family;
+      font-weight: 300;
+      font-size: 15px;
+      text-align: center;
+  }
+
+  @mixin section-text {
+      font-family: $secondary-font-family;
+      font-weight: 300;
+      font-size: 17px;
+  }
+
+  @mixin form-style {
+      font-size: 14px;
+      line-height: 14px;
+      border: 1px solid #ced4da;
+      padding: 5px;
+
+  }
+
+  /*--------------------- EMPIEZA BODY -----------------------*/
+
+  body {
+      margin: 0;
+
+      h2 {
+          @include section-title;
+      }
+
+      h5 {
+          @include section-subtitle;
+      }
+  }
+
+  /*--------------------- EMPIEZA NAV -----------------------*/
+
+  nav {
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $background-color-nav;
+
+      img {
+          width: 80px;
+          height: auto;
+      }
+
+      .links {
+          font-family: $secondary-font-family;
+          font-weight: 600px;
+          text-decoration: none;
+
+          ul {
+              display: flex;
+              list-style-type: none;
+          }
+
+          li {
+              list-style-type: none;
+              padding: 10px;
+              color: $text-color;
+          }
+
+          i {
+              display: none;
+              color: $text-color;
+          }
+      }
+  }
+
+  #menu {
+      background-color: $background-color-menu;
+      color: $text-color-menu;
+      width: 200px;
+      position: absolute;
+      top: 0;
+      left: -200px;
+      height: 100%;
+      transition: all 0.5s;
+
+      li {
+          list-style-type: none;
+          font-family: $main-font-family;
+          line-height: 35px;
+      }
+
+      a {
+          color: $background-color-nav;
+          list-style-type: none;
+          font-family: $secondary-font-family;
+          line-height: 35px;
+      }
+  }
+
+
+  @media (max-width: 800px) {
+      .links li {
+          display: none;
+      }
+
+      .links i {
+          display: block;
+      }
+  }
+
+  #menu:target {
+      left: 0px;
+  }
+
+  #overly:target {
+      display: block;
+  }
+
+  li:hover {
+      color: $text-color-hover;
+  }
+
+
+  /*---------------------  TERMINA NAV -----------------------*/
+
+  /*---------------------  EMPIEZA HEADER -----------------------*/
+
+  header {
+      height: 600px;
+      display: flex;
+      align-items: center;
+      background-color: $background-color-header;
+      color: $text-color-header;
+      font-family: $main-font-family;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+  }
+
+  .solutions {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+
+      h1 {
+          font-weight: 800px;
+          font-size: 50px;
+          font-family: $secondary-font-family;
+      }
+
+      span {
+          color: #84b1ec;
+          text-decoration-line: underline;
+      }
+  }
+
+  .botones {
+      display: flex;
+  }
+
+  .botones button {
+      width: 160px;
+      height: 40px;
+      font-size: 14px;
+      font-weight: 600;
+      color: $text-color-button;
+      font-family: $main-font-family;
+      background-color: $background-color-button;
+      border: 2px solid white;
+      border-radius: 20px;
+      display: flex;
+      padding: 10px 32px;
+      margin: 0px 30px 0px 0px;
+  }
+
+  button:first-child {
+      background: $first-button-color;
+      border: 2px solid $first-button-color;
+  }
+
+
+  button:hover {
+      background-color: $background-color-button;
+      border: 2px solid #fff;
+      transition: 0.7s;
+  }
+
+  .imagenheader {
+      width: 600px;
+      height: auto;
+
+      img {
+          width: 600px;
+          height: auto;
+      }
+  }
+
+  @media (max-width: 900px) {
+      header {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          height: auto;
+          padding: 50px;
+
+          h1 {
+              text-align: center;
+          }
+      }
+  }
+
+  /*--------------------- EMPIEZA ABOUT US -----------------------*/
+
+  #about-us {
+      padding: 60px 80px;
+      background-color: $background-color-nav;
+      height: 1200px;
+
+      h5 {
+          @include section-subtitle;
+      }
+
+      h4 {
+          @include secondary-title;
+      }
+
+      p {
+          @include section-text;
+      }
+
+      .about-1 {
+          display: flex;
+          justify-content: space-around;
+      }
+
+      .iconos {
+          width: 40%;
+
+          h5 {
+              text-align: start;
+          }
+      }
+
+      .image-about-us {
+          width: 550px;
+          height: auto;
+
+          img {
+              width: 550px;
+              height: auto;
+              margin: 40px;
+          }
+      }
+  }
+
+  @media (max-width: 900px) {
+      .about-1 {
+          display: flex;
+          flex-direction: column-reverse;
+      }
+
+      #about-us .iconos {
+          width: 100%;
+      }
+  }
+
+
+  /*--------------------- TERMINA ABOUT US -----------------------*/
+  /*--------------------- EMPIEZA CONTACT US----------------------*/
+
+  .contact {
+      background-color: #fff;
+      padding: 60px 0px;
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+      height: 600px;
+  }
+
+  #location {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      >div {
+          width: 50%;
+          padding: 20px 15px;
+      }
+
+      iframe {
+          height: 315px;
+          width: 100%;
+      }
+
+      .columna2 {
+          display: flex;
+          flex-direction: column;
+
+          ul {
+              display: flex;
+              justify-content: space-around;
+              list-style-type: none;
+
+          }
+
+          li {
+              font-family: $secondary-font-family;
+              list-style-type: none;
+              padding: 10px;
+              color: grey;
+              font-size: 14px;
+
+              i {
+                  color: #1868cf;
+                  width: 18px;
+
+              }
+
+          }
+
+
+      }
+
+      #form2 {
+          display: flex;
+          flex-direction: column;
+
+          .personal {
+              display: flex;
+              justify-content: space-around;
+          }
+
+          .personal input {
+              @include form-style;
+              height: 35px;
+              width: 48%;
+
+
+          }
+
+          .adicional {
+              display: flex;
+              flex-direction: column;
+          }
+
+          input {
+              @include form-style;
+              height: 35px;
+
+          }
+
+          textarea {
+              @include form-style;
+              font-family: $secondary-font-family;
+              padding: 6px 12px;
+          }
+
+      }
+
+      input[type="submit"] {
+          width: 160px;
+          height: 40px;
+          background-color: $first-button-color;
+          color: $text-color-button;
+          font-size: 14px;
+          line-height: 14px;
+          border-radius: 20px;
+          padding: 8px 30px;
+      }
+  }
+
+
+
+  /*----------------------TERMINA CONTACT US--------------------*/
+  /*--------------------- EMPIEZA FOOTER -----------------------*/
+  footer {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 30px;
+      font-size: 14px;
+      text-align: justify;
+      background-color: #00428a;
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+  }
+
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+
+  }
+
+  .container>div {
+      margin: 15px;
+  }
+
+  .wayne {
+      width: 350px;
+      margin-top: 0px;
+  }
+
+  h1 {
+      letter-spacing: 0px;
+      font-size: 34px;
+      font-weight: normal;
+  }
+
+  .useful-links {
+      width: 180px;
+
+  }
+
+  .social {
+      width: 250px;
+
+  }
+
+  .suscription {
+      width: 300px;
+  }
+
+  span {
+      font-weight: bold;
+  }
+
+  i {
+      color: #fff;
+      border-radius: 50%;
+  }
+
+  .fab {
+      padding: 8px;
+      margin: 2px;
+      border-radius: 50%;
+      background-color: #007bff;
+      color: #fff;
+  }
+
+  form {
+      display: flex;
+      margin: 0;
+
+  }
+
+  input[type=email] {
+      border: none;
+      width: 65%;
+      height: 35px;
+      font-size: 16px;
+      line-height: 16px;
+      padding: 0;
+  }
+
+  input[type="submit"] {
+      background: #007bff;
+      border: none;
+      width: 35%;
+      height: 35px;
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      transition: 0.5s;
+      cursor: pointer;
+      padding: 0;
+  }
+
+  i:hover {
+      background-color: #0669d3;
+      transition: 0.5;
+  }
+
+  ul {
+      padding-inline-start: 0px;
+  }
+
+  li,
+  a {
+      line-height: 24px;
+      list-style: none;
+      color: #fff;
+      text-decoration: none;
+  }
+
+  a:hover {
+      color: lightskyblue;
+      transition: 0.5;
+  }
+
+  @media(max-width: 600px) {
+      .container {
+          flex-direction: column;
+      }
+  }
+
+  /* @media (max-width: 1000px) {
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -425,14 +545,14 @@ a:hover {
    } */
 
 
-.copyright {
-    background-color: darkblue;
-    padding-top: 40px;
-    display: block;
-    text-align: center;
-    color: #fff;
-    font-size: 10px;
-    margin: 0;
-}
+  .copyright {
+      background-color: darkblue;
+      padding-top: 40px;
+      display: block;
+      text-align: center;
+      color: #fff;
+      font-size: 10px;
+      margin: 0;
+  }
 
-/*--------------------- TERMINA FOOTER -----------------------*/
+  /*--------------------- TERMINA FOOTER -----------------------*/

@@ -1,48 +1,81 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap");
+
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 /*-------------- FONTS ---------------*/
 /*-------------  BUTTONS ---------------*/
 /*-------------  NAV ---------------*/
 /*-------------  MENU ---------------*/
 /*-------------  HEADER ---------------*/
+/*-------------  SERVICES ---------------*/
 /*--------------------- MIXIN -----------------------*/
 /*--------------------- EMPIEZA BODY -----------------------*/
 body {
-  margin: 0; }
-  body h2 {
-    font-family: "Montserrat", sans-serif;
-    color: #283d50;
-    font-size: 35px;
-    text-align: center;
-    font-weight: 500; }
+  margin: 0;
+}
+
+body h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #283d50;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 500;
+}
+
+body h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+}
 
 /*--------------------- EMPIEZA NAV -----------------------*/
 nav {
   padding: 20px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  background-color: #fff; }
-  nav img {
-    width: 80px;
-    height: auto; }
-  nav .links {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600px;
-    text-decoration: none; }
-    nav .links ul {
-      display: flex;
-      list-style-type: none; }
-    nav .links li {
-      list-style-type: none;
-      padding: 10px;
-      color: #031880; }
-    nav .links i {
-      display: none;
-      color: #031880; }
+  background-color: #fff;
+}
+
+nav img {
+  width: 80px;
+  height: auto;
+}
+
+nav .links {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600px;
+  text-decoration: none;
+}
+
+nav .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+nav .links li {
+  list-style-type: none;
+  padding: 10px;
+  color: #031880;
+}
+
+nav .links i {
+  display: none;
+  color: #031880;
+}
 
 #menu {
   background-color: rgba(19, 39, 57, 0.8);
@@ -52,62 +85,98 @@ nav {
   top: 0;
   left: -200px;
   height: 100%;
-  transition: all 0.5s; }
-  #menu li {
-    list-style-type: none;
-    font-family: "Open Sans", sans-serif;
-    line-height: 35px; }
-  #menu a {
-    color: #fff;
-    list-style-type: none;
-    font-family: "Montserrat", sans-serif;
-    line-height: 35px; }
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#menu li {
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+  line-height: 35px;
+}
+
+#menu a {
+  color: #fff;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  line-height: 35px;
+}
 
 @media (max-width: 800px) {
   .links li {
-    display: none; }
+    display: none;
+  }
+
   .links i {
-    display: block; } }
+    display: block;
+  }
+}
 
 #menu:target {
-  left: 0px; }
+  left: 0px;
+}
 
 #overly:target {
-  display: block; }
+  display: block;
+}
 
 li:hover {
-  color: #1868cf; }
+  color: #1868cf;
+}
 
 /*---------------------  TERMINA NAV -----------------------*/
 /*---------------------  EMPIEZA HEADER -----------------------*/
 header {
   height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #1445b3;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   align-items: center;
-  padding: 20px; }
+  padding: 20px;
+}
 
 .solutions {
   width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  padding: 20px; }
-  .solutions h1 {
-    font-weight: 800px;
-    font-size: 50px;
-    font-family: "Montserrat", sans-serif; }
-  .solutions span {
-    color: #84b1ec;
-    text-decoration-line: underline; }
+  padding: 20px;
+}
+
+.solutions h1 {
+  font-weight: 800px;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.solutions span {
+  color: #84b1ec;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
 
 .botones {
-  display: flex; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 .botones button {
   width: 160px;
@@ -119,131 +188,330 @@ header {
   background-color: #1445b3;
   border: 2px solid white;
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 10px 32px;
-  margin: 0px 30px 0px 0px; }
+  margin: 0px 30px 0px 0px;
+}
 
 button:first-child {
   background: #007bff;
-  border: 2px solid #007bff; }
+  border: 2px solid #007bff;
+}
 
 button:hover {
   background-color: #1445b3;
   border: 2px solid #fff;
-  transition: 0.7s; }
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
 
 .imagenheader {
   width: 600px;
-  height: auto; }
-  .imagenheader img {
-    width: 600px;
-    height: auto; }
+  height: auto;
+}
+
+.imagenheader img {
+  width: 600px;
+  height: auto;
+}
 
 @media (max-width: 900px) {
   header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: auto;
-    padding: 50px; }
-    header h1 {
-      text-align: center; } }
+    padding: 50px;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+}
 
 /*--------------------- EMPIEZA ABOUT US -----------------------*/
 #about-us {
   padding: 60px 80px;
   background-color: #fff;
-  height: 1200px; }
-  #about-us h5 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    text-align: center; }
-  #about-us h4 {
-    font-family: "Montserrat", sans-serif;
-    color: #283d50;
-    font-size: 18px;
-    font-weight: 700; }
-  #about-us p {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 17px; }
-  #about-us .about-1 {
-    display: flex;
-    justify-content: space-around; }
-  #about-us .iconos {
-    width: 40%; }
-    #about-us .iconos h5 {
-      text-align: start; }
-  #about-us .image-about-us {
-    width: 550px;
-    height: auto; }
-    #about-us .image-about-us img {
-      width: 550px;
-      height: auto;
-      margin: 40px; }
+  height: 1200px;
+}
+
+#about-us h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+}
+
+#about-us h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #283d50;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#about-us p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+#about-us .about-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+#about-us .iconos {
+  width: 40%;
+}
+
+#about-us .iconos h5 {
+  text-align: start;
+}
+
+#about-us .image-about-us {
+  width: 550px;
+  height: auto;
+}
+
+#about-us .image-about-us img {
+  width: 550px;
+  height: auto;
+  margin: 40px;
+}
 
 @media (max-width: 900px) {
   .about-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
   #about-us .iconos {
-    width: 100%; } }
+    width: 100%;
+  }
+}
 
 /*--------------------- TERMINA ABOUT US -----------------------*/
+/*--------------------- EMPIEZA CONTACT US----------------------*/
+.contact {
+  background-color: #fff;
+  padding: 60px 0px;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  height: 600px;
+}
+
+#location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#location>div {
+  width: 50%;
+  padding: 20px 15px;
+}
+
+#location iframe {
+  height: 315px;
+  width: 100%;
+}
+
+#location .columna2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#location .columna2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+#location .columna2 li {
+  font-family: "Montserrat", sans-serif;
+  list-style-type: none;
+  padding: 10px;
+  color: grey;
+  font-size: 14px;
+}
+
+#location .columna2 li i {
+  color: #1868cf;
+  width: 18px;
+}
+
+#location #form2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#location #form2 .personal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+#location #form2 .personal input {
+  font-size: 14px;
+  line-height: 14px;
+  border: 1px solid #ced4da;
+  padding: 5px;
+  height: 35px;
+  width: 48%;
+}
+
+#location #form2 .adicional {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#location #form2 input {
+  font-size: 14px;
+  line-height: 14px;
+  border: 1px solid #ced4da;
+  padding: 5px;
+  height: 35px;
+}
+
+#location #form2 textarea {
+  font-size: 14px;
+  line-height: 14px;
+  border: 1px solid #ced4da;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  padding: 6px 12px;
+}
+
+#location input[type="submit"] {
+  width: 160px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 20px;
+  padding: 8px 30px;
+}
+
+/*----------------------TERMINA CONTACT US--------------------*/
 /*--------------------- EMPIEZA FOOTER -----------------------*/
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   padding: 30px;
   font-size: 14px;
   text-align: justify;
   background-color: #00428a;
   color: #fff;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap; }
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
 
-.container > div {
-  margin: 15px; }
+.container>div {
+  margin: 15px;
+}
 
 .wayne {
   width: 350px;
-  margin-top: 0px; }
+  margin-top: 0px;
+}
 
 h1 {
   letter-spacing: 0px;
   font-size: 34px;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 .useful-links {
-  width: 180px; }
+  width: 180px;
+}
 
 .social {
-  width: 250px; }
+  width: 250px;
+}
 
 .suscription {
-  width: 300px; }
+  width: 300px;
+}
 
 span {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 i {
   color: #fff;
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
 .fab {
   padding: 8px;
   margin: 2px;
   border-radius: 50%;
   background-color: #007bff;
-  color: #fff; }
+  color: #fff;
+}
 
 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin: 0; }
+  margin: 0;
+}
 
 input[type=email] {
   border: none;
@@ -251,7 +519,8 @@ input[type=email] {
   height: 35px;
   font-size: 16px;
   line-height: 16px;
-  padding: 0; }
+  padding: 0;
+}
 
 input[type="submit"] {
   background: #007bff;
@@ -261,30 +530,45 @@ input[type="submit"] {
   text-align: center;
   font-size: 14px;
   color: #fff;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
-  padding: 0; }
+  padding: 0;
+}
 
 i:hover {
   background-color: #0669d3;
-  transition: 0.5; }
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
 
 ul {
-  padding-inline-start: 0px; }
+  -webkit-padding-start: 0px;
+  padding-inline-start: 0px;
+}
 
-li, a {
+li,
+a {
   line-height: 24px;
   list-style: none;
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 a:hover {
   color: lightskyblue;
-  transition: 0.5; }
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
 
 @media (max-width: 600px) {
   .container {
-    flex-direction: column; } }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
 
 /* @media (max-width: 1000px) {
     .container {
@@ -299,6 +583,8 @@ a:hover {
   text-align: center;
   color: #fff;
   font-size: 10px;
-  margin: 0; }
+  margin: 0;
+}
 
 /*--------------------- TERMINA FOOTER -----------------------*/
+/*# sourceMappingURL=style.css.map */
