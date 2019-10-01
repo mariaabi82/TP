@@ -66,6 +66,10 @@ body {
     h2 {
         @include section-title;
     }
+
+    h5 {
+        @include section-subtitle;
+    }
 }
 
 /*--------------------- EMPIEZA NAV -----------------------*/
@@ -365,6 +369,90 @@ button:hover {
 }
 /*--------------------- TERMINA SERVICES -------------*/
 
+
+/*--------------------- EMPIEZA TEAM -----------------------*/
+
+
+#team {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    img {
+        width: 100%;
+    }
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        font-family: $secondary-font-family;
+        font-size: 20px;
+    }
+    p {
+        font-family: $secondary-font-family;
+        font-style: italic;
+        font-size: 10px;
+    }
+}
+.imagen {
+    width: 300px;
+    height: 300px;
+    background-size: auto 300px;
+    justify-content: center;
+    margin: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#image-1 {
+    background-image: url(https://pmcvariety.files.wordpress.com/2019/09/shutterstock_editorial_10404629io.jpeg);
+}
+
+#image-2 {
+    background-image: url(https://img.etimg.com/thumb/msid-66809741,width-643,imgsize-567912,resizemode-4/christianbale.jpg);
+}
+
+#image-3 {
+    background-image: url(https://www.chicagotribune.com/resizer/PA97Y1k4Q2SyyKinWLPIHQ8UajI=/800x680/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/MYT7XG5FIZA6XBQLZAAWI47JAA.jpg);
+}
+
+#image-4 {
+    background-image: url(https://binaryapi.ap.org/b9726dfc69c04804a2dd6b24c36a5bbc/preview.jpg);
+}
+
+.overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: linear-gradient(rgba(0, 62, 128, 0.7), rgba(0, 62, 128, 0.7));
+    transform: translateY(300px);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen:hover .overlay {
+transform: translateY(0px);
+transition: 0.6s;
+}
+
+@media (max-width: 1000px) {
+    .img-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+/*--------------------- TERMINA TEAM -----------------------*/
 /*--------------------- EMPIEZA FOOTER -----------------------*/
 footer {
     display: flex;
