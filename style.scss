@@ -373,12 +373,14 @@
           .personal {
               display: flex;
               justify-content: space-around;
+              margin: 10px 0px;
           }
 
           .personal input {
               @include form-style;
               height: 35px;
-              width: 48%;
+              width: 50%;
+              margin-right: 10px;
 
 
           }
@@ -386,6 +388,7 @@
           .adicional {
               display: flex;
               flex-direction: column;
+              margin: 10px 0px;
           }
 
           input {
@@ -397,7 +400,7 @@
           textarea {
               @include form-style;
               font-family: $secondary-font-family;
-              padding: 6px 12px;
+              padding: 5px 12px;
           }
 
       }
@@ -411,6 +414,7 @@
           line-height: 14px;
           border-radius: 20px;
           padding: 8px 30px;
+
       }
   }
 
