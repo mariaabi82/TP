@@ -276,7 +276,30 @@ button:hover {
 
 
 /*--------------------- TERMINA ABOUT US -----------------------*/
+/*--------------------- EMPIEZA CONTACT US----------------------*/
 
+#contact{
+    background-color: #fff;
+    padding: 60px 0px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+
+.location {
+    display: flex;
+
+}
+    ul {
+        display: flex;
+        list-style-type: none;
+        }
+        li {
+            list-style-type: none;
+            font-family: $main-font-family;
+            line-height: 35px;
+        }
+}
+
+
+/*----------------------TERMINA CONTACT US--------------------*/
 /*--------------------- EMPIEZA FOOTER -----------------------*/
 footer {
     display: flex;
