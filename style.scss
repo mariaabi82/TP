@@ -301,6 +301,95 @@ button:hover {
 
 /*--------------------- TERMINA ABOUT US -----------------------*/
 
+
+/*--------------------- EMPIEZA PORTFOLIO -----------------------*/
+
+#our-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    .botones {
+        display: flex;
+        justify-content: center;
+        button {
+            width: 70px;
+            height: 40px;
+            font-size: 14px;
+            font-weight: 600;
+            color: $text-color-button;
+            font-family: $main-font-family;
+            background-color: $background-color-button;
+            border-radius: 20px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .images-portfolio {
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                font-family: $secondary-font-family;
+                font-size: 20px;
+            }
+            p {
+                font-family: $secondary-font-family;
+                font-style: italic;
+                font-size: 10px;
+            }
+            #image-1 {
+                background-image: url(https://pmcvariety.files.wordpress.com/2019/09/shutterstock_editorial_10404629io.jpeg);
+            }
+            #image-2 {
+                background-image: url(https://img.etimg.com/thumb/msid-66809741,width-643,imgsize-567912,resizemode-4/christianbale.jpg);
+            }
+            #image-3 {
+                background-image: url(https://www.chicagotribune.com/resizer/PA97Y1k4Q2SyyKinWLPIHQ8UajI=/800x680/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/MYT7XG5FIZA6XBQLZAAWI47JAA.jpg);
+            }
+            #image-4 {
+                background-image: url(https://binaryapi.ap.org/b9726dfc69c04804a2dd6b24c36a5bbc/preview.jpg);
+            }
+            .imagen {
+                width: 400px;
+                height: 250px;
+                background-size: auto 400px;
+                justify-content: center;
+                margin: 15px;
+                border-radius: 5%;
+                overflow: hidden;
+                .overlay{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    transition: 1s;
+                .imagen:hover .overlay {
+                    background: linear-gradient(rgba(0, 62, 128, 0.7), rgba(0, 62, 128, 0.7));
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+button:hover {
+    background-color: $background-color-button;
+    border: 2px solid #fff;
+    transition: 0.7s;
+}
+    
+
+/*--------------------- TERMINA PORTFOLIO -----------------------*/
+
+
+
 /*--------------------- EMPIEZA TEAM -----------------------*/
 
 
@@ -308,66 +397,60 @@ button:hover {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    img {
-        width: 100%;
+    .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            font-family: $secondary-font-family;
+            font-size: 20px;
+        }
+        p {
+            font-family: $secondary-font-family;
+            font-style: italic;
+            font-size: 10px;
+        }
+        .imagen {
+            width: 300px;
+            height: 300px;
+            background-size: auto 300px;
+            justify-content: center;
+            margin: 25px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        #image-1 {
+            background-image: url(https://pmcvariety.files.wordpress.com/2019/09/shutterstock_editorial_10404629io.jpeg);
+        }
+        
+        #image-2 {
+            background-image: url(https://img.etimg.com/thumb/msid-66809741,width-643,imgsize-567912,resizemode-4/christianbale.jpg);
+        }
+        
+        #image-3 {
+            background-image: url(https://www.chicagotribune.com/resizer/PA97Y1k4Q2SyyKinWLPIHQ8UajI=/800x680/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/MYT7XG5FIZA6XBQLZAAWI47JAA.jpg);
+        }
+        
+        #image-4 {
+            background-image: url(https://binaryapi.ap.org/b9726dfc69c04804a2dd6b24c36a5bbc/preview.jpg);
+        }
+        .overlay{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            background: linear-gradient(rgba(0, 62, 128, 0.7), rgba(0, 62, 128, 0.7));
+            transform: translateY(300px);
+            .social {
+                display: flex;
+                justify-content: center;
+            }
+            
+        }
     }
-}
-
-.img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h3 {
-        font-family: $secondary-font-family;
-        font-size: 20px;
-    }
-    p {
-        font-family: $secondary-font-family;
-        font-style: italic;
-        font-size: 10px;
-    }
-}
-.imagen {
-    width: 300px;
-    height: 300px;
-    background-size: auto 300px;
-    justify-content: center;
-    margin: 25px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-#image-1 {
-    background-image: url(https://pmcvariety.files.wordpress.com/2019/09/shutterstock_editorial_10404629io.jpeg);
-}
-
-#image-2 {
-    background-image: url(https://img.etimg.com/thumb/msid-66809741,width-643,imgsize-567912,resizemode-4/christianbale.jpg);
-}
-
-#image-3 {
-    background-image: url(https://www.chicagotribune.com/resizer/PA97Y1k4Q2SyyKinWLPIHQ8UajI=/800x680/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/MYT7XG5FIZA6XBQLZAAWI47JAA.jpg);
-}
-
-#image-4 {
-    background-image: url(https://binaryapi.ap.org/b9726dfc69c04804a2dd6b24c36a5bbc/preview.jpg);
-}
-
-.overlay{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    background: linear-gradient(rgba(0, 62, 128, 0.7), rgba(0, 62, 128, 0.7));
-    transform: translateY(300px);
-}
-
-.social {
-    display: flex;
-    justify-content: center;
 }
 
 .imagen:hover .overlay {
@@ -521,5 +604,4 @@ a:hover {
     font-size: 10px;
     margin: 0;
 }
-
 /*--------------------- TERMINA FOOTER -----------------------*/
