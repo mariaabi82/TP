@@ -59,6 +59,7 @@
   }
 
   @mixin form-style {
+      font-family: $secondary-font-family;
       font-size: 14px;
       line-height: 14px;
       border: 1px solid #ced4da;
@@ -341,23 +342,27 @@
           display: flex;
           flex-direction: column;
 
-          ul {
+          .lista2 {
               display: flex;
               justify-content: space-around;
+              align-items: center;
               list-style-type: none;
 
-          }
 
-          li {
-              font-family: $secondary-font-family;
-              list-style-type: none;
-              padding: 10px;
-              color: grey;
-              font-size: 14px;
+
+              p {
+                  font-family: $secondary-font-family;
+                  list-style-type: none;
+                  padding: 10px;
+                  color: grey;
+                  font-size: 14px;
+              }
 
               i {
                   color: #1868cf;
                   width: 18px;
+                  height: 32px;
+                  display: inline-block;
 
               }
 
@@ -373,45 +378,59 @@
           .personal {
               display: flex;
               justify-content: space-around;
+              margin: 10px 0px;
           }
 
           .personal input {
               @include form-style;
               height: 35px;
-              width: 48%;
-
+              width: 100%;
 
           }
 
           .adicional {
               display: flex;
               flex-direction: column;
+
           }
 
-          input {
+          input[type="text"] {
               @include form-style;
               height: 35px;
 
           }
 
-          textarea {
-              @include form-style;
-              font-family: $secondary-font-family;
-              padding: 6px 12px;
+          .nombre {
+              margin-right: 10px;
           }
 
+          textarea {
+              @include form-style;
+              margin-top: 20px;
+              color: grey;
+
+          }
+
+          .submit {
+              align-self: center;
+              margin-top: 10px;
+
+              input[type="submit"] {
+                  width: 160px;
+                  height: 40px;
+                  background-color: $first-button-color;
+                  color: $text-color-button;
+                  font-size: 14px;
+                  line-height: 14px;
+                  border-radius: 20px;
+                  padding: 8px 30px;
+
+
+              }
+          }
       }
 
-      input[type="submit"] {
-          width: 160px;
-          height: 40px;
-          background-color: $first-button-color;
-          color: $text-color-button;
-          font-size: 14px;
-          line-height: 14px;
-          border-radius: 20px;
-          padding: 8px 30px;
-      }
+
   }
 
 
