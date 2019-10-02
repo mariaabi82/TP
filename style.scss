@@ -247,12 +247,14 @@ button:hover {
     }
 }
 
+
+
 /*--------------------- EMPIEZA ABOUT US -----------------------*/
 
 #about-us {
     padding: 60px 80px;
     background-color: $background-color-nav;
-    height: 2000px;
+    height: 1700px;
 
     h5 {
         @include section-subtitle;
@@ -382,6 +384,54 @@ button:hover {
 }
 /*--------------------- TERMINA SERVICES -------------*/
 
+/*--------------------- EMPIEZA OUR PORTFOLIO -----------------------*/
+
+#our-portfolio {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 25px;
+    button {
+        background-color: $first-button-color;
+        color: $text-color-button;
+        padding: 6px 20px;
+        border-radius: 50px;
+        margin: 15px 15px 15px 0;
+    }
+    .portfolio {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .image {
+            width: 350px;
+            height: 250px;
+            margin: 15px;
+            .overlay {
+                width: 350px;
+                height: 250px;
+                background-color: #00428a;
+                display: none;
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .portfolio {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }  
+}
+/*--------------------- TERMINA PORTFOLIO -----------------------*/
 
 /*--------------------- EMPIEZA TEAM -----------------------*/
 

@@ -159,7 +159,7 @@ button:hover {
 #about-us {
   padding: 60px 80px;
   background-color: #fff;
-  height: 2000px; }
+  height: 1700px; }
   #about-us h5 {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
@@ -250,6 +250,46 @@ button:hover {
       color: #1445b3; }
 
 /*--------------------- TERMINA SERVICES -------------*/
+/*--------------------- EMPIEZA OUR PORTFOLIO -----------------------*/
+#our-portfolio {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 25px; }
+  #our-portfolio button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 50px;
+    margin: 15px 15px 15px 0; }
+  #our-portfolio .portfolio {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #our-portfolio .portfolio .image {
+      width: 350px;
+      height: 250px;
+      margin: 15px; }
+      #our-portfolio .portfolio .image .overlay {
+        width: 350px;
+        height: 250px;
+        background-color: #00428a;
+        display: none; }
+    #our-portfolio .portfolio img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+@media (max-width: 1000px) {
+  .portfolio {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap; } }
+
+/*--------------------- TERMINA PORTFOLIO -----------------------*/
 /*--------------------- EMPIEZA TEAM -----------------------*/
 #team {
   display: flex;
