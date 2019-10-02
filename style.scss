@@ -59,6 +59,7 @@
   }
 
   @mixin form-style {
+      font-family: $secondary-font-family;
       font-size: 14px;
       line-height: 14px;
       border: 1px solid #ced4da;
@@ -376,11 +377,16 @@
               margin: 10px 0px;
           }
 
+          .espacio {color: #fff;
+              background-color: #fff;
+              width: 10px;
+              display: none;
+          }
+
           .personal input {
               @include form-style;
               height: 35px;
-              width: 50%;
-              margin-right: 10px;
+              width: 100%%;
 
 
           }
@@ -388,10 +394,10 @@
           .adicional {
               display: flex;
               flex-direction: column;
-              margin: 10px 0px;
+
           }
 
-          input {
+          input[type="text"] {
               @include form-style;
               height: 35px;
 
@@ -399,23 +405,31 @@
 
           textarea {
               @include form-style;
-              font-family: $secondary-font-family;
-              padding: 5px 12px;
+              margin-top: 20px;
+              color: grey;
+
           }
 
+          .submit {
+              align-self: center;
+              margin-top: 10px;
+
+              input[type="submit"] {
+                  width: 160px;
+                  height: 40px;
+                  background-color: $first-button-color;
+                  color: $text-color-button;
+                  font-size: 14px;
+                  line-height: 14px;
+                  border-radius: 20px;
+                  padding: 8px 30px;
+
+
+              }
+          }
       }
 
-      input[type="submit"] {
-          width: 160px;
-          height: 40px;
-          background-color: $first-button-color;
-          color: $text-color-button;
-          font-size: 14px;
-          line-height: 14px;
-          border-radius: 20px;
-          padding: 8px 30px;
 
-      }
   }
 
 
