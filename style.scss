@@ -342,23 +342,27 @@
           display: flex;
           flex-direction: column;
 
-          ul {
+          .lista2 {
               display: flex;
               justify-content: space-around;
+              align-items: center;
               list-style-type: none;
 
-          }
 
-          li {
-              font-family: $secondary-font-family;
-              list-style-type: none;
-              padding: 10px;
-              color: grey;
-              font-size: 14px;
+
+              p {
+                  font-family: $secondary-font-family;
+                  list-style-type: none;
+                  padding: 10px;
+                  color: grey;
+                  font-size: 14px;
+              }
 
               i {
                   color: #1868cf;
                   width: 18px;
+                  height: 32px;
+                  display: inline-block;
 
               }
 
@@ -377,17 +381,10 @@
               margin: 10px 0px;
           }
 
-          .espacio {color: #fff;
-              background-color: #fff;
-              width: 10px;
-              display: none;
-          }
-
           .personal input {
               @include form-style;
               height: 35px;
-              width: 100%%;
-
+              width: 100%;
 
           }
 
@@ -401,6 +398,10 @@
               @include form-style;
               height: 35px;
 
+          }
+
+          .nombre {
+              margin-right: 10px;
           }
 
           textarea {
