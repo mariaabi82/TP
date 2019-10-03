@@ -405,31 +405,59 @@
     </container>
     <!-------------------- CLIENTS ------------------------>
 
+
     <!-------------------- CONTACT US ------------------------>
-    <container id="contact-us">
+    <section class="contact">
         <h2>Contact Us</h2>
-        <div>
-            <iframe src="" frameborder="0"></iframe>
+        <div id="location">
+            <div class="columna1">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"></iframe>
+
+            </div>
+            <div class="columna2">
+                <div class="lista2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>A108 Adam Street, NY 535022</p>
+                    <i class="far fa-envelope"></i>
+                    <p>info@example.com</p>
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+1 5589 55488 55</p>
+
+                </div>
+
+                <form action="/contacto" method="post" id="form2">
+                    <div class="personal">
+                        <input class="nombre" required type="text" placeholder="Your Name">
+
+                        <input required type="email" placeholder="Your Mail">
+                    </div>
+                    <div class="adicional">
+                        <input type="text" placeholder="Subject">
+
+                        <textarea name="" id="" cols="30" rows="8">Message
+
+                            </textarea>
+                    </div>
+                    <div class="submit"> <input type="submit" value="Send Message">
+                    </div>
+
+
+                </form>
+
+            </div>
         </div>
-        <div>
-            Dirección
-            Correo
-            Teléfono
-        </div>
-        <div>
-            Formulario
-        </div>
-    </container>
+
+
+
+    </section>
     <!-------------------- CONTACT US ------------------------>
 
     <!-------------------- FOOTER ------------------------>
-    <container>
-        Agregar último código de footer
-    </container>
 
     <!-------------------- FOOTER ------------------------>
 
-    <footer>
+    <footer id="footer">
         <div class="container">
 
             <div class="wayne">
@@ -461,11 +489,13 @@
                     <br><span>Phone</span>: +1 5589 55488 55
                     <br><span>Email</span>: info@example.com</p>
 
-                <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
-                <a href="https://ar.linkedin.com/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fab fa-google-plus"></i></a>
+                <div><a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                    <a href="https://ar.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fab fa-google-plus"></i></a>
+
+                </div>
             </div>
 
             <div class="suscription">
@@ -483,6 +513,11 @@
         </div>
 
     </footer>
+    <div id="copyright">
+        <p> © Copyright <strong>Wayne Enterprises.</strong> All Rights Reserved </p>
+        <p>Designed by ... </p>
+        <br>
+    </div>
 </body>
 
 </html>

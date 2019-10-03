@@ -411,115 +411,186 @@ button:hover {
     flex-wrap: wrap; } }
 
 /*--------------------- TERMINA TEAM -----------------------*/
+/*--------------------- EMPIEZA CONTACT US----------------------*/
+.contact {
+  background-color: #fff;
+  padding: 60px 0px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  height: 600px; }
+
+#location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #location > div {
+    width: 50%;
+    padding: 20px 15px; }
+  #location iframe {
+    height: 315px;
+    width: 100%; }
+  #location .columna2 {
+    display: flex;
+    flex-direction: column; }
+    #location .columna2 .lista2 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style-type: none; }
+      #location .columna2 .lista2 p {
+        font-family: "Montserrat", sans-serif;
+        list-style-type: none;
+        padding: 10px;
+        color: grey;
+        font-size: 14px; }
+      #location .columna2 .lista2 i {
+        color: lightskyblue;
+        width: 24px;
+        display: inline-block; }
+  #location #form2 {
+    display: flex;
+    flex-direction: column; }
+    #location #form2 .personal {
+      display: flex;
+      justify-content: space-around;
+      margin: 10px 0px; }
+    #location #form2 .personal input {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      line-height: 14px;
+      border: 1px solid #ced4da;
+      padding: 5px;
+      height: 35px;
+      width: 100%; }
+    #location #form2 .adicional {
+      display: flex;
+      flex-direction: column; }
+    #location #form2 input[type="text"] {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      line-height: 14px;
+      border: 1px solid #ced4da;
+      padding: 5px;
+      height: 35px; }
+    #location #form2 .nombre {
+      margin-right: 10px; }
+    #location #form2 textarea {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      line-height: 14px;
+      border: 1px solid #ced4da;
+      padding: 5px;
+      margin-top: 20px;
+      color: grey; }
+    #location #form2 .submit {
+      align-self: center;
+      margin-top: 10px; }
+      #location #form2 .submit input[type="submit"] {
+        width: 160px;
+        height: 40px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 14px;
+        line-height: 14px;
+        border-radius: 20px;
+        padding: 8px 30px; }
+
+/*----------------------TERMINA CONTACT US--------------------*/
 /*--------------------- EMPIEZA FOOTER -----------------------*/
-footer {
+#footer {
   display: flex;
   justify-content: space-evenly;
   padding: 30px;
   font-size: 14px;
   text-align: justify;
-  background-color: #00428a;
+  background-color: #004a99;
   color: #fff;
-  font-family: "Montserrat", sans-serif; }
-
-.container {
-  display: flex;
-  flex-wrap: wrap; }
-
-.container > div {
-  margin: 15px; }
-
-.wayne {
-  width: 350px;
-  margin-top: 0px; }
-
-h1 {
-  letter-spacing: 0px;
-  font-size: 34px;
-  font-weight: normal; }
-
-.useful-links {
-  width: 180px; }
-
-.social {
-  width: 250px; }
-
-.suscription {
-  width: 300px; }
-
-span {
-  font-weight: bold; }
-
-i {
-  color: #fff;
-  border-radius: 50%; }
-
-.fab {
-  padding: 8px;
-  margin: 2px;
-  border-radius: 50%;
-  background-color: #007bff;
-  color: #fff; }
-
-form {
-  display: flex;
-  margin: 0; }
-
-input[type=email] {
-  border: none;
-  width: 65%;
-  height: 35px;
-  font-size: 16px;
-  line-height: 16px;
-  padding: 0; }
-
-input[type="submit"] {
-  background: #007bff;
-  border: none;
-  width: 35%;
-  height: 35px;
-  text-align: center;
-  font-size: 14px;
-  color: #fff;
-  transition: 0.5s;
-  cursor: pointer;
-  padding: 0; }
-
-i:hover {
-  background-color: #0669d3;
-  transition: 0.5; }
-
-ul {
-  padding-inline-start: 0px; }
-
-li,
-a {
-  line-height: 24px;
-  list-style: none;
-  color: #fff;
-  text-decoration: none; }
-
-a:hover {
-  color: lightskyblue;
-  transition: 0.5; }
-
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column; } }
-
-/* @media (max-width: 1000px) {
+  font-family: "Montserrat", sans-serif;
+  /* @media (max-width: 1000px) {
     .container {
         display: flex;
         flex-wrap: wrap;
         width: 50%;
-   } */
-.copyright {
-  background-color: darkblue;
+   } */ }
+  #footer .container {
+    display: flex;
+    flex-wrap: wrap; }
+  #footer .container > div {
+    margin: 15px; }
+  #footer .wayne {
+    width: 350px;
+    margin-top: 0px; }
+  #footer h1 {
+    letter-spacing: 0px;
+    font-size: 34px;
+    font-weight: normal; }
+  #footer .useful-links {
+    width: 180px; }
+  #footer .social {
+    display: flex;
+    flex-direction: column;
+    width: 250px; }
+  #footer .suscription {
+    width: 300px; }
+  #footer span {
+    font-weight: bold; }
+  #footer i {
+    color: #fff;
+    border-radius: 50%; }
+  #footer .fab {
+    padding: 8px;
+    margin: 2px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff; }
+  #footer form {
+    display: flex;
+    margin: 0; }
+  #footer input[type=email] {
+    border: none;
+    width: 65%;
+    height: 35px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0; }
+  #footer input[type="submit"] {
+    background: #007bff;
+    border: none;
+    width: 35%;
+    height: 35px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 0; }
+  #footer i:hover {
+    background-color: #0669d3;
+    transition: 0.5; }
+  #footer ul {
+    padding-inline-start: 0px; }
+  #footer li,
+  #footer a {
+    line-height: 24px;
+    list-style: none;
+    color: #fff;
+    text-decoration: none; }
+  #footer a:hover {
+    color: lightskyblue;
+    transition: 0.5; }
+  @media (max-width: 600px) {
+    #footer .container {
+      flex-direction: column; } }
+
+#copyright {
+  background-color: #00428a;
   padding-top: 40px;
   display: block;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
   margin: 0; }
+  #copyright span {
+    font-weight: bold; }
 
 /*--------------------- TERMINA FOOTER -----------------------*/
