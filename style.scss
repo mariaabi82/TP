@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,400,700,800&display=swap');
 
 * {
     box-sizing: border-box;
@@ -28,7 +28,9 @@ $text-color-header: #fff;
 $background-color-services: #c6e3f2;
 $background-color-cards: #fff;
 $h3-hover: #1445b3;
-
+/*-------------  TESTIMONIALS    ---------------*/
+$background-color-section: #e6f1f7;
+$shadow-section: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 /*--------------------- MIXIN -----------------------*/
 @mixin section-title {
     font-family: $secondary-font-family;
@@ -58,6 +60,11 @@ $h3-hover: #1445b3;
     font-size: 17px;
 }
 
+html {
+    scroll-behavior: smooth;
+    
+}
+
 /*--------------------- EMPIEZA BODY -----------------------*/
 
 body {
@@ -75,14 +82,17 @@ body {
 /*--------------------- EMPIEZA NAV -----------------------*/
 
 nav {
-    padding: 20px 60px;
+    padding: 3px 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: $background-color-nav;
+    box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
 
     img {
-        width: 80px;
+        width: 65px;
         height: auto;
     }
 
@@ -96,10 +106,16 @@ nav {
             list-style-type: none;
         }
 
-        li {
+        a, li {
             list-style-type: none;
-            padding: 10px;
+            padding: 8px;
             color: $text-color;
+            margin-left: 3px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        li:hover {
+            color: $text-color-hover;
         }
 
         i {
@@ -119,12 +135,6 @@ nav {
     height: 100%;
     transition: all 0.5s;
 
-    li {
-        list-style-type: none;
-        font-family: $main-font-family;
-        line-height: 35px;
-    }
-
     a {
         color: $background-color-nav;
         list-style-type: none;
@@ -134,7 +144,7 @@ nav {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .links li {
         display: none;
     }
@@ -252,9 +262,9 @@ button:hover {
 /*--------------------- EMPIEZA ABOUT US -----------------------*/
 
 #about-us {
-    padding: 60px 80px;
     background-color: $background-color-nav;
-    height: 1700px;
+    height: auto;
+    padding: 30px;
 
     h5 {
         @include section-subtitle;
@@ -329,6 +339,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: $shadow-section;
 
     
 
@@ -433,6 +444,66 @@ button:hover {
 }
 /*--------------------- TERMINA PORTFOLIO -----------------------*/
 
+/*--------------------- EMPIEZA TESTIMONIALS -----------------------*/
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+    padding-bottom: 50px;
+    background-color: $background-color-section;
+    h2 {
+        margin-bottom: 50px;
+    }
+    box-shadow: $shadow-section;
+
+    .testimonials {
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+        .img-testimonials {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            margin: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+        }
+        .text-testimonials {
+            width: 46%;
+            height: auto;
+            font-family: $main-font-family;
+            h3 {
+                font-weight: 700;
+                font-size: 18px;
+                margin: 0px;
+            }
+            h6 {
+                font-weight: 200;
+                font-size: 14px;
+                color: #7f858b;
+                margin: 2px;
+            }
+            p {
+                font-style: italic;
+                font-weight: 200;
+                font-size: 14px;
+                color: #444;
+            }
+        }
+
+    }
+    
+}
+
+/*--------------------- TERMINA TESTIMONIALS -----------------------*/
+
+
 /*--------------------- EMPIEZA TEAM -----------------------*/
 
 
@@ -440,6 +511,7 @@ button:hover {
     display: flex;
     flex-direction: column; 
     align-items: center;
+    padding: 50px;
     img {
         width: 100%;
     }
@@ -642,6 +714,7 @@ a:hover {
         flex-wrap: wrap;
         width: 50%;
    } */
+
 
 
 .copyright {
