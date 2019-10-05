@@ -216,55 +216,142 @@ button:hover {
 #about-us {
   background-color: #fff;
   height: auto;
-  padding: 30px; }
-  #about-us h5 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    text-align: center; }
-  #about-us h4 {
-    font-family: "Montserrat", sans-serif;
-    color: #283d50;
-    font-size: 18px;
-    font-weight: 700; }
-  #about-us h3 {
-    font-family: "Montserrat", sans-serif;
-    color: #283d50;
-    font-size: 18px;
-    font-weight: 700;
-    font-size: 25px; }
-  #about-us p {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 17px; }
-  #about-us .about-1, #about-us .about-2, #about-us .about-3 {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px; }
-  #about-us .iconos {
-    width: 40%; }
-    #about-us .iconos h5 {
-      text-align: start; }
-  #about-us .image-about-us {
-    width: 550px;
-    height: auto; }
-    #about-us .image-about-us img {
-      width: 550px;
-      height: auto;
-      margin: 40px; }
+  padding: 20px; }
 
-@media (max-width: 900px) {
-  #about-us {
-    height: auto; }
-  .about-1, .about-3 {
-    display: flex;
-    flex-direction: column-reverse; }
-  .about-2 {
+.about-1, .about-2, .about-3 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 40px 30px 40px; }
+  .about-1 .text-about-us, .about-2 .text-about-us, .about-3 .text-about-us {
+    width: 40%;
     display: flex;
     flex-direction: column; }
-  #about-us .iconos {
-    width: 100%; } }
+    .about-1 .text-about-us h3, .about-2 .text-about-us h3, .about-3 .text-about-us h3 {
+      font-family: "Montserrat", sans-serif;
+      color: #283d50;
+      font-size: 18px;
+      font-weight: 700;
+      font-size: 24px; }
+    .about-1 .text-about-us p, .about-2 .text-about-us p, .about-3 .text-about-us p {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      color: #444;
+      margin-block-end: 25px; }
+    .about-1 .text-about-us .contenido, .about-2 .text-about-us .contenido, .about-3 .text-about-us .contenido {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100px;
+      width: 100%; }
+      .about-1 .text-about-us .contenido .icon, .about-2 .text-about-us .contenido .icon, .about-3 .text-about-us .contenido .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15%;
+        padding: 0px; }
+        .about-1 .text-about-us .contenido .icon .fas, .about-1 .text-about-us .contenido .icon .far, .about-2 .text-about-us .contenido .icon .fas, .about-2 .text-about-us .contenido .icon .far, .about-3 .text-about-us .contenido .icon .fas, .about-3 .text-about-us .contenido .icon .far {
+          font-size: 35px;
+          margin: 0px;
+          color: #007bff;
+          background-color: #fff;
+          border: solid 2px #007bff;
+          border-radius: 50%;
+          padding: 17px;
+          transition: background-color 0.2s; }
+        .about-1 .text-about-us .contenido .icon .far:hover, .about-2 .text-about-us .contenido .icon .far:hover, .about-3 .text-about-us .contenido .icon .far:hover {
+          color: #fff;
+          background-color: #007bff; }
+        .about-1 .text-about-us .contenido .icon .fas:hover, .about-2 .text-about-us .contenido .icon .fas:hover, .about-3 .text-about-us .contenido .icon .fas:hover {
+          color: #fff;
+          background-color: #007bff; }
+      .about-1 .text-about-us .contenido .text, .about-2 .text-about-us .contenido .text, .about-3 .text-about-us .contenido .text {
+        width: 80%; }
+        .about-1 .text-about-us .contenido .text h4, .about-2 .text-about-us .contenido .text h4, .about-3 .text-about-us .contenido .text h4 {
+          font-family: "Montserrat", sans-serif;
+          color: #283d50;
+          font-size: 18px;
+          font-weight: 700;
+          margin-block-start: 0;
+          margin-block-end: 5px; }
+        .about-1 .text-about-us .contenido .text h5, .about-2 .text-about-us .contenido .text h5, .about-3 .text-about-us .contenido .text h5 {
+          font-family: "Open Sans", sans-serif;
+          font-weight: 300;
+          font-size: 16px;
+          color: #444;
+          font-size: 14px;
+          text-align: start;
+          margin-block-start: 0;
+          margin-block-end: 0; }
+  .about-1 .image-about-us, .about-2 .image-about-us, .about-3 .image-about-us {
+    width: 40%; }
+    .about-1 .image-about-us img, .about-2 .image-about-us img, .about-3 .image-about-us img {
+      width: 100%;
+      height: auto; }
 
+/* .about-1, .about-2, .about-3 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    width: 50%;
+    h5 {
+        @include section-subtitle;
+    }
+
+    h4 {
+        @include secondary-title;
+    }
+
+    h3 {
+        @include secondary-title;
+        font-size: 25px;
+    }
+
+    p {
+        @include section-text;
+    }
+}
+    
+
+    .text-about-us div {
+        width: 40%;
+
+        h5 {
+            text-align: start;
+        }
+    }
+
+
+    .image-about-us {
+        width: 550px;
+        height: auto;
+
+        img {
+            width: 550px;
+            height: auto;
+            margin: 40px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #about-us {
+        height: auto;
+    }
+    .about-1, .about-3 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    #about-us .iconos {
+        width: 100%;
+    }
+}
+
+*/
 /*--------------------- TERMINA ABOUT US -----------------------*/
 /*--------------------- EMPIEZA SERVICES -------------*/
 .services-cards {
