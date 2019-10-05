@@ -338,6 +338,12 @@ button:hover {
     background-color: $background-color-nav;
     height: auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2, h5{
+        width: 40%;
+    }
 }
 
 .about-1, .about-2, .about-3 {
