@@ -221,7 +221,7 @@ button:hover {
   flex-direction: column;
   align-items: center; }
   #about-us h2, #about-us h5 {
-    width: 40%; }
+    width: 600px; }
 
 .about-1, .about-2, .about-3 {
   display: flex;
@@ -297,7 +297,13 @@ button:hover {
 @media (max-width: 1000px) {
   #about-us {
     width: 100%;
-    height: auto; }
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #about-us h2, #about-us h5 {
+      width: 400px; }
   .about-1, .about-3 {
     width: 100%;
     display: flex;
@@ -318,7 +324,13 @@ button:hover {
 @media (max-width: 600px) {
   #about-us {
     width: 100%;
-    height: auto; }
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #about-us h2, #about-us h5 {
+      width: 85%; }
   .about-1, .about-3 {
     width: 100%;
     display: flex;

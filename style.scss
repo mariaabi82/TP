@@ -342,7 +342,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     h2, h5{
-        width: 40%;
+        width: 600px;
     }
 }
 
@@ -427,6 +427,13 @@ button:hover {
     #about-us {
         width: 100%;
         height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2, h5{
+            width: 400px;
+        }
     }
 
     .about-1, .about-3 {
@@ -458,6 +465,13 @@ button:hover {
     #about-us {
         width: 100%;
         height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2, h5{
+            width: 85%;
+        }
     }
 
     .about-1, .about-3 {
