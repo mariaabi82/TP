@@ -17,43 +17,62 @@
     <!-------------------- NAV ------------------------>
     <nav>
         <div>
-            <img src="img/logo-tp.png">
+            <a href="#home">
+                <img src="img/logo-tp.png">
+            </a>
         </div>
 
-        <div class="links">
+        <div class="links-nav">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#our-portfolio">Portfolio</a></li>
                 <li><a href="#team">Team</a></li>
-                <li>Drop Down</li>
-                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="#drop-down">Drop Down ↓</a></li>
+                <div id="drop-down">
+                    <ul>
+                        <li>Drop Down 1</li>
+                        <li>Drop Down 2</li>
+                        <li>Drop Down 3</li>
+                    </ul>
+                </div>
+                <li><a href="#contact">Contact Us</a></li>
+
                 <a href="#menu"><i class="fas fa-bars"></i></a>
 
             </ul>
         </div>
 
+
+        <div id="menu">
+            <div class="overly-menu">
+                <div class="cerrar"><a href="#"> x </a></div>
+                <div class="links-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#our-portfolio">Portfolio</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#drop-down">Drop Down ↓</a></li>
+                    <div id="drop-down">
+                        <ul>
+                            <li>Drop Down 1</li>
+                            <li>Drop Down 2</li>
+                            <li>Drop Down 3</li>
+                        </ul>
+                    </div>
+                    <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
     </nav>
 
-    <div id="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>Team</li>
-            <li>Drop Down</li>
-            <li>Contact Us</li>
-
-            <div><a href="#"> x </a></div>
-
-        </ul>
-
-    </div>
-
-
     <!-------------------- NAV ------------------------>
+
+    <div id="home"></div>
 
     <!-------------------- HEADER ------------------------>
     <header>
@@ -407,7 +426,7 @@
 
 
     <!-------------------- CONTACT US ------------------------>
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2>Contact Us</h2>
         <div id="location">
             <div class="columna1">

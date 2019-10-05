@@ -32,6 +32,15 @@ $h3-hover: #1445b3;
 $background-color-section: #e6f1f7;
 $shadow-section: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 /*--------------------- MIXIN -----------------------*/
+
+@mixin style-links-nav {
+    list-style-type: none;
+    padding: 8px;
+    color: $text-color;
+    margin-left: 3px;
+    font-size: 14px;
+    font-weight: 500;
+}
 @mixin section-title {
     font-family: $secondary-font-family;
     color: #283d50;
@@ -69,13 +78,15 @@ $shadow-section: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 html {
     scroll-behavior: smooth;
-    
 }
 
 /*--------------------- EMPIEZA BODY -----------------------*/
 
 body {
     margin: 0;
+    a {
+        text-decoration: none;
+    }
 
     h2 {
         @include section-title;
@@ -89,7 +100,8 @@ body {
 /*--------------------- EMPIEZA NAV -----------------------*/
 
 nav {
-    padding: 3px 10px;
+    padding: 20px 0px;
+    height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -97,81 +109,133 @@ nav {
     box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
+    padding-inline-start: 0px;
 
     img {
         width: 65px;
         height: auto;
     }
 
-    .links {
+    .links-nav {
         font-family: $secondary-font-family;
         font-weight: 600px;
         text-decoration: none;
-
         ul {
             display: flex;
             list-style-type: none;
+            a, li {
+            @include style-links-nav;
+            color: $text-color;
+            }
+            li:hover {
+                color: $text-color-hover;
+            }
+    
+            .fas {
+                display: none;
+            }
         }
 
-        a, li {
-            list-style-type: none;
-            padding: 8px;
-            color: $text-color;
-            margin-left: 3px;
-            font-size: 14px;
-            font-weight: 500;
+        #drop-down {
+            display: none;
+            ul {
+                position: absolute;
+                background-color: $background-color-nav;
+                padding-inline-start: 0px;
+                display: flex;
+                flex-direction: column;
+                top: 100px;
+                left: 1010px;   
+            }
         }
         li:hover {
             color: $text-color-hover;
         }
-
-        i {
-            display: none;
-            color: $text-color;
+        a:hover {
+            color: $text-color-hover;
         }
     }
-}
 
-#menu {
-    background-color: $background-color-menu;
+    #menu {
     color: $text-color-menu;
-    width: 200px;
-    position: absolute;
-    top: 0;
-    left: -200px;
-    height: 100%;
-    transition: all 0.5s;
-
-    a {
-        color: $background-color-nav;
-        list-style-type: none;
-        font-family: $secondary-font-family;
-        line-height: 35px;
+    position: fixed;
+    padding: 0px;
+    left: -1500px;
+    width: 100%;
+    height: auto;
+    transition: all 1s;
+    overflow: hidden;
+    .overly-menu {
+        background-color: $background-color-menu;
+        width: 100%;
+        height: 900px;
+        .cerrar {
+            position: absolute;
+            top: 10px;
+            right: 50px;
+            font-family: $secondary-font-family;
+            color: $text-color-button;
+            font-size: 28px;
+            font-weight: 700;
+            z-index: 9999;
+            a:visited {
+                color:$text-color-button;
+            }
+        }
+        .links-menu {
+            background-color: $background-color-menu;
+            width: 280px;
+            height: 900px;
+            padding: 20px;
+            a, li {
+                list-style-type: none;
+                font-family: $main-font-family;
+                color: $text-color-menu;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 40px;
+                }
+            }
+            li:hover {
+                color: $text-color-hover;
+            } 
+            a:hover {
+                color: $text-color-hover;
+            }       
+        }
+        
     }
-}
-
-
-@media (max-width: 1000px) {
-    .links li {
-        display: none;
+ 
+    #menu:target {
+        left: 0px;
+        top: 0px;
     }
-
-    .links i {
+        
+    /* #drop-down:target {
         display: block;
-    }
+    } */
+ 
 }
-
-#menu:target {
-    left: 0px;
-}
-
-#overly:target {
-    display: block;
-}
-
-li:hover {
-    color: $text-color-hover;
-}
+    @media (max-width: 1000px) {
+        nav {
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            padding: 10px 40px;
+            .links-nav ul .fas {
+                display: flex;
+                color: $text-color;
+                font-size: 22px;
+                z-index: 999;
+                
+            }
+        }
+        .links-nav li {
+            display: none;
+        }
+    
+        
+    }    
 
 /*---------------------  TERMINA NAV -----------------------*/
 
@@ -179,6 +243,7 @@ li:hover {
 
 header {
     height: 600px;
+    width: 100%;
     display: flex;
     align-items: center;
     background-color: $background-color-header;
@@ -510,7 +575,7 @@ button:hover {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    padding: 50px;
+    padding: 30px;
     img {
         width: 100%;
     }
@@ -531,9 +596,9 @@ button:hover {
     }
 }
 .imagen {
-    width: 300px;
-    height: 300px;
-    background-size: auto 300px;
+    width: 250px;
+    height: 250px;
+    background-size: auto 250px;
     justify-content: center;
     margin: 25px;
     border-radius: 50%;
