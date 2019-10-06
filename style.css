@@ -8,10 +8,10 @@
 /*-------------- FONTS ---------------*/
 /*-------------  BUTTONS ---------------*/
 /*-------------  NAV ---------------*/
-/*-------------  MENU ---------------*/
+/*-------------------------- MENU ---------------*/
 /*-------------  HEADER ---------------*/
 /*-------------  SERVICES ---------------*/
-/*-------------  TESTIMONIALS    ---------------*/
+/*---------------------------  TESTIMONIALS    ---------------*/
 /*--------------------- MIXIN -----------------------*/
 html {
   scroll-behavior: smooth;
@@ -20,6 +20,10 @@ html {
 /*--------------------- EMPIEZA BODY -----------------------*/
 body {
   margin: 0;
+}
+
+body a {
+  text-decoration: none;
 }
 
 body h2 {
@@ -39,7 +43,8 @@ body h5 {
 
 /*--------------------- EMPIEZA NAV -----------------------*/
 nav {
-  padding: 3px 10px;
+  padding: 20px 0px;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,6 +58,11 @@ nav {
           box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  /* #drop-down:target {
+        display: block;
+    } */
 }
 
 nav img {
@@ -60,82 +70,158 @@ nav img {
   height: auto;
 }
 
-nav .links {
+nav .links-nav {
   font-family: "Montserrat", sans-serif;
   font-weight: 600px;
   text-decoration: none;
 }
 
-nav .links ul {
+nav .links-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 }
 
-nav .links a,
-nav .links li {
+nav .links-nav ul a,
+nav .links-nav ul li {
   list-style-type: none;
   padding: 8px;
   color: #031880;
   margin-left: 3px;
   font-size: 14px;
   font-weight: 500;
-}
-
-nav .links li:hover {
-  color: #1868cf;
-}
-
-nav .links i {
-  display: none;
   color: #031880;
 }
 
-#menu {
-  background-color: rgba(19, 39, 57, 0.8);
-  color: #ffffff;
-  width: 200px;
-  position: absolute;
-  top: 0;
-  left: -200px;
-  height: 100%;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+nav .links-nav ul li:hover {
+  color: #1868cf;
 }
 
-#menu a {
-  color: #fff;
-  list-style-type: none;
+nav .links-nav ul .fas {
+  display: none;
+}
+
+nav .links-nav #drop-down {
+  display: none;
+}
+
+nav .links-nav #drop-down ul {
+  position: absolute;
+  background-color: #fff;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 100px;
+  left: 1010px;
+}
+
+nav .links-nav li:hover {
+  color: #1868cf;
+}
+
+nav .links-nav a:hover {
+  color: #1868cf;
+}
+
+nav #menu {
+  color: #ffffff;
+  position: fixed;
+  padding: 0px;
+  left: -1500px;
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+nav #menu .overly-menu {
+  background-color: rgba(19, 39, 57, 0.8);
+  width: 100%;
+  height: 900px;
+}
+
+nav #menu .overly-menu .cerrar {
+  position: absolute;
+  top: 10px;
+  right: 50px;
   font-family: "Montserrat", sans-serif;
-  line-height: 35px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  z-index: 9999;
+}
+
+nav #menu .overly-menu .cerrar a:visited {
+  color: #fff;
+}
+
+nav #menu .overly-menu .links-menu {
+  background-color: rgba(19, 39, 57, 0.8);
+  width: 280px;
+  height: 900px;
+  padding: 20px;
+}
+
+nav #menu .overly-menu .links-menu a,
+nav #menu .overly-menu .links-menu li {
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+nav #menu .overly-menu li:hover {
+  color: #1868cf;
+}
+
+nav #menu .overly-menu a:hover {
+  color: #1868cf;
+}
+
+nav #menu:target {
+  left: 0px;
+  top: 0px;
 }
 
 @media (max-width: 1000px) {
-  .links li {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 60px;
+    padding: 10px 40px;
+  }
+  nav .links-nav ul .fas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #031880;
+    font-size: 22px;
+    z-index: 999;
+  }
+  .links-nav li {
     display: none;
   }
-  .links i {
-    display: block;
-  }
-}
-
-#menu:target {
-  left: 0px;
-}
-
-#overly:target {
-  display: block;
-}
-
-li:hover {
-  color: #1868cf;
 }
 
 /*---------------------  TERMINA NAV -----------------------*/
 /*---------------------  EMPIEZA HEADER -----------------------*/
 header {
   height: 600px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,102 +335,7 @@ button:hover {
 #about-us {
   background-color: #fff;
   height: auto;
-  padding: 30px;
-}
-
-#about-us h5 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  text-align: center;
-}
-
-#about-us h4 {
-  font-family: "Montserrat", sans-serif;
-  color: #283d50;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-#about-us h3 {
-  font-family: "Montserrat", sans-serif;
-  color: #283d50;
-  font-size: 18px;
-  font-weight: 700;
-  font-size: 25px;
-}
-
-#about-us p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 17px;
-}
-
-#about-us .about-1,
-#about-us .about-2,
-#about-us .about-3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 20px;
-}
-
-#about-us .iconos {
-  width: 40%;
-}
-
-#about-us .iconos h5 {
-  text-align: start;
-}
-
-#about-us .image-about-us {
-  width: 550px;
-  height: auto;
-}
-
-#about-us .image-about-us img {
-  width: 550px;
-  height: auto;
-  margin: 40px;
-}
-
-@media (max-width: 900px) {
-  #about-us {
-    height: auto;
-  }
-  .about-1,
-  .about-3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .about-2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #about-us .iconos {
-    width: 100%;
-  }
-}
-
-/*--------------------- TERMINA ABOUT US -----------------------*/
-/*--------------------- EMPIEZA SERVICES -------------*/
-.services-cards {
-  height: 900px;
-  width: auto;
-  padding: 40px;
-  background-color: #c6e3f2;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,68 +346,309 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
-.services-cards h2 {
-  font-family: "Open Sans", sans-serif;
+#about-us h2,
+#about-us h5 {
+  width: 600px;
 }
 
-.services-cards p {
+.about-1,
+.about-2,
+.about-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px 40px 30px 40px;
+}
+
+.about-1 .text-about-us,
+.about-2 .text-about-us,
+.about-3 .text-about-us {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-1 .text-about-us h3,
+.about-2 .text-about-us h3,
+.about-3 .text-about-us h3 {
   font-family: "Montserrat", sans-serif;
+  color: #283d50;
+  font-size: 18px;
+  font-weight: 700;
+  font-size: 24px;
 }
 
-.services-cards .groupofcards {
-  height: 600px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 30px 20px 30px;
-  border-radius: 5px;
+.about-1 .text-about-us p,
+.about-2 .text-about-us p,
+.about-3 .text-about-us p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #444;
+  -webkit-margin-after: 25px;
+          margin-block-end: 25px;
+}
+
+.about-1 .text-about-us .contenido,
+.about-2 .text-about-us .contenido,
+.about-3 .text-about-us .contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100px;
+  width: 100%;
+}
+
+.about-1 .text-about-us .contenido .icon,
+.about-2 .text-about-us .contenido .icon,
+.about-3 .text-about-us .contenido .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15%;
+  padding: 0px;
 }
 
-.services-cards .card {
-  width: 425px;
-  height: 168px;
-  margin: 20px;
-  border-radius: 15px;
+.about-1 .text-about-us .contenido .icon .fas,
+.about-1 .text-about-us .contenido .icon .far,
+.about-2 .text-about-us .contenido .icon .fas,
+.about-2 .text-about-us .contenido .icon .far,
+.about-3 .text-about-us .contenido .icon .fas,
+.about-3 .text-about-us .contenido .icon .far {
+  font-size: 35px;
+  margin: 0px;
+  color: #007bff;
   background-color: #fff;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  direction: column;
+  border: solid 2px #007bff;
+  border-radius: 50%;
+  padding: 17px;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
-.services-cards .card img {
-  height: 30px;
-  width: auto;
+.about-1 .text-about-us .contenido .icon .far:hover,
+.about-2 .text-about-us .contenido .icon .far:hover,
+.about-3 .text-about-us .contenido .icon .far:hover {
+  color: #fff;
+  background-color: #007bff;
 }
 
-.services-cards .card:hover {
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  -webkit-transition: 0.20s;
-  transition: 0.20s;
+.about-1 .text-about-us .contenido .icon .fas:hover,
+.about-2 .text-about-us .contenido .icon .fas:hover,
+.about-3 .text-about-us .contenido .icon .fas:hover {
+  color: #fff;
+  background-color: #007bff;
 }
 
-.services-cards .card:hover h3 {
-  color: #1445b3;
+.about-1 .text-about-us .contenido .text,
+.about-2 .text-about-us .contenido .text,
+.about-3 .text-about-us .contenido .text {
+  width: 80%;
 }
 
-/*--------------------- TERMINA SERVICES -------------*/
+.about-1 .text-about-us .contenido .text h4,
+.about-2 .text-about-us .contenido .text h4,
+.about-3 .text-about-us .contenido .text h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #283d50;
+  font-size: 18px;
+  font-weight: 700;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 5px;
+          margin-block-end: 5px;
+}
+
+.about-1 .text-about-us .contenido .text h5,
+.about-2 .text-about-us .contenido .text h5,
+.about-3 .text-about-us .contenido .text h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #444;
+  font-size: 14px;
+  text-align: start;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.about-1 .image-about-us,
+.about-2 .image-about-us,
+.about-3 .image-about-us {
+  width: 40%;
+}
+
+.about-1 .image-about-us img,
+.about-2 .image-about-us img,
+.about-3 .image-about-us img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1000px) {
+  #about-us {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #about-us h2,
+  #about-us h5 {
+    width: 400px;
+  }
+  .about-1,
+  .about-3 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 60px 10px 60px;
+  }
+  .about-1 .image-about-us,
+  .about-1 .text-about-us,
+  .about-3 .image-about-us,
+  .about-3 .text-about-us {
+    width: 90%;
+  }
+  .about-2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 60px 10px 60px;
+  }
+  .about-2 .image-about-us,
+  .about-2 .text-about-us {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  #about-us {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #about-us h2,
+  #about-us h5 {
+    width: 85%;
+  }
+  .about-1,
+  .about-3 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 20px 10px 20px;
+  }
+  .about-1 .image-about-us,
+  .about-1 .text-about-us,
+  .about-3 .image-about-us,
+  .about-3 .text-about-us {
+    width: 9 0%;
+  }
+  .about-1 .image-about-us .contenido .icon,
+  .about-1 .text-about-us .contenido .icon,
+  .about-3 .image-about-us .contenido .icon,
+  .about-3 .text-about-us .contenido .icon {
+    width: 10%;
+    margin: 15px;
+  }
+  .about-1 .image-about-us .contenido .icon .fas,
+  .about-1 .image-about-us .contenido .icon .far,
+  .about-1 .text-about-us .contenido .icon .fas,
+  .about-1 .text-about-us .contenido .icon .far,
+  .about-3 .image-about-us .contenido .icon .fas,
+  .about-3 .image-about-us .contenido .icon .far,
+  .about-3 .text-about-us .contenido .icon .fas,
+  .about-3 .text-about-us .contenido .icon .far {
+    font-size: 25px;
+  }
+  .about-2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 20px 10px 20px;
+  }
+  .about-2 .image-about-us,
+  .about-2 .text-about-us {
+    width: 90%;
+  }
+}
+
+/*--------------------- TERMINA ABOUT US -----------------------*/
 /*--------------------- EMPIEZA OUR PORTFOLIO -----------------------*/
 #our-portfolio {
   height: auto;
@@ -572,7 +804,7 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px;
+  padding: 30px;
 }
 
 #team img {
@@ -603,9 +835,9 @@ button:hover {
 }
 
 .imagen {
-  width: 300px;
-  height: 300px;
-  background-size: auto 300px;
+  width: 250px;
+  height: 250px;
+  background-size: auto 250px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
