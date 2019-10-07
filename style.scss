@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:200,400,700,800&display=swap');
+
 * {
 	box-sizing: border-box;
 }
@@ -102,12 +103,15 @@ html {
 
 body {
 	margin: 0;
+
 	a {
 		text-decoration: none;
 	}
+
 	h2 {
 		@include section-title;
 	}
+
 	h5 {
 		@include section-subtitle;
 	}
@@ -127,31 +131,39 @@ nav {
 	position: fixed;
 	width: 100%;
 	padding-inline-start: 0px;
+
 	img {
 		width: 65px;
 		height: auto;
 	}
+
 	.links-nav {
 		font-family: $secondary-font-family;
 		font-weight: 600px;
 		text-decoration: none;
+
 		ul {
 			display: flex;
 			list-style-type: none;
+
 			a,
 			li {
 				@include style-links-nav;
 				color: $text-color;
 			}
+
 			li:hover {
 				color: $text-color-hover;
 			}
+
 			.fas {
 				display: none;
 			}
 		}
+
 		#drop-down {
 			display: none;
+
 			ul {
 				position: absolute;
 				background-color: $background-color-nav;
@@ -162,13 +174,16 @@ nav {
 				left: 1010px;
 			}
 		}
+
 		li:hover {
 			color: $text-color-hover;
 		}
+
 		a:hover {
 			color: $text-color-hover;
 		}
 	}
+
 	#menu {
 		color: $text-color-menu;
 		position: fixed;
@@ -178,10 +193,12 @@ nav {
 		height: auto;
 		transition: all 1s;
 		overflow: hidden;
+
 		.overly-menu {
 			background-color: $background-color-menu;
 			width: 100%;
 			height: 900px;
+
 			.cerrar {
 				position: absolute;
 				top: 10px;
@@ -191,15 +208,18 @@ nav {
 				font-size: 28px;
 				font-weight: 700;
 				z-index: 9999;
+
 				a:visited {
 					color: $text-color-button;
 				}
 			}
+
 			.links-menu {
 				background-color: $background-color-menu;
 				width: 280px;
 				height: 900px;
 				padding: 20px;
+
 				a,
 				li {
 					list-style-type: none;
@@ -210,18 +230,22 @@ nav {
 					line-height: 40px;
 				}
 			}
+
 			li:hover {
 				color: $text-color-hover;
 			}
+
 			a:hover {
 				color: $text-color-hover;
 			}
 		}
 	}
+
 	#menu:target {
 		left: 0px;
 		top: 0px;
 	}
+
 	/* #drop-down:target {
         display: block;
     } */
@@ -233,6 +257,7 @@ nav {
 		justify-content: space-between;
 		height: 60px;
 		padding: 10px 40px;
+
 		.links-nav ul .fas {
 			display: flex;
 			color: $text-color;
@@ -240,6 +265,7 @@ nav {
 			z-index: 999;
 		}
 	}
+
 	.links-nav li {
 		display: none;
 	}
@@ -271,11 +297,13 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	padding: 20px;
+
 	h1 {
 		font-weight: 800px;
 		font-size: 50px;
 		font-family: $secondary-font-family;
 	}
+
 	span {
 		color: #84b1ec;
 		text-decoration-line: underline;
@@ -315,6 +343,7 @@ button:hover {
 .imagenheader {
 	width: 600px;
 	height: auto;
+
 	img {
 		width: 600px;
 		height: auto;
@@ -328,6 +357,7 @@ button:hover {
 		justify-content: center;
 		height: auto;
 		padding: 50px;
+
 		h1 {
 			text-align: center;
 		}
@@ -344,6 +374,7 @@ button:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 	h2,
 	h5 {
 		width: 600px;
@@ -356,30 +387,36 @@ button:hover {
 	display: flex;
 	justify-content: space-evenly;
 	padding: 10px 40px 30px 40px;
+
 	.text-about-us {
 		width: 40%;
 		display: flex;
 		flex-direction: column;
+
 		h3 {
 			@include secondary-title;
 			font-size: 24px;
 		}
+
 		p {
 			@include section-text;
 			margin-block-end: 25px;
 		}
+
 		.contenido {
 			display: flex;
 			align-items: center;
 			justify-content: space-evenly;
 			height: 100px;
 			width: 100%;
+
 			.icon {
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				width: 15%;
 				padding: 0px;
+
 				.fas,
 				.far {
 					font-size: 35px;
@@ -391,22 +428,27 @@ button:hover {
 					padding: 17px;
 					transition: background-color 0.2s;
 				}
+
 				.far:hover {
 					color: $text-color-button;
 					background-color: $first-button-color;
 				}
+
 				.fas:hover {
 					color: $text-color-button;
 					background-color: $first-button-color;
 				}
 			}
+
 			.text {
 				width: 80%;
+
 				h4 {
 					@include secondary-title;
 					margin-block-start: 0;
 					margin-block-end: 5px;
 				}
+
 				h5 {
 					@include section-text;
 					font-size: 14px;
@@ -417,8 +459,10 @@ button:hover {
 			}
 		}
 	}
+
 	.image-about-us {
 		width: 40%;
+
 		img {
 			width: 100%;
 			height: auto;
@@ -434,11 +478,13 @@ button:hover {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
 		h2,
 		h5 {
 			width: 400px;
 		}
 	}
+
 	.about-1,
 	.about-3 {
 		width: 100%;
@@ -446,17 +492,20 @@ button:hover {
 		flex-direction: column-reverse;
 		align-items: center;
 		padding: 10px 60px 10px 60px;
+
 		.image-about-us,
 		.text-about-us {
 			width: 90%;
 		}
 	}
+
 	.about-2 {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding: 10px 60px 10px 60px;
+
 		.image-about-us,
 		.text-about-us {
 			width: 90%;
@@ -472,11 +521,13 @@ button:hover {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
 		h2,
 		h5 {
 			width: 85%;
 		}
 	}
+
 	.about-1,
 	.about-3 {
 		width: 100%;
@@ -484,13 +535,16 @@ button:hover {
 		flex-direction: column-reverse;
 		align-items: center;
 		padding: 10px 20px 10px 20px;
+
 		.image-about-us,
 		.text-about-us {
 			width: 9 0%;
+
 			.contenido {
 				.icon {
 					width: 10%;
 					margin: 15px;
+
 					.fas,
 					.far {
 						font-size: 25px;
@@ -499,12 +553,14 @@ button:hover {
 			}
 		}
 	}
+
 	.about-2 {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding: 10px 20px 10px 20px;
+
 		.image-about-us,
 		.text-about-us {
 			width: 90%;
@@ -525,6 +581,7 @@ button:hover {
 	flex-direction: column;
 	align-items: center;
 	padding: 50px 25px;
+
 	button {
 		background-color: $first-button-color;
 		color: $text-color-button;
@@ -532,15 +589,18 @@ button:hover {
 		border-radius: 50px;
 		margin: 15px 15px 15px 0;
 	}
+
 	.portfolio {
 		width: auto;
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+
 		.image {
 			width: 350px;
 			height: 250px;
 			margin: 15px;
+
 			.overlay {
 				width: 350px;
 				height: 250px;
@@ -548,6 +608,7 @@ button:hover {
 				display: none;
 			}
 		}
+
 		img {
 			width: 100%;
 			height: 100%;
@@ -577,19 +638,24 @@ button:hover {
 	padding: 30px;
 	padding-bottom: 50px;
 	background-color: $background-color-section;
+
 	h2 {
 		margin-bottom: 50px;
 	}
+
 	box-shadow: $shadow-section;
+
 	.testimonials {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
 		.img-testimonials {
 			width: 110px;
 			height: 110px;
 			border-radius: 50%;
 			margin: 20px;
+
 			img {
 				width: 100%;
 				height: 100%;
@@ -597,21 +663,25 @@ button:hover {
 				overflow: hidden;
 			}
 		}
+
 		.text-testimonials {
 			width: 46%;
 			height: auto;
 			font-family: $main-font-family;
+
 			h3 {
 				font-weight: 700;
 				font-size: 18px;
 				margin: 0px;
 			}
+
 			h6 {
 				font-weight: 200;
 				font-size: 14px;
 				color: #7f858b;
 				margin: 2px;
 			}
+
 			p {
 				font-style: italic;
 				font-weight: 200;
@@ -633,6 +703,7 @@ button:hover {
 	flex-direction: column;
 	align-items: center;
 	padding: 30px;
+
 	img {
 		width: 100%;
 	}
@@ -642,10 +713,12 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	h3 {
 		font-family: $secondary-font-family;
 		font-size: 20px;
 	}
+
 	p {
 		font-family: $secondary-font-family;
 		font-style: italic;
@@ -722,6 +795,7 @@ button:hover {
 	background-color: #ecf5ff;
 	padding: 50px 20px;
 	box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+
 	.our-container {
 		padding: 20px 0px;
 		display: flex;
@@ -729,12 +803,14 @@ button:hover {
 		justify-content: center;
 		align-items: center;
 	}
+
 	.empresas {
 		padding: 30px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
+
 		.logo-clients {
 			display: flex;
 			justify-content: center;
@@ -743,17 +819,21 @@ button:hover {
 			width: 25%;
 			height: 180px;
 			border: 1px solid lightgray;
+
 			img {
 				width: 135px;
 				height: auto;
 				transition: (0.7s) ease-out;
 			}
+
 			img:hover {
 				transform: scale(1.3, 1.3);
 			}
+
 			@media(max-width: 600px) {
 				width: 80%;
 			}
+
 			@media(max-width: 1000px) and (min-width: 600px) {
 				width: 40%;
 			}
@@ -776,28 +856,34 @@ button:hover {
 	background-color: #fff;
 	padding: 60px 0px;
 	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+
 	h2 {
 		width: 100%;
 	}
+
 	.location {
 		display: flex;
 		align-items: center;
 		width: 50%;
 		padding: 20px 15px;
+
 		iframe {
 			height: 315px;
 			width: 100%;
 		}
 	}
+
 	.columna2 {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
+
 		.lista2 {
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
 			list-style-type: none;
+
 			p {
 				font-family: $secondary-font-family;
 				list-style-type: none;
@@ -805,6 +891,7 @@ button:hover {
 				color: grey;
 				font-size: 14px;
 			}
+
 			.fas,
 			.far {
 				color: lightskyblue;
@@ -813,38 +900,47 @@ button:hover {
 				display: inline-block;
 			}
 		}
+
 		.form2 {
 			display: flex;
 			flex-direction: column;
+
 			.personal {
 				display: flex;
 				justify-content: space-around;
 				margin: 10px 0px;
 			}
+
 			.personal input {
 				@include form-style;
 				height: 35px;
 				width: 100%;
 			}
+
 			.adicional {
 				display: flex;
 				flex-direction: column;
 			}
+
 			input[type="text"] {
 				@include form-style;
 				height: 35px;
 			}
+
 			.nombre {
 				margin-right: 10px;
 			}
+
 			textarea {
 				@include form-style;
 				margin-top: 20px;
 				color: grey;
 			}
+
 			.submit {
 				align-self: center;
 				margin-top: 10px;
+
 				input[type="submit"] {
 					width: 160px;
 					height: 40px;
@@ -877,20 +973,25 @@ button:hover {
 	background-color: #00428a;
 	color: #fff;
 	font-family: "Montserrat", sans-serif;
+
 	div {
 		margin: 15px;
 	}
+
 	.wayne {
 		width: 350px;
 		margin-top: 0px;
 	}
+
 	h1 {
 		letter-spacing: 0px;
 		font-size: 34px;
 		font-weight: normal;
 	}
+
 	.useful-links {
 		width: 180px;
+
 		li,
 		a {
 			line-height: 24px;
@@ -898,24 +999,30 @@ button:hover {
 			color: #fff;
 			text-decoration: none;
 		}
+
 		ul {
 			padding-inline-start: 0px;
 		}
+
 		a:hover {
 			color: lightskyblue;
 			transition: 0.5;
 		}
 	}
+
 	.social {
 		width: 250px;
 		display: block;
+
 		span {
 			font-weight: bold;
 		}
+
 		i {
 			color: #fff;
 			border-radius: 50%;
 		}
+
 		.fab {
 			padding: 8px;
 			margin: 2px;
@@ -923,18 +1030,22 @@ button:hover {
 			background-color: #007bff;
 			color: #fff;
 		}
+
 		i:hover {
 			background-color: #0669d3;
 			transition: 0.5;
 		}
 	}
+
 	.suscription {
 		width: 300px;
 	}
+
 	form {
 		display: flex;
 		margin: 0;
 	}
+
 	input[type=email] {
 		border: none;
 		width: 65%;
@@ -943,6 +1054,7 @@ button:hover {
 		line-height: 16px;
 		padding: 0;
 	}
+
 	input[type="submit"] {
 		background: #007bff;
 		border: none;
@@ -955,6 +1067,7 @@ button:hover {
 		cursor: pointer;
 		padding: 0;
 	}
+
 	@media(max-width: 600px) {
 		flex-direction: column;
 		align-items: flex-start;
@@ -973,7 +1086,29 @@ button:hover {
 	font-size: 12px;
 	margin: 0;
 	border: 0;
+
 	span {
 		font-weight: bold;
 	}
+}
+
+.to-top {
+
+	position: fixed;
+	right: 60px;
+	bottom: 60px;
+	text-align: center;
+	width: 60px;
+	height: 60px;
+
+	.fas {
+		padding: 12px;
+		margin: 2px;
+		border-radius: 50%;
+		background-color: #007bff;
+		color: #fff;
+		width: 45px;
+		height: 45px;
+	}
+
 }

@@ -1316,4 +1316,23 @@ button:hover {
 #copyright span {
   font-weight: bold;
 }
+
+.to-top {
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+}
+
+.to-top .fas {
+  padding: 12px;
+  margin: 2px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+}
 /*# sourceMappingURL=style.css.map */
