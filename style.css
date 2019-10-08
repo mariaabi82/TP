@@ -355,7 +355,9 @@ button:hover {
   width: 600px;
 }
 
-.about-1, .about-2, .about-3 {
+.about-1,
+.about-2,
+.about-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,7 +369,9 @@ button:hover {
   margin-right: auto;
 }
 
-.about-1 .text-about-us, .about-2 .text-about-us, .about-3 .text-about-us {
+.about-1 .text-about-us,
+.about-2 .text-about-us,
+.about-3 .text-about-us {
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,7 +383,9 @@ button:hover {
   margin: 15px;
 }
 
-.about-1 .text-about-us h3, .about-2 .text-about-us h3, .about-3 .text-about-us h3 {
+.about-1 .text-about-us h3,
+.about-2 .text-about-us h3,
+.about-3 .text-about-us h3 {
   font-family: "Montserrat", sans-serif;
   color: #283d50;
   font-size: 18px;
@@ -387,7 +393,9 @@ button:hover {
   font-size: 24px;
 }
 
-.about-1 .text-about-us p, .about-2 .text-about-us p, .about-3 .text-about-us p {
+.about-1 .text-about-us p,
+.about-2 .text-about-us p,
+.about-3 .text-about-us p {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -396,7 +404,9 @@ button:hover {
           margin-block-end: 25px;
 }
 
-.about-1 .text-about-us .contenido, .about-2 .text-about-us .contenido, .about-3 .text-about-us .contenido {
+.about-1 .text-about-us .contenido,
+.about-2 .text-about-us .contenido,
+.about-3 .text-about-us .contenido {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,7 +420,9 @@ button:hover {
   width: auto;
 }
 
-.about-1 .text-about-us .contenido .icon, .about-2 .text-about-us .contenido .icon, .about-3 .text-about-us .contenido .icon {
+.about-1 .text-about-us .contenido .icon,
+.about-2 .text-about-us .contenido .icon,
+.about-3 .text-about-us .contenido .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,7 +436,12 @@ button:hover {
   margin: 10px;
 }
 
-.about-1 .text-about-us .contenido .icon .fas, .about-1 .text-about-us .contenido .icon .far, .about-2 .text-about-us .contenido .icon .fas, .about-2 .text-about-us .contenido .icon .far, .about-3 .text-about-us .contenido .icon .fas, .about-3 .text-about-us .contenido .icon .far {
+.about-1 .text-about-us .contenido .icon .fas,
+.about-1 .text-about-us .contenido .icon .far,
+.about-2 .text-about-us .contenido .icon .fas,
+.about-2 .text-about-us .contenido .icon .far,
+.about-3 .text-about-us .contenido .icon .fas,
+.about-3 .text-about-us .contenido .icon .far {
   font-size: 30px;
   margin: 0px;
   color: #007bff;
@@ -436,21 +453,29 @@ button:hover {
   transition: background-color 0.2s;
 }
 
-.about-1 .text-about-us .contenido .icon .far:hover, .about-2 .text-about-us .contenido .icon .far:hover, .about-3 .text-about-us .contenido .icon .far:hover {
+.about-1 .text-about-us .contenido .icon .far:hover,
+.about-2 .text-about-us .contenido .icon .far:hover,
+.about-3 .text-about-us .contenido .icon .far:hover {
   color: #fff;
   background-color: #007bff;
 }
 
-.about-1 .text-about-us .contenido .icon .fas:hover, .about-2 .text-about-us .contenido .icon .fas:hover, .about-3 .text-about-us .contenido .icon .fas:hover {
+.about-1 .text-about-us .contenido .icon .fas:hover,
+.about-2 .text-about-us .contenido .icon .fas:hover,
+.about-3 .text-about-us .contenido .icon .fas:hover {
   color: #fff;
   background-color: #007bff;
 }
 
-.about-1 .text-about-us .contenido .text, .about-2 .text-about-us .contenido .text, .about-3 .text-about-us .contenido .text {
+.about-1 .text-about-us .contenido .text,
+.about-2 .text-about-us .contenido .text,
+.about-3 .text-about-us .contenido .text {
   width: 80%;
 }
 
-.about-1 .text-about-us .contenido .text h4, .about-2 .text-about-us .contenido .text h4, .about-3 .text-about-us .contenido .text h4 {
+.about-1 .text-about-us .contenido .text h4,
+.about-2 .text-about-us .contenido .text h4,
+.about-3 .text-about-us .contenido .text h4 {
   font-family: "Montserrat", sans-serif;
   color: #283d50;
   font-size: 18px;
@@ -461,7 +486,9 @@ button:hover {
           margin-block-end: 5px;
 }
 
-.about-1 .text-about-us .contenido .text h5, .about-2 .text-about-us .contenido .text h5, .about-3 .text-about-us .contenido .text h5 {
+.about-1 .text-about-us .contenido .text h5,
+.about-2 .text-about-us .contenido .text h5,
+.about-3 .text-about-us .contenido .text h5 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -474,7 +501,9 @@ button:hover {
           margin-block-end: 0;
 }
 
-.about-1 .image-about-us, .about-2 .image-about-us, .about-3 .image-about-us {
+.about-1 .image-about-us,
+.about-2 .image-about-us,
+.about-3 .image-about-us {
   width: 40%;
   margin: 15px;
   display: -webkit-box;
@@ -484,7 +513,9 @@ button:hover {
       flex-shrink: 0;
 }
 
-.about-1 .image-about-us img, .about-2 .image-about-us img, .about-3 .image-about-us img {
+.about-1 .image-about-us img,
+.about-2 .image-about-us img,
+.about-3 .image-about-us img {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -1034,7 +1065,8 @@ a:hover {
   transition: all 0.5s;
 }
 
-#our-portfolio .portfolio .image .overlay-portfolio h3, #our-portfolio .portfolio .image .overlay-portfolio p {
+#our-portfolio .portfolio .image .overlay-portfolio h3,
+#our-portfolio .portfolio .image .overlay-portfolio p {
   color: #fff;
   z-index: 999999;
   font-family: "Montserrat", sans-serif;
@@ -1050,7 +1082,8 @@ a:hover {
   margin: 3px;
 }
 
-#our-portfolio .portfolio .image .overlay-portfolio .fas, #our-portfolio .portfolio .image .overlay-portfolio .far {
+#our-portfolio .portfolio .image .overlay-portfolio .fas,
+#our-portfolio .portfolio .image .overlay-portfolio .far {
   font-size: 15px;
   margin: 10px;
   border-radius: 50%;
@@ -1586,7 +1619,8 @@ a:hover {
   font-family: "Montserrat", sans-serif;
 }
 
-#patita .uno, #patita .dos {
+#patita .uno,
+#patita .dos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1600,7 +1634,8 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-  #patita .uno, #patita .dos {
+  #patita .uno,
+  #patita .dos {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
