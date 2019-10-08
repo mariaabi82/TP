@@ -9,7 +9,9 @@
 /*-------------------------- MENU ---------------*/
 /*-------------  HEADER ---------------*/
 /*-------------  SERVICES ---------------*/
+/*------------- WHY CHOOSE US ---------------*/
 /*---------------------------  TESTIMONIALS    ---------------*/
+/*-------------  TEAM ---------------*/
 /*--------------------- MIXIN -----------------------*/
 html {
   scroll-behavior: smooth; }
@@ -21,10 +23,10 @@ body {
     text-decoration: none; }
   body h2 {
     font-family: "Montserrat", sans-serif;
-    color: #283d50;
     font-size: 35px;
     text-align: center;
-    font-weight: 500; }
+    font-weight: 500;
+    color: #283d50; }
   body h5 {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
@@ -218,8 +220,7 @@ button:hover {
 #about-us {
   background-color: #fff;
   height: auto;
-  padding: 20px;
-  padding-top: 60px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -227,57 +228,43 @@ button:hover {
   #about-us h5 {
     width: 600px; }
 
-.about-1,
-.about-2,
-.about-3 {
+.about-1, .about-2, .about-3 {
   display: flex;
-  justify-content: space-evenly;
-  padding: 10px 40px 30px 40px; }
-  .about-1 .text-about-us,
-  .about-2 .text-about-us,
-  .about-3 .text-about-us {
+  justify-content: center;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto; }
+  .about-1 .text-about-us, .about-2 .text-about-us, .about-3 .text-about-us {
     width: 40%;
     display: flex;
-    flex-direction: column; }
-    .about-1 .text-about-us h3,
-    .about-2 .text-about-us h3,
-    .about-3 .text-about-us h3 {
+    flex-direction: column;
+    margin: 15px; }
+    .about-1 .text-about-us h3, .about-2 .text-about-us h3, .about-3 .text-about-us h3 {
       font-family: "Montserrat", sans-serif;
       color: #283d50;
       font-size: 18px;
       font-weight: 700;
       font-size: 24px; }
-    .about-1 .text-about-us p,
-    .about-2 .text-about-us p,
-    .about-3 .text-about-us p {
+    .about-1 .text-about-us p, .about-2 .text-about-us p, .about-3 .text-about-us p {
       font-family: "Open Sans", sans-serif;
       font-weight: 300;
       font-size: 16px;
       color: #444;
       margin-block-end: 25px; }
-    .about-1 .text-about-us .contenido,
-    .about-2 .text-about-us .contenido,
-    .about-3 .text-about-us .contenido {
+    .about-1 .text-about-us .contenido, .about-2 .text-about-us .contenido, .about-3 .text-about-us .contenido {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      height: 100px;
-      width: 100%; }
-      .about-1 .text-about-us .contenido .icon,
-      .about-2 .text-about-us .contenido .icon,
-      .about-3 .text-about-us .contenido .icon {
+      height: 90%;
+      width: auto; }
+      .about-1 .text-about-us .contenido .icon, .about-2 .text-about-us .contenido .icon, .about-3 .text-about-us .contenido .icon {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 15%;
-        padding: 0px; }
-        .about-1 .text-about-us .contenido .icon .fas,
-        .about-1 .text-about-us .contenido .icon .far,
-        .about-2 .text-about-us .contenido .icon .fas,
-        .about-2 .text-about-us .contenido .icon .far,
-        .about-3 .text-about-us .contenido .icon .fas,
-        .about-3 .text-about-us .contenido .icon .far {
-          font-size: 35px;
+        width: 8%;
+        margin: 10px; }
+        .about-1 .text-about-us .contenido .icon .fas, .about-1 .text-about-us .contenido .icon .far, .about-2 .text-about-us .contenido .icon .fas, .about-2 .text-about-us .contenido .icon .far, .about-3 .text-about-us .contenido .icon .fas, .about-3 .text-about-us .contenido .icon .far {
+          font-size: 30px;
           margin: 0px;
           color: #007bff;
           background-color: #fff;
@@ -285,32 +272,22 @@ button:hover {
           border-radius: 50%;
           padding: 17px;
           transition: background-color 0.2s; }
-        .about-1 .text-about-us .contenido .icon .far:hover,
-        .about-2 .text-about-us .contenido .icon .far:hover,
-        .about-3 .text-about-us .contenido .icon .far:hover {
+        .about-1 .text-about-us .contenido .icon .far:hover, .about-2 .text-about-us .contenido .icon .far:hover, .about-3 .text-about-us .contenido .icon .far:hover {
           color: #fff;
           background-color: #007bff; }
-        .about-1 .text-about-us .contenido .icon .fas:hover,
-        .about-2 .text-about-us .contenido .icon .fas:hover,
-        .about-3 .text-about-us .contenido .icon .fas:hover {
+        .about-1 .text-about-us .contenido .icon .fas:hover, .about-2 .text-about-us .contenido .icon .fas:hover, .about-3 .text-about-us .contenido .icon .fas:hover {
           color: #fff;
           background-color: #007bff; }
-      .about-1 .text-about-us .contenido .text,
-      .about-2 .text-about-us .contenido .text,
-      .about-3 .text-about-us .contenido .text {
+      .about-1 .text-about-us .contenido .text, .about-2 .text-about-us .contenido .text, .about-3 .text-about-us .contenido .text {
         width: 80%; }
-        .about-1 .text-about-us .contenido .text h4,
-        .about-2 .text-about-us .contenido .text h4,
-        .about-3 .text-about-us .contenido .text h4 {
+        .about-1 .text-about-us .contenido .text h4, .about-2 .text-about-us .contenido .text h4, .about-3 .text-about-us .contenido .text h4 {
           font-family: "Montserrat", sans-serif;
           color: #283d50;
           font-size: 18px;
           font-weight: 700;
           margin-block-start: 0;
           margin-block-end: 5px; }
-        .about-1 .text-about-us .contenido .text h5,
-        .about-2 .text-about-us .contenido .text h5,
-        .about-3 .text-about-us .contenido .text h5 {
+        .about-1 .text-about-us .contenido .text h5, .about-2 .text-about-us .contenido .text h5, .about-3 .text-about-us .contenido .text h5 {
           font-family: "Open Sans", sans-serif;
           font-weight: 300;
           font-size: 16px;
@@ -319,15 +296,16 @@ button:hover {
           text-align: start;
           margin-block-start: 0;
           margin-block-end: 0; }
-  .about-1 .image-about-us,
-  .about-2 .image-about-us,
-  .about-3 .image-about-us {
-    width: 40%; }
-    .about-1 .image-about-us img,
-    .about-2 .image-about-us img,
-    .about-3 .image-about-us img {
+  .about-1 .image-about-us, .about-2 .image-about-us, .about-3 .image-about-us {
+    width: 40%;
+    margin: 15px;
+    display: flex;
+    flex-shrink: 0; }
+    .about-1 .image-about-us img, .about-2 .image-about-us img, .about-3 .image-about-us img {
       width: 100%;
-      height: auto; }
+      height: auto;
+      display: flex;
+      flex-shrink: 0; }
 
 @media (max-width: 1000px) {
   #about-us {
@@ -379,7 +357,7 @@ button:hover {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    padding: 10px 20px 10px 20px; }
+    padding: 10px; }
     .about-1 .image-about-us,
     .about-1 .text-about-us,
     .about-3 .image-about-us,
@@ -405,12 +383,185 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 20px 10px 20px; }
+    padding: 10px; }
     .about-2 .image-about-us,
     .about-2 .text-about-us {
       width: 90%; } }
 
 /*--------------------- TERMINA ABOUT US -----------------------*/
+/*--------------------- EMPIEZA SERVICES -------------*/
+/*-----NECESITA ARREGLO: cortar imagen, hacer responsive en 900 y 600 -------*/
+.services-cards {
+  padding: 40px;
+  background-color: #ecf5ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
+  .services-cards p {
+    font-family: "Montserrat", sans-serif; }
+  .services-cards .groupofcards {
+    width: fit-content;
+    padding: 30px 20px 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .services-cards .groupofcards .card {
+      width: 380px;
+      height: 168px;
+      margin: 20px;
+      padding: 10px;
+      border-radius: 15px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      display: flex;
+      direction: column;
+      overflow: hidden; }
+      .services-cards .groupofcards .card .icono {
+        height: 60px;
+        width: auto;
+        margin-left: -40px; }
+      .services-cards .groupofcards .card .texto {
+        padding-right: 10px;
+        height: auto;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        .services-cards .groupofcards .card .texto h3 {
+          font-family: "Montserrat", sans-serif;
+          padding-bottom: 0px;
+          margin-bottom: 0px; }
+        .services-cards .groupofcards .card .texto p {
+          font-family: "Open Sans", sans-serif;
+          color: #444;
+          font-size: 14px;
+          margin-left: 0px;
+          line-height: 24px;
+          margin-bottom: 0; }
+  .services-cards .card:hover {
+    transform: translateY(-10px);
+    transition: 0.20s; }
+    .services-cards .card:hover h3 {
+      color: #1868cf; }
+  @media (min-width: 1100px) {
+    .services-cards .services {
+      height: fit-content; }
+    .services-cards .groupofcards {
+      padding: 60px; }
+    .services-cards .card {
+      width: 300px;
+      height: auto;
+      margin-right: 60px; } }
+  @media (max-width: 1000px) {
+    .services-cards .services {
+      height: fit-content; }
+    .services-cards .groupofcards {
+      padding: 30px 0px 30px; }
+    .services-cards .card {
+      width: 250px;
+      height: auto; } }
+  @media (max-width: 800px) {
+    .services-cards .services {
+      height: fit-content; }
+    .services-cards .groupofcards {
+      padding: 20px 0px 20px; }
+    .services-cards .card {
+      width: 200px;
+      height: auto; } }
+  @media (max-width: 600px) {
+    .services-cards .services {
+      height: fit-content; }
+    .services-cards .groupofcards {
+      padding: 20px 0px 20px; }
+    .services-cards .card {
+      width: 150px;
+      height: auto; } }
+
+/*--------------------- TERMINA SERVICES -------------*/
+/*--------------------- EMPIEZA WHY CHOOSE US -------------*/
+#why-choose-us {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 150px;
+  background-color: #004a99;
+  color: #ffffff; }
+
+.choose-us {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  padding-right: 60px; }
+  .choose-us h2 {
+    color: #fff; }
+  .choose-us h5 {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    width: 50%; }
+
+#cards, #choose-numeros {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row; }
+
+.choose-card {
+  background-color: #00458f;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.3s; }
+  .choose-card i, .choose-card p {
+    color: #d8eafe; }
+  .choose-card i {
+    font-size: 48px;
+    padding-top: 15px; }
+  .choose-card a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold; }
+
+.choose-card:hover {
+  background-color: #18337d; }
+
+a:hover {
+  text-decoration: underline; }
+
+#choose-numeros {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 40px; }
+  #choose-numeros .numeros {
+    display: block; }
+  #choose-numeros span {
+    font-weight: bold;
+    font-size: 48px;
+    padding-right: 100px;
+    display: block; }
+
+@media (max-width: 1000px) {
+  #cards {
+    display: flex;
+    flex-direction: column; }
+  .choose-card {
+    margin-bottom: 20px; }
+  #choose-numeros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; } }
+
+/*--------------------- TERMINA WHY CHOOSE US -------------*/
 /*--------------------- EMPIEZA OUR PORTFOLIO -----------------------*/
 #our-portfolio {
   height: auto;
@@ -501,63 +652,91 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px; }
-  #team img {
-    width: 100%; }
+  padding-top: 50px; }
+  #team h2 {
+    margin: 10px; }
+  #team h5 {
+    width: 600px;
+    text-align: center;
+    color: #556877;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    margin: 10px; }
 
 .img-container {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .img-container h3 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px; }
-  .img-container p {
-    font-family: "Montserrat", sans-serif;
-    font-style: italic;
-    font-size: 10px; }
-
-.imagen {
-  width: 250px;
-  height: 250px;
-  background-size: auto 250px;
-  justify-content: center;
-  margin: 25px;
-  border-radius: 50%;
-  overflow: hidden; }
+  .img-container .imagen {
+    width: 250px;
+    height: 250px;
+    background-size: auto 250px;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap; }
+    .img-container .imagen .overlay {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      background: linear-gradient(rgba(0, 62, 128, 0.7), rgba(0, 62, 128, 0.7));
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden; }
+      .img-container .imagen .overlay .overlay-text {
+        transform: translateY(50px);
+        z-index: 999999;
+        transition: all 0.6s;
+        opacity: 0;
+        visibility: hidden; }
+        .img-container .imagen .overlay .overlay-text h3 {
+          font-family: "Montserrat", sans-serif;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 1px; }
+        .img-container .imagen .overlay .overlay-text p {
+          font-family: "Open Sans", sans-serif;
+          font-style: italic;
+          font-size: 13px;
+          margin-top: 0px;
+          font-weight: 200; }
+        .img-container .imagen .overlay .overlay-text .fab {
+          color: #ffffff;
+          font-weight: 15;
+          margin: 5px; }
+        .img-container .imagen .overlay .overlay-text .social {
+          display: flex;
+          justify-content: center; }
 
 #image-1 {
   background-image: url(img/team-01.jpg); }
 
 #image-2 {
-  background-image: url(https://img.etimg.com/thumb/msid-66809741,width-643,imgsize-567912,resizemode-4/christianbale.jpg); }
+  background-image: url(img/team-02.jpg); }
 
 #image-3 {
-  background-image: url(https://www.chicagotribune.com/resizer/PA97Y1k4Q2SyyKinWLPIHQ8UajI=/800x680/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/MYT7XG5FIZA6XBQLZAAWI47JAA.jpg); }
+  background-image: url(img/team-03.jpg); }
 
 #image-4 {
-  background-image: url(https://binaryapi.ap.org/b9726dfc69c04804a2dd6b24c36a5bbc/preview.jpg); }
-
-.overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  background: linear-gradient(rgba(0, 62, 128, 0.7), rgba(0, 62, 128, 0.7));
-  transform: translateY(300px); }
-
-.social {
-  display: flex;
-  justify-content: center; }
+  background-image: url(img/team-04.jpg); }
 
 .imagen:hover .overlay {
-  transform: translateY(0px);
-  transition: 0.6s; }
+  opacity: 1;
+  visibility: visible; }
 
-@media (max-width: 1000px) {
+.imagen:hover .overlay .overlay-text {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible; }
+
+@media (max-width: 900px) {
   .img-container {
     display: flex;
     flex-wrap: wrap; } }
