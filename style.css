@@ -573,11 +573,20 @@ a:hover {
   align-items: center;
   padding: 50px 25px; }
   #our-portfolio button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 6px 20px;
+    background-color: #e6f1f7;
+    color: #007bff;
+    padding: 10px 20px;
     border-radius: 50px;
-    margin: 15px 15px 15px 0; }
+    margin: 30px 10px;
+    border: none;
+    transition: all 0.3s;
+    font-size: 12px; }
+  #our-portfolio #all-button {
+    background-color: #007bff;
+    color: #fff; }
+  #our-portfolio button:hover {
+    background-color: #007bff;
+    color: #fff; }
   #our-portfolio .portfolio {
     width: auto;
     display: flex;
@@ -586,16 +595,53 @@ a:hover {
     #our-portfolio .portfolio .image {
       width: 350px;
       height: 250px;
-      margin: 15px; }
-      #our-portfolio .portfolio .image .overlay {
+      margin: 15px;
+      background-size: cover;
+      border-radius: 5%;
+      background-size: cover;
+      position: relative;
+      z-index: 998; }
+      #our-portfolio .portfolio .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5%; }
+      #our-portfolio .portfolio .image .overlay-portfolio {
         width: 350px;
         height: 250px;
-        background-color: #00428a;
-        display: none; }
-    #our-portfolio .portfolio img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
+        background: linear-gradient(rgba(0, 62, 128, 0.6), rgba(0, 62, 128, 0.6));
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.5s; }
+        #our-portfolio .portfolio .image .overlay-portfolio h3, #our-portfolio .portfolio .image .overlay-portfolio p {
+          color: #fff;
+          z-index: 999999;
+          font-family: "Montserrat", sans-serif; }
+        #our-portfolio .portfolio .image .overlay-portfolio h3 {
+          font-size: 22px;
+          margin: 0px; }
+        #our-portfolio .portfolio .image .overlay-portfolio p {
+          font-family: "Open Sans", sans-serif;
+          margin: 3px; }
+        #our-portfolio .portfolio .image .overlay-portfolio .fas, #our-portfolio .portfolio .image .overlay-portfolio .far {
+          font-size: 15px;
+          margin: 10px;
+          border-radius: 50%;
+          color: #fff;
+          background-color: #007bff;
+          padding: 12px; }
+    #our-portfolio .portfolio .image:hover .overlay-portfolio {
+      visibility: visible;
+      opacity: 1; }
 
 @media (max-width: 1000px) {
   .portfolio {
@@ -688,7 +734,7 @@ a:hover {
       width: 100%;
       height: 100%;
       color: #fff;
-      background: linear-gradient(rgba(0, 62, 128, 0.7), rgba(0, 62, 128, 0.7));
+      background: linear-gradient(rgba(0, 62, 128, 0.6), rgba(0, 62, 128, 0.6));
       overflow: hidden;
       opacity: 0;
       visibility: hidden; }

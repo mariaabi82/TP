@@ -18,6 +18,7 @@ sans-serif;
 $background-color-button: #1445b3;
 $text-color-button: #fff;
 $first-button-color: #007bff;
+$hover-button-color: #e6f1f7;
 
 /*-------------  NAV ---------------*/
 
@@ -115,6 +116,12 @@ $color-paragraph: #556877;
 	padding: 5px;
 }
 
+@mixin overlay {
+	background: linear-gradient(rgba(0, 62, 128, 0.6), rgba(0, 62, 128, 0.6));
+	overflow: hidden;
+	opacity: 0;
+	visibility: hidden;
+}
 html {
 	scroll-behavior: smooth;
 }
@@ -655,8 +662,6 @@ button:hover {
 				}
 			}
 
-
-
 		}
 	}
 
@@ -862,13 +867,23 @@ a:hover {
 	flex-direction: column;
 	align-items: center;
 	padding: 50px 25px;
-
 	button {
-		background-color: $first-button-color;
-		color: $text-color-button;
-		padding: 6px 20px;
+		background-color:$hover-button-color;
+		color: $first-button-color;
+		padding: 10px 20px;
 		border-radius: 50px;
-		margin: 15px 15px 15px 0;
+		margin: 30px 10px;
+		border: none;
+		transition: all 0.3s;
+		font-size: 12px;
+	}
+	#all-button {
+		background-color: $first-button-color;
+		color: $text-color-button;	
+	}
+	button:hover {
+		background-color: $first-button-color;
+		color: $text-color-button;	
 	}
 
 	.portfolio {
@@ -881,19 +896,59 @@ a:hover {
 			width: 350px;
 			height: 250px;
 			margin: 15px;
-
-			.overlay {
+			background-size: cover;
+			border-radius: 5%;
+			background-size: cover;
+			position: relative;
+			z-index: 998;
+			img {
+			width: 100%;
+			height: 100%;	
+			object-fit: cover;
+			border-radius: 5%;
+			}
+			
+			.overlay-portfolio {
 				width: 350px;
 				height: 250px;
-				background-color: #00428a;
-				display: none;
+				@include overlay;
+				position: absolute;
+				top:0;
+				left: 0;
+				border-radius: 5%;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				transition: all 0.5s;
+				h3, p {
+					color: #fff;
+					z-index: 999999;
+					font-family: $secondary-font-family;
+				}
+				h3 {
+					font-size: 22px;
+					margin: 0px;
+				}
+				p {
+					font-family: $main-font-family;
+					margin: 3px;
+				}
+				.fas, .far {
+					font-size: 15px;
+					margin: 10px;
+					border-radius: 50%;
+					color: #fff;
+					background-color: $first-button-color;
+					padding: 12px;
+
+				}
+				
 			}
 		}
-
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
+		.image:hover .overlay-portfolio {
+			visibility: visible;
+			opacity: 1;
 		}
 	}
 }
@@ -1020,10 +1075,7 @@ a:hover {
 			width: 100%;
 			height: 100%;
 			color: #fff;
-			background: linear-gradient(rgba(0, 62, 128, 0.7), rgba(0, 62, 128, 0.7));
-			overflow: hidden;
-			opacity: 0;
-			visibility: hidden;
+			@include overlay;
 			.overlay-text {
 				transform: translateY(50px);
 				z-index: 999999;
