@@ -11,6 +11,7 @@
 /*-------------------------- MENU ---------------*/
 /*-------------  HEADER ---------------*/
 /*-------------  SERVICES ---------------*/
+/*------------- WHY CHOOSE US ---------------*/
 /*---------------------------  TESTIMONIALS    ---------------*/
 /*--------------------- MIXIN -----------------------*/
 html {
@@ -28,10 +29,10 @@ body a {
 
 body h2 {
   font-family: "Montserrat", sans-serif;
-  color: #283d50;
   font-size: 35px;
   text-align: center;
   font-weight: 500;
+  color: #283d50;
 }
 
 body h5 {
@@ -134,7 +135,7 @@ nav #menu {
   color: #ffffff;
   position: fixed;
   padding: 0px;
-  left: -1500px;
+  left: -2000px;
   width: 100%;
   height: auto;
   -webkit-transition: all 1s;
@@ -649,6 +650,308 @@ button:hover {
 }
 
 /*--------------------- TERMINA ABOUT US -----------------------*/
+/*--------------------- EMPIEZA SERVICES -------------*/
+/*-----NECESITA ARREGLO: cortar imagen, hacer responsive en 900 y 600 -------*/
+.services-cards {
+  padding: 40px;
+  background-color: #ecf5ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+.services-cards p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.services-cards .groupofcards {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 30px 20px 30px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services-cards .groupofcards .card {
+  width: 380px;
+  height: 168px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: column;
+  overflow: hidden;
+}
+
+.services-cards .groupofcards .card .icono {
+  height: 60px;
+  width: auto;
+  margin-left: -40px;
+}
+
+.services-cards .groupofcards .card .texto {
+  padding-right: 10px;
+  height: auto;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services-cards .groupofcards .card .texto h3 {
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.services-cards .groupofcards .card .texto p {
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+  font-size: 14px;
+  margin-left: 0px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.services-cards .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: 0.20s;
+  transition: 0.20s;
+}
+
+.services-cards .card:hover h3 {
+  color: #1868cf;
+}
+
+@media (min-width: 1100px) {
+  .services-cards .services {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .services-cards .groupofcards {
+    padding: 60px;
+  }
+  .services-cards .card {
+    width: 300px;
+    height: auto;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .services-cards .services {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .services-cards .groupofcards {
+    padding: 30px 0px 30px;
+  }
+  .services-cards .card {
+    width: 250px;
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .services-cards .services {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .services-cards .groupofcards {
+    padding: 20px 0px 20px;
+  }
+  .services-cards .card {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-cards .services {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .services-cards .groupofcards {
+    padding: 20px 0px 20px;
+  }
+  .services-cards .card {
+    width: 150px;
+    height: auto;
+  }
+}
+
+/*--------------------- TERMINA SERVICES -------------*/
+/*--------------------- EMPIEZA WHY CHOOSE US -------------*/
+#why-choose-us {
+  height: auto;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 150px;
+  background-color: #004a99;
+  color: #ffffff;
+}
+
+.choose-us {
+  height: auto;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 15px;
+  padding-right: 60px;
+}
+
+.choose-us h2 {
+  color: #fff;
+}
+
+.choose-us h5 {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  width: 50%;
+}
+
+#cards,
+#choose-numeros {
+  height: auto;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.choose-card {
+  background-color: #00458f;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.choose-card i,
+.choose-card p {
+  color: #d8eafe;
+}
+
+.choose-card i {
+  font-size: 48px;
+  padding-top: 15px;
+}
+
+.choose-card a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.choose-card:hover {
+  background-color: #18337d;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#choose-numeros {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 40px;
+}
+
+#choose-numeros .numeros {
+  display: block;
+}
+
+#choose-numeros span {
+  font-weight: bold;
+  font-size: 48px;
+  padding-right: 100px;
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  #cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .choose-card {
+    margin-bottom: 20px;
+  }
+  #choose-numeros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/*--------------------- TERMINA WHY CHOOSE US -------------*/
 /*--------------------- EMPIEZA OUR PORTFOLIO -----------------------*/
 #our-portfolio {
   height: auto;
