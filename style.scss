@@ -160,6 +160,7 @@ nav {
 	position: fixed;
 	width: 100%;
 	padding-inline-start: 0px;
+	z-index: 999999999;
 
 	img {
 		width: 65px;
@@ -222,11 +223,13 @@ nav {
 		height: auto;
 		transition: all 1s;
 		overflow: hidden;
+		z-index: 999999999999999999;
 
 		.overly-menu {
 			background-color: $background-color-menu;
 			width: 100%;
 			height: 900px;
+			z-index: 999999999999999999;
 
 			.cerrar {
 				position: absolute;
@@ -936,7 +939,7 @@ a:hover {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
-				transition: all 0.5s;
+				transition: all 0.3s;
 
 				h3,
 				p {
@@ -977,13 +980,39 @@ a:hover {
 }
 
 @media (max-width: 1000px) {
+	#our-portfolio {
+		padding: 20px 10px;
+	}
+
 	.portfolio {
 		width: auto;
 		display: flex;
 		flex-wrap: wrap;
 	}
+
 }
 
+@media (max-width: 780px) {
+	#our-portfolio {
+		padding: 10px 10px;
+
+		.portfolio .image {
+			width: 510px;
+			height: 250px;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.overlay-portfolio {
+				width: 510px;
+				height: 250px;
+			}
+		}
+	}
+
+}
 
 /*--------------------- TERMINA PORTFOLIO -----------------------*/
 
@@ -1513,6 +1542,7 @@ a:hover {
 	text-align: center;
 	width: 60px;
 	height: 60px;
+	z-index: 9999999;
 
 	.fas {
 		padding: 12px;
