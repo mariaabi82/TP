@@ -140,6 +140,8 @@ nav #menu {
   left: -2000px;
   width: 100%;
   height: auto;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   overflow: hidden;
   z-index: 999999999999999999;
 }
@@ -171,8 +173,6 @@ nav #menu .overly-menu .links-menu {
   width: 280px;
   height: 900px;
   padding: 20px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 nav #menu .overly-menu .links-menu a,
@@ -327,7 +327,7 @@ header {
   height: auto;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -518,7 +518,7 @@ header {
 .about-1 .image-about-us,
 .about-2 .image-about-us,
 .about-3 .image-about-us {
-  width: 40%;
+  width: 520px;
   margin: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1368,7 +1368,7 @@ a:hover {
   visibility: visible;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .img-container {
     display: -webkit-box;
     display: -ms-flexbox;
