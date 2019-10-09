@@ -96,16 +96,16 @@
 }
 /*--------------------- EMPIEZA BODY -----------------------*/
  body {
-     margin: 0;
-     a {
-         text-decoration: none;
+    margin: 0;
+    a {
+        text-decoration: none;
     }
-     h2 {
-         @include section-title;
-         margin-top: 80px;
+    h2 {
+        @include section-title;
+        margin-top: 80px;
     }
-     h5 {
-         @include section-subtitle;
+    h5 {
+        @include section-subtitle;
     }
 }
 /*--------------------- EMPIEZA NAV -----------------------*/
@@ -140,11 +140,12 @@ nav {
 			a,
 			li {
 				@include style-links-nav;
-				color: $text-color;
+                color: $text-color;
+                text-decoration: none;
 			}
 
 			li:hover {
-				color: $text-color-hover;
+                color: $text-color-hover;
 			}
 
 			.fas {

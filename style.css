@@ -65,7 +65,8 @@ nav {
         margin-left: 3px;
         font-size: 14px;
         font-weight: 500;
-        color: #031880; }
+        color: #031880;
+        text-decoration: none; }
       nav .links-nav ul li:hover {
         color: #1868cf; }
       nav .links-nav ul .fas {
