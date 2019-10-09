@@ -212,20 +212,22 @@ nav {
 
 	#menu {
 		color: $text-color-menu;
-		position: fixed;
+        position: fixed;
+        left: -280px;;
 		padding: 0px;
-		left: -2000px;
-		width: 100%;
+        width: 100%;
 		height: auto;
-		transition: all 1s;
+		transition: all 0.5s;
 		overflow: hidden;
 		z-index: 999999999999999999;
 
-		.overly-menu {
+		.overlay-menu {
 			background-color: $background-color-menu;
 			width: 100%;
 			height: 900px;
-			z-index: 999999999999999999;
+            z-index: 999999999999999999;
+            opacity: 0;
+            visibility: hidden;
 
 			.cerrar {
 				position: absolute;
@@ -235,20 +237,17 @@ nav {
 				color: $text-color-button;
 				font-size: 28px;
 				font-weight: 700;
-				z-index: 9999;
 
 				a:visited {
 					color: $text-color-button;
 				}
 			}
 
-			
-
 			.links-menu {
 				background-color: $background-color-menu;
 				width: 280px;
 				height: 900px;
-				padding: 20px;
+                padding: 20px;
 
 				a,
 				li {
@@ -268,12 +267,32 @@ nav {
 			a:hover {
 				color: $text-color-hover;
 			}
-		}
+        }
+        
+        .overlay-menu2 {
+            background-color: $background-color-menu;
+			width: 100%;
+			height: 900px;
+            z-index: 999999999999999999;
+            opacity: 0;
+            visibility: hidden;   
+        }
 	}
 
 	#menu:target {
 		left: 0px;
 		top: 0px;
+    }
+    
+    #menu:target .overlay-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    #menu:target .overlay-menu2 {
+        opacity: 1;
+        visibility: visible;
+        z-index: 999999999999999999999999;
 	}
 
 	.dropdown {
