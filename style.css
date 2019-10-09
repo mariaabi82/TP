@@ -6,14 +6,14 @@
 }
 
 /*-------------- FONTS ---------------*/
-/*-------------  BUTTONS ---------------*/
-/*-------------  NAV ---------------*/
+/*------------- BUTTONS ---------------*/
+/*------------- NAV ---------------*/
 /*-------------------------- MENU ---------------*/
-/*-------------  HEADER ---------------*/
-/*-------------  SERVICES ---------------*/
+/*------------- HEADER ---------------*/
+/*------------- SERVICES ---------------*/
 /*------------- WHY CHOOSE US ---------------*/
-/*---------------------------  TESTIMONIALS    ---------------*/
-/*-------------  TEAM ---------------*/
+/*--------------------------- TESTIMONIALS ---------------*/
+/*------------- TEAM ---------------*/
 /*--------------------- MIXIN -----------------------*/
 html {
   scroll-behavior: smooth;
@@ -65,8 +65,9 @@ nav {
           padding-inline-start: 0px;
   z-index: 999999999;
   /* #drop-down:target {
-        display: block;
-    } */
+         display: block;
+    }
+     */
 }
 
 nav img {
@@ -87,8 +88,7 @@ nav .links-nav ul {
   list-style-type: none;
 }
 
-nav .links-nav ul a,
-nav .links-nav ul li {
+nav .links-nav ul a, nav .links-nav ul li {
   list-style-type: none;
   padding: 8px;
   color: #031880;
@@ -176,8 +176,7 @@ nav #menu .overly-menu .links-menu {
   padding: 20px;
 }
 
-nav #menu .overly-menu .links-menu a,
-nav #menu .overly-menu .links-menu li {
+nav #menu .overly-menu .links-menu a, nav #menu .overly-menu .links-menu li {
   list-style-type: none;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -223,8 +222,8 @@ nav #menu:target {
   }
 }
 
-/*---------------------  TERMINA NAV -----------------------*/
-/*---------------------  EMPIEZA HEADER -----------------------*/
+/*--------------------- TERMINA NAV -----------------------*/
+/*--------------------- EMPIEZA HEADER -----------------------*/
 header {
   height: 600px;
   width: 100%;
@@ -365,14 +364,11 @@ header {
           align-items: center;
 }
 
-#about-us h2,
-#about-us h5 {
+#about-us h2, #about-us h5 {
   width: 600px;
 }
 
-.about-1,
-.about-2,
-.about-3 {
+.about-1, .about-2, .about-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,9 +380,7 @@ header {
   margin-right: auto;
 }
 
-.about-1 .text-about-us,
-.about-2 .text-about-us,
-.about-3 .text-about-us {
+.about-1 .text-about-us, .about-2 .text-about-us, .about-3 .text-about-us {
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,9 +392,7 @@ header {
   margin: 15px;
 }
 
-.about-1 .text-about-us h3,
-.about-2 .text-about-us h3,
-.about-3 .text-about-us h3 {
+.about-1 .text-about-us h3, .about-2 .text-about-us h3, .about-3 .text-about-us h3 {
   font-family: "Montserrat", sans-serif;
   color: #283d50;
   font-size: 18px;
@@ -408,9 +400,7 @@ header {
   font-size: 24px;
 }
 
-.about-1 .text-about-us p,
-.about-2 .text-about-us p,
-.about-3 .text-about-us p {
+.about-1 .text-about-us p, .about-2 .text-about-us p, .about-3 .text-about-us p {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -419,9 +409,7 @@ header {
           margin-block-end: 25px;
 }
 
-.about-1 .text-about-us .contenido,
-.about-2 .text-about-us .contenido,
-.about-3 .text-about-us .contenido {
+.about-1 .text-about-us .contenido, .about-2 .text-about-us .contenido, .about-3 .text-about-us .contenido {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,9 +423,7 @@ header {
   width: auto;
 }
 
-.about-1 .text-about-us .contenido .icon,
-.about-2 .text-about-us .contenido .icon,
-.about-3 .text-about-us .contenido .icon {
+.about-1 .text-about-us .contenido .icon, .about-2 .text-about-us .contenido .icon, .about-3 .text-about-us .contenido .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,12 +437,7 @@ header {
   margin: 10px;
 }
 
-.about-1 .text-about-us .contenido .icon .fas,
-.about-1 .text-about-us .contenido .icon .far,
-.about-2 .text-about-us .contenido .icon .fas,
-.about-2 .text-about-us .contenido .icon .far,
-.about-3 .text-about-us .contenido .icon .fas,
-.about-3 .text-about-us .contenido .icon .far {
+.about-1 .text-about-us .contenido .icon .fas, .about-1 .text-about-us .contenido .icon .far, .about-2 .text-about-us .contenido .icon .fas, .about-2 .text-about-us .contenido .icon .far, .about-3 .text-about-us .contenido .icon .fas, .about-3 .text-about-us .contenido .icon .far {
   font-size: 30px;
   margin: 0px;
   color: #007bff;
@@ -468,29 +449,21 @@ header {
   transition: background-color 0.2s;
 }
 
-.about-1 .text-about-us .contenido .icon .far:hover,
-.about-2 .text-about-us .contenido .icon .far:hover,
-.about-3 .text-about-us .contenido .icon .far:hover {
+.about-1 .text-about-us .contenido .icon .far:hover, .about-2 .text-about-us .contenido .icon .far:hover, .about-3 .text-about-us .contenido .icon .far:hover {
   color: #fff;
   background-color: #007bff;
 }
 
-.about-1 .text-about-us .contenido .icon .fas:hover,
-.about-2 .text-about-us .contenido .icon .fas:hover,
-.about-3 .text-about-us .contenido .icon .fas:hover {
+.about-1 .text-about-us .contenido .icon .fas:hover, .about-2 .text-about-us .contenido .icon .fas:hover, .about-3 .text-about-us .contenido .icon .fas:hover {
   color: #fff;
   background-color: #007bff;
 }
 
-.about-1 .text-about-us .contenido .text,
-.about-2 .text-about-us .contenido .text,
-.about-3 .text-about-us .contenido .text {
+.about-1 .text-about-us .contenido .text, .about-2 .text-about-us .contenido .text, .about-3 .text-about-us .contenido .text {
   width: 80%;
 }
 
-.about-1 .text-about-us .contenido .text h4,
-.about-2 .text-about-us .contenido .text h4,
-.about-3 .text-about-us .contenido .text h4 {
+.about-1 .text-about-us .contenido .text h4, .about-2 .text-about-us .contenido .text h4, .about-3 .text-about-us .contenido .text h4 {
   font-family: "Montserrat", sans-serif;
   color: #283d50;
   font-size: 18px;
@@ -501,9 +474,7 @@ header {
           margin-block-end: 5px;
 }
 
-.about-1 .text-about-us .contenido .text h5,
-.about-2 .text-about-us .contenido .text h5,
-.about-3 .text-about-us .contenido .text h5 {
+.about-1 .text-about-us .contenido .text h5, .about-2 .text-about-us .contenido .text h5, .about-3 .text-about-us .contenido .text h5 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -516,9 +487,7 @@ header {
           margin-block-end: 0;
 }
 
-.about-1 .image-about-us,
-.about-2 .image-about-us,
-.about-3 .image-about-us {
+.about-1 .image-about-us, .about-2 .image-about-us, .about-3 .image-about-us {
   width: 520px;
   margin: 15px;
   display: -webkit-box;
@@ -528,9 +497,7 @@ header {
       flex-shrink: 0;
 }
 
-.about-1 .image-about-us img,
-.about-2 .image-about-us img,
-.about-3 .image-about-us img {
+.about-1 .image-about-us img, .about-2 .image-about-us img, .about-3 .image-about-us img {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -556,12 +523,10 @@ header {
         -ms-flex-align: center;
             align-items: center;
   }
-  #about-us h2,
-  #about-us h5 {
+  #about-us h2, #about-us h5 {
     width: 400px;
   }
-  .about-1,
-  .about-3 {
+  .about-1, .about-3 {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -575,10 +540,7 @@ header {
             align-items: center;
     padding: 10px 60px 10px 60px;
   }
-  .about-1 .image-about-us,
-  .about-1 .text-about-us,
-  .about-3 .image-about-us,
-  .about-3 .text-about-us {
+  .about-1 .image-about-us, .about-1 .text-about-us, .about-3 .image-about-us, .about-3 .text-about-us {
     width: 90%;
   }
   .about-2 {
@@ -595,8 +557,7 @@ header {
             align-items: center;
     padding: 10px 60px 10px 60px;
   }
-  .about-2 .image-about-us,
-  .about-2 .text-about-us {
+  .about-2 .image-about-us, .about-2 .text-about-us {
     width: 90%;
   }
 }
@@ -617,12 +578,10 @@ header {
         -ms-flex-align: center;
             align-items: center;
   }
-  #about-us h2,
-  #about-us h5 {
+  #about-us h2, #about-us h5 {
     width: 85%;
   }
-  .about-1,
-  .about-3 {
+  .about-1, .about-3 {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -636,27 +595,14 @@ header {
             align-items: center;
     padding: 10px;
   }
-  .about-1 .image-about-us,
-  .about-1 .text-about-us,
-  .about-3 .image-about-us,
-  .about-3 .text-about-us {
+  .about-1 .image-about-us, .about-1 .text-about-us, .about-3 .image-about-us, .about-3 .text-about-us {
     width: 9 0%;
   }
-  .about-1 .image-about-us .contenido .icon,
-  .about-1 .text-about-us .contenido .icon,
-  .about-3 .image-about-us .contenido .icon,
-  .about-3 .text-about-us .contenido .icon {
+  .about-1 .image-about-us .contenido .icon, .about-1 .text-about-us .contenido .icon, .about-3 .image-about-us .contenido .icon, .about-3 .text-about-us .contenido .icon {
     width: 10%;
     margin: 15px;
   }
-  .about-1 .image-about-us .contenido .icon .fas,
-  .about-1 .image-about-us .contenido .icon .far,
-  .about-1 .text-about-us .contenido .icon .fas,
-  .about-1 .text-about-us .contenido .icon .far,
-  .about-3 .image-about-us .contenido .icon .fas,
-  .about-3 .image-about-us .contenido .icon .far,
-  .about-3 .text-about-us .contenido .icon .fas,
-  .about-3 .text-about-us .contenido .icon .far {
+  .about-1 .image-about-us .contenido .icon .fas, .about-1 .image-about-us .contenido .icon .far, .about-1 .text-about-us .contenido .icon .fas, .about-1 .text-about-us .contenido .icon .far, .about-3 .image-about-us .contenido .icon .fas, .about-3 .image-about-us .contenido .icon .far, .about-3 .text-about-us .contenido .icon .fas, .about-3 .text-about-us .contenido .icon .far {
     font-size: 25px;
   }
   .about-2 {
@@ -673,8 +619,7 @@ header {
             align-items: center;
     padding: 10px;
   }
-  .about-2 .image-about-us,
-  .about-2 .text-about-us {
+  .about-2 .image-about-us, .about-2 .text-about-us {
     width: 90%;
   }
 }
@@ -892,8 +837,7 @@ header {
   width: 50%;
 }
 
-#cards,
-#choose-numeros {
+#cards, #choose-numeros {
   height: auto;
   width: auto;
   display: -webkit-box;
@@ -906,18 +850,19 @@ header {
 }
 
 .choose-card {
+  width: 315px;
+  height: 270px;
   background-color: #00458f;
   border-radius: 10px;
-  margin: 0 15px;
-  padding: 20px;
+  margin: 0 10px;
+  padding: 15px;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.choose-card i,
-.choose-card p {
+.choose-card i, .choose-card p {
   color: #d8eafe;
 }
 
@@ -941,23 +886,54 @@ a:hover {
 }
 
 #choose-numeros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  margin: 40px;
+  padding: 40px;
 }
 
 #choose-numeros .numeros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+}
+
+#choose-numeros .numeros span {
+  font-weight: bold;
+  font-size: 48px;
   display: block;
 }
 
-#choose-numeros span {
-  font-weight: bold;
-  font-size: 48px;
-  padding-right: 100px;
-  display: block;
+#choose-numeros .numeros p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  text-align: center;
 }
 
 @media (max-width: 1000px) {
+  .choose-us {
+    width: 550px;
+    padding: 0;
+  }
   #cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -966,9 +942,13 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .choose-card {
     margin-bottom: 20px;
+    width: 550px;
   }
   #choose-numeros {
     display: -webkit-box;
@@ -1080,8 +1060,7 @@ a:hover {
   transition: all 0.3s;
 }
 
-#our-portfolio .portfolio .image .overlay-portfolio h3,
-#our-portfolio .portfolio .image .overlay-portfolio p {
+#our-portfolio .portfolio .image .overlay-portfolio h3, #our-portfolio .portfolio .image .overlay-portfolio p {
   color: #fff;
   z-index: 999999;
   font-family: "Montserrat", sans-serif;
@@ -1097,8 +1076,7 @@ a:hover {
   margin: 3px;
 }
 
-#our-portfolio .portfolio .image .overlay-portfolio .fas,
-#our-portfolio .portfolio .image .overlay-portfolio .far {
+#our-portfolio .portfolio .image .overlay-portfolio .fas, #our-portfolio .portfolio .image .overlay-portfolio .far {
   font-size: 15px;
   margin: 10px;
   border-radius: 50%;
@@ -1547,8 +1525,7 @@ a:hover {
   font-size: 14px;
 }
 
-#contact .columna2 .lista2 .fas,
-#contact .columna2 .lista2 .far {
+#contact .columna2 .lista2 .fas, #contact .columna2 .lista2 .far {
   color: lightskyblue;
   padding: 8px;
   margin: 2px;
@@ -1658,8 +1635,7 @@ a:hover {
   font-family: "Montserrat", sans-serif;
 }
 
-#patita .uno,
-#patita .dos {
+#patita .uno, #patita .dos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1673,8 +1649,7 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-  #patita .uno,
-  #patita .dos {
+  #patita .uno, #patita .dos {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1703,8 +1678,7 @@ a:hover {
   width: 180px;
 }
 
-#patita .useful-links li,
-#patita .useful-links a {
+#patita .useful-links li, #patita .useful-links a {
   line-height: 24px;
   list-style: none;
   color: #fff;
@@ -1839,9 +1813,4 @@ a:hover {
   width: 45px;
   height: 45px;
 }
-<<<<<<< HEAD
 /*# sourceMappingURL=style.css.map */
-=======
-
-/*# sourceMappingURL=style.css.map */
->>>>>>> a5395f5fd21b63368d8d76e9ddb1d6c7312bdea7
