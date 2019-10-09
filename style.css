@@ -34,6 +34,7 @@ body h2 {
   text-align: center;
   font-weight: 500;
   color: #283d50;
+  margin-top: 80px;
 }
 
 body h5 {
@@ -1838,4 +1839,9 @@ a:hover {
   width: 45px;
   height: 45px;
 }
+<<<<<<< HEAD
 /*# sourceMappingURL=style.css.map */
+=======
+
+/*# sourceMappingURL=style.css.map */
+>>>>>>> a5395f5fd21b63368d8d76e9ddb1d6c7312bdea7
