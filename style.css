@@ -77,8 +77,8 @@ nav {
         font-weight: 500;
         color: #031880;
         text-decoration: none; }
-      nav .links-nav ul li:hover {
-        color: #1868cf; }
+      nav .links-nav ul a:hover {
+        color: #007bff; }
       nav .links-nav ul .fas {
         display: none; }
     nav .links-nav .dropdown {
@@ -110,9 +110,9 @@ nav {
       position: absolute;
       left: 100%; }
     nav .links-nav li:hover {
-      color: #1868cf; }
+      color: #007bff; }
   nav a:hover {
-    color: #1868cf; }
+    color: #007bff; }
 
 #menu {
   color: #ffffff;
@@ -147,18 +147,17 @@ nav {
       width: 280px;
       height: 900px;
       padding: 20px; }
-      #menu .overlay-menu .links-menu a,
-      #menu .overlay-menu .links-menu li {
+      #menu .overlay-menu .links-menu a, #menu .overlay-menu .links-menu li {
         list-style-type: none;
         font-family: "Open Sans", sans-serif;
         color: #ffffff;
         font-size: 16px;
         font-weight: 500;
         line-height: 40px; }
-    #menu .overlay-menu li:hover {
-      color: #1868cf; }
-    #menu .overlay-menu a:hover {
-      color: #1868cf; }
+      #menu .overlay-menu .links-menu li:hover {
+        color: #84b1ec; }
+      #menu .overlay-menu .links-menu a:hover {
+        color: #84b1ec; }
 
 #menu:target {
   left: 0px;
@@ -200,12 +199,6 @@ nav {
   display: block;
   position: absolute;
   left: 100%; }
-
-li:hover {
-  color: #1868cf; }
-
-a:hover {
-  color: #1868cf; }
 
 @media (max-width: 1000px) {
   nav {

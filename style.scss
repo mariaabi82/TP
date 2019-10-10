@@ -14,10 +14,11 @@
 /*------------- NAV ---------------*/
  $background-color-nav: #fff;
  $text-color: #031880;
+ $text-color-hover: #007bff;
 /*-------------------------- MENU ---------------*/
  $background-color-menu: rgba(19, 39, 57, 0.8);
  $text-color-menu: #ffffff;
- $text-color-hover: #1868cf;
+ $text-color-hover-responsive: #84b1ec;
 /*------------- HEADER ---------------*/
  $background-color-header: #1445b3;
  $text-color-header: #fff;
@@ -163,9 +164,9 @@ nav {
                 text-decoration: none;
 			}
 
-			li:hover {
+            a:hover {
                 color: $text-color-hover;
-			}
+            }
 
 			.fas {
 				display: none;
@@ -264,32 +265,29 @@ nav {
 				}
 			}
 
-			
-
 			.links-menu {
 				background-color: $background-color-menu;
 				width: 280px;
 				height: 900px;
 				padding: 20px;
-
-				a,
-				li {
+				a, li {
 					list-style-type: none;
 					font-family: $main-font-family;
 					color: $text-color-menu;
 					font-size: 16px;
 					font-weight: 500;
 					line-height: 40px;
-				}
+                }
+                li:hover {
+                    color: $text-color-hover-responsive;
+                }
+    
+                a:hover {
+                    color: $text-color-hover-responsive;
+                }
 			}
 
-			li:hover {
-				color: $text-color-hover;
-			}
-
-			a:hover {
-				color: $text-color-hover;
-			}
+			
 		}
 	}
 
@@ -351,17 +349,6 @@ left:100%;
 
 }
 
-li:hover {
-		color: $text-color-hover;
-	}
-	
-	
-
-	a:hover {
-		color: $text-color-hover;
-	}
-
-	
 @media (max-width: 1000px) {
 	nav {
 		display: flex;
