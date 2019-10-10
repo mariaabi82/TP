@@ -27,7 +27,7 @@ body {
     text-align: center;
     font-weight: 500;
     color: #283d50;
-    margin-top: 80px; }
+    margin-top: 100px; }
   body h5 {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
@@ -295,7 +295,6 @@ header {
 #about-us {
   background-color: #fff;
   height: auto;
-  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -385,7 +384,6 @@ header {
   #about-us {
     width: 100%;
     height: auto;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -444,7 +442,7 @@ header {
 /*--------------------- EMPIEZA SERVICES -------------*/
 /*-----NECESITA ARREGLO: cortar imagen, hacer responsive en 900 y 600 -------*/
 .services-cards {
-  padding: 40px;
+  padding: 0px 40px 40px 40px;
   background-color: #ecf5ff;
   display: flex;
   flex-direction: column;
@@ -639,7 +637,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 25px; }
+  padding: 0px 25px 50px 25px; }
   #our-portfolio button {
     background-color: #e6f1f7;
     color: #007bff;
@@ -738,7 +736,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   height: auto;
-  padding: 30px;
   padding-bottom: 50px;
   background-color: #e6f1f7;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
@@ -783,16 +780,15 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px; }
-  #team h2 {
-    margin: 10px; }
+  padding: 0px 40px 60px 40px; }
   #team h5 {
     width: 600px;
     text-align: center;
     color: #556877;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
-    margin: 10px; }
+    margin-top: 5px;
+    margin-bottom: 30px; }
 
 .img-container {
   display: flex;
@@ -924,7 +920,7 @@ a:hover {
   align-content: space-between;
   flex-wrap: wrap;
   background-color: #fff;
-  padding: 60px 0px;
+  padding-bottom: 60px;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
   #contact h2 {
     width: 100%; }

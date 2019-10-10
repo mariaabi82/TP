@@ -102,7 +102,7 @@
     }
     h2 {
         @include section-title;
-        margin-top: 80px;
+        margin-top: 100px;
     }
     h5 {
         @include section-subtitle;
@@ -454,7 +454,6 @@ li:hover {
  #about-us {
      background-color: $background-color-nav;
      height: auto;
-     padding-top: 50px;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -547,7 +546,6 @@ li:hover {
      #about-us {
          width: 100%;
          height: auto;
-         padding: 20px;
          display: flex;
          flex-direction: column;
          align-items: center;
@@ -622,7 +620,7 @@ li:hover {
 /*--------------------- EMPIEZA SERVICES -------------*/
 /*-----NECESITA ARREGLO: cortar imagen, hacer responsive en 900 y 600 -------*/
  .services-cards {
-     padding: 40px;
+     padding: 0px 40px 40px 40px;
      background-color: $background-color-services;
      display: flex;
      flex-direction: column;
@@ -857,7 +855,7 @@ li:hover {
      display: flex;
      flex-direction: column;
      align-items: center;
-     padding: 50px 25px;
+     padding: 0px 25px 50px 25px;
      button {
          background-color: $hover-button-color;
          color: $first-button-color;
@@ -971,7 +969,6 @@ li:hover {
      display: flex;
      flex-direction: column;
      height: auto;
-     padding: 30px;
      padding-bottom: 50px;
      background-color: $background-color-section;
      h2 {
@@ -1020,21 +1017,19 @@ li:hover {
 }
 /*--------------------- TERMINA TESTIMONIALS -----------------------*/
 /*--------------------- EMPIEZA TEAM -----------------------*/
- #team {
+#team {
      display: flex;
      flex-direction: column;
      align-items: center;
-     padding-top: 50px;
-     h2 {
-         margin: 10px;
-    }
-     h5 {
+     padding: 0px 40px 60px 40px;;
+    h5 {
          width: 600px;
          text-align: center;
          color: $color-paragraph;
          font-family: $main-font-family;
          font-size: 15px;
-         margin: 10px;
+         margin-top: 5px;
+         margin-bottom: 30px;
     }
 }
  .img-container {
@@ -1177,7 +1172,7 @@ li:hover {
      align-content: space-between;
      flex-wrap: wrap;
      background-color: #fff;
-     padding: 60px 0px;
+     padding-bottom: 60px;
      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
      h2 {
          width: 100%;
