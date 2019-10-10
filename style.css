@@ -27,12 +27,14 @@ body {
     text-align: center;
     font-weight: 500;
     color: #283d50;
-    margin-top: 100px; }
+    margin-top: 100px;
+    margin-bottom: 20px; }
   body h5 {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 15px;
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
   @media (max-width: 1000px) {
     body h2 {
       margin-top: 90px;
@@ -307,14 +309,13 @@ header {
   flex-direction: column;
   align-items: center; }
   #about-us h2, #about-us h5 {
-    width: 600px; }
+    width: 40%; }
 
 .about-1, .about-2, .about-3 {
+  width: 100%;
   display: flex;
   justify-content: center;
-  padding: 10px 20px;
-  margin-left: auto;
-  margin-right: auto; }
+  padding: 10px 20px; }
   .about-1 .text-about-us, .about-2 .text-about-us, .about-3 .text-about-us {
     width: 40%;
     display: flex;
@@ -396,13 +397,13 @@ header {
     flex-direction: column;
     align-items: center; }
     #about-us h2, #about-us h5 {
-      width: 400px; }
+      width: 40%; }
   .about-1, .about-3 {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    padding: 10px 60px 10px 60px; }
+    padding: 0px 70px; }
     .about-1 .image-about-us, .about-1 .text-about-us, .about-3 .image-about-us, .about-3 .text-about-us {
       width: 90%; }
   .about-2 {
@@ -410,7 +411,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 60px 10px 60px; }
+    padding: 0px 70px; }
     .about-2 .image-about-us, .about-2 .text-about-us {
       width: 90%; } }
 
@@ -445,6 +446,14 @@ header {
     padding: 10px; }
     .about-2 .image-about-us, .about-2 .text-about-us {
       width: 90%; } }
+
+@media (min-width: 1400px) {
+  #about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #about-us .about-1, #about-us .about-2, #about-us .about-3 {
+      max-width: 1400px; } }
 
 /*--------------------- TERMINA ABOUT US -----------------------*/
 /*--------------------- EMPIEZA SERVICES -------------*/
@@ -547,7 +556,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 150px;
+  padding: 0px 150px 40px 150px;
   background-color: #004a99;
   color: #ffffff; }
 
@@ -559,7 +568,8 @@ header {
   font-size: 15px;
   padding-right: 60px; }
   .choose-us h2 {
-    color: #fff; }
+    color: #fff;
+    margin-top: 50px; }
   .choose-us h5 {
     text-align: center;
     margin: auto;
@@ -795,7 +805,7 @@ a:hover {
   align-items: center;
   padding: 0px 40px 60px 40px; }
   #team h5 {
-    width: 600px;
+    width: 40%;
     text-align: center;
     color: #556877;
     font-family: "Open Sans", sans-serif;
@@ -879,7 +889,20 @@ a:hover {
 @media (max-width: 1000px) {
   .img-container {
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+    .img-container .imagen {
+      width: 330px;
+      height: 330px;
+      background-size: cover; } }
+
+@media (max-width: 600px) {
+  .img-container {
+    display: flex;
+    flex-wrap: wrap; }
+    .img-container .imagen {
+      width: 400px;
+      height: 400px;
+      background-size: cover; } }
 
 /*--------------------- TERMINA TEAM -----------------------*/
 /*!-------------------- EMPIEZA CLIENTS ------------------------*/
@@ -889,8 +912,10 @@ a:hover {
   justify-content: center;
   align-items: center;
   background-color: #ecf5ff;
-  padding: 50px 20px;
+  padding: 0 20px 50px 20px;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
+  #our-clients h2 {
+    margin-top: 50px; }
   #our-clients .our-container {
     padding: 20px 0px;
     display: flex;
