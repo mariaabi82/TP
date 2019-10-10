@@ -1229,6 +1229,25 @@ a:hover {
             max-width: 1400px;
         }
     }
+
+    .circles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .fas {
+            color: lightgrey;
+            padding: 4px;
+        }
+
+        .fas:hover {
+            color: #1868cf;
+        }
+
+        .fas:first-child {
+            color: #1868cf;
+        }
+    }
 }
 
 /*--------------------- TERMINA TESTIMONIALS -----------------------*/
