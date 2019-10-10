@@ -107,7 +107,23 @@
     h5 {
         @include section-subtitle;
     }
+
+    @media (max-width: 1000px) {
+        h2 {
+        margin-top: 90px;
+        margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        h2 {
+        margin-top: 80px;
+        margin-bottom: 10px;
+        }
+    }
 }
+
+
 /*--------------------- EMPIEZA NAV -----------------------*/
 
 nav {
@@ -936,17 +952,22 @@ li:hover {
         }
     }
 }
- @media (max-width: 1000px) {
-     #our-portfolio {
-         padding: 20px 10px;
-    }
-     .portfolio {
-         width: auto;
-         display: flex;
-         flex-wrap: wrap;
-    }
+@media (max-width: 1000px) { 
+    #our-portfolio {
+        .portfolio {
+            padding: 5px;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            .image {
+                width: 280px;
+            }
+        }
+    }  
+    
 }
- @media (max-width: 780px) {
+
+@media (max-width: 780px) {
      #our-portfolio {
          padding: 10px 10px;
          .portfolio .image {
@@ -963,6 +984,14 @@ li:hover {
         }
     }
 }
+
+@media (min-width: 1400px) {
+.portfolio {
+    max-width: 1200px; 
+} 
+}
+
+
 /*--------------------- TERMINA PORTFOLIO -----------------------*/
 /*--------------------- EMPIEZA TESTIMONIALS -----------------------*/
  #testimonials {
