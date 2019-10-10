@@ -188,6 +188,7 @@ nav {
 
             li:hover {
                 color: $text-color-hover;
+transition: 3s;
 			}
 
 			.fas {
@@ -457,9 +458,11 @@ nav {
 		position: absolute;
 		min-width:200px;
         z-index: 1;
+
       
 		ul {
-			background-color: $background-color-nav;
+			background-color: $background-color-menu;
+      
 			padding-inline-start: 0px;
 			display: flex;
 			flex-direction: column;

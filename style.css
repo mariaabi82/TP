@@ -80,7 +80,8 @@ nav {
         color: #031880;
         text-decoration: none; }
       nav .links-nav ul li:hover {
-        color: #1868cf; }
+        color: #1868cf;
+        transition: 3s; }
       nav .links-nav ul .fas {
         display: none; }
     nav .links-nav .dropdown {
@@ -268,7 +269,7 @@ nav {
   min-width: 200px;
   z-index: 1; }
   .dropdown-content ul, .deep-dropdown ul {
-    background-color: #fff;
+    background-color: rgba(19, 39, 57, 0.8);
     padding-inline-start: 0px;
     display: flex;
     flex-direction: column;
