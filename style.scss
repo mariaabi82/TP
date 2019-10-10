@@ -109,7 +109,12 @@ html {
 }
 
 /*--------------------- EMPIEZA BODY -----------------------*/
+<<<<<<< HEAD
 body {
+=======
+
+ body {
+>>>>>>> 0063708e7b75ebdf711829402fba22c85788d6fb
     margin: 0;
 
     a {
@@ -118,14 +123,34 @@ body {
 
     h2 {
         @include section-title;
-        margin-top: 80px;
+        margin-top: 100px;
+        margin-bottom: 20px;;;
     }
 
     h5 {
         @include section-subtitle;
+        margin: 0;
+    }
+
+    @media (max-width: 1000px) {
+        h2 {
+        margin-top: 90px;
+        margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        h2 {
+        margin-top: 80px;
+        margin-bottom: 10px;
+        }
     }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0063708e7b75ebdf711829402fba22c85788d6fb
 /*--------------------- EMPIEZA NAV -----------------------*/
 
 nav {
@@ -493,13 +518,17 @@ header {
 
 /*--------------------- EMPIEZA ABOUT US -----------------------*/
 #about-us {
+<<<<<<< HEAD
     background-color: $background-color-nav;
     height: auto;
     padding-top: 50px;
+=======
+>>>>>>> 0063708e7b75ebdf711829402fba22c85788d6fb
     display: flex;
     flex-direction: column;
     align-items: center;
 
+<<<<<<< HEAD
     h2,
     h5 {
         width: 600px;
@@ -700,10 +729,194 @@ header {
         }
     }
 }
+=======
+    .about-us {
+        background-color: $background-color-nav;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2, h5 {
+            width: 40%;
+       }
+   }
+    .about-1, .about-2, .about-3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 20px;
+        .text-about-us {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+            h3 {
+                @include secondary-title;
+                font-size: 24px;
+           }
+            p {
+                @include section-text;
+                margin-block-end: 25px;
+           }
+            .contenido {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 90%;
+                width: auto;
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 8%;
+                    margin: 10px;
+                    .fas, .far {
+                        font-size: 30px;
+                        margin: 0px;
+                        color: $first-button-color;
+                        background-color: $text-color-button;
+                        border: solid 2px $first-button-color;
+                        border-radius: 50%;
+                        padding: 17px;
+                        transition: background-color 0.2s;
+                   }
+                    .far:hover {
+                        color: $text-color-button;
+                        background-color: $first-button-color;
+                   }
+                    .fas:hover {
+                        color: $text-color-button;
+                        background-color: $first-button-color;
+                   }
+               }
+                .text {
+                    width: 80%;
+                    h4 {
+                        @include secondary-title;
+                        margin-block-start: 0;
+                        margin-block-end: 5px;
+                   }
+                    h5 {
+                        @include section-text;
+                        font-size: 14px;
+                        text-align: start;
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                   }
+               }
+           }
+       }
+        .image-about-us {
+            width: 520px;
+            ;
+            margin: 15px;
+            display: flex;
+            flex-shrink: 0;
+            img {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-shrink: 0;
+           }
+       }
+   }
+    @media (max-width: 1000px) {
+        .about-us {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2, h5 {
+               width: 40%;
+           }
+       }
+        .about-1, .about-3 {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 0px 70px;
+            .image-about-us, .text-about-us {
+                width: 90%;
+           }
+       }
+        .about-2 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 70px;
+            .image-about-us, .text-about-us {
+                width: 90%;
+           }
+       }
+   }
+    @media (max-width: 600px) {
+        .about-us {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2, h5 {
+                width: 85%;
+           }
+       }
+        .about-1, .about-3 {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 10px;
+            .image-about-us, .text-about-us {
+                width: 9 0%;
+                .contenido {
+                    .icon {
+                        width: 10%;
+                        margin: 15px;
+                        .fas, .far {
+                            font-size: 25px;
+                       }
+                   }
+               }
+           }
+       }
+        .about-2 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            .image-about-us, .text-about-us {
+                width: 90%;
+           }
+       }
+   }
+   
+   @media (min-width: 1400px) {
+       .about-us {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           width: 70%;
+       }
+       .about-1, .about-2, .about-3 {
+           max-width: 1400px;
+           }
+       
+   }
+   
+} 
+
+
+>>>>>>> 0063708e7b75ebdf711829402fba22c85788d6fb
 
 /*--------------------- TERMINA ABOUT US -----------------------*/
 /*--------------------- EMPIEZA SERVICES -------------*/
 /*-----NECESITA ARREGLO: cortar imagen, hacer responsive en 900 y 600 -------*/
+<<<<<<< HEAD
 .services-cards {
     padding: 40px;
     background-color: $background-color-services;
@@ -741,6 +954,41 @@ header {
                 height: 60px;
                 width: auto;
                 margin-left: -40px;
+=======
+ .services-cards {
+     padding: 0px 40px 40px 40px;
+     background-color: $background-color-services;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     box-shadow: $shadow-section;
+     p {
+         font-family: $secondary-font-family;
+    }
+     .groupofcards {
+         width: fit-content;
+         padding: 30px 20px 30px;
+         border-radius: 5px;
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+         .card {
+             width: 380px;
+             height: 168px;
+             margin: 20px;
+             padding: 10px;
+             border-radius: 15px;
+             background-color: $background-color-cards;
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+             transition: 0.3s;
+             display: flex;
+             direction: column;
+             overflow: hidden;
+             .icono {
+                 height: 60px;
+                 width: auto;
+                 margin-left: -40px;
+>>>>>>> 0063708e7b75ebdf711829402fba22c85788d6fb
             }
 
             .texto {
@@ -837,6 +1085,7 @@ header {
 
 /*--------------------- TERMINA SERVICES -------------*/
 /*--------------------- EMPIEZA WHY CHOOSE US -------------*/
+<<<<<<< HEAD
 #why-choose-us {
 
     display: flex;
@@ -864,6 +1113,35 @@ header {
         font-size: 15px;
         padding-bottom: 60px;
         width: 50%;
+=======
+ #why-choose-us {
+     height: auto;
+     width: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 0px 150px 40px 150px;
+     background-color: $background-color-chooseus;
+     color: $text-color-menu;
+}
+ .choose-us {
+     height: auto;
+     width: auto;
+     display: flex;
+     flex-direction: column;
+     font-size: 15px;
+     padding-right: 60px;
+     h2 {
+         color: $text-color-header;
+         margin-top: 50px;;
+    }
+     h5 {
+         text-align: center;
+         margin: auto;
+         font-size: 15px;
+         padding-bottom: 60px;
+         width: 50%;
+>>>>>>> 0063708e7b75ebdf711829402fba22c85788d6fb
     }
 }
 
@@ -973,6 +1251,7 @@ a:hover {
 
 /*--------------------- TERMINA WHY CHOOSE US -------------*/
 /*--------------------- EMPIEZA OUR PORTFOLIO -----------------------*/
+<<<<<<< HEAD
 #our-portfolio {
     height: auto;
     width: auto;
@@ -1023,6 +1302,52 @@ a:hover {
                 height: 100%;
                 object-fit: cover;
                 border-radius: 5%;
+=======
+ #our-portfolio {
+     height: auto;
+     width: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 0px 25px 50px 25px;
+     button {
+         background-color: $hover-button-color;
+         color: $first-button-color;
+         padding: 10px 20px;
+         border-radius: 50px;
+         margin: 30px 10px;
+         border: none;
+         transition: all 0.3s;
+         font-size: 12px;
+    }
+     #all-button {
+         background-color: $first-button-color;
+         color: $text-color-button;
+    }
+     button:hover {
+         background-color: $first-button-color;
+         color: $text-color-button;
+    }
+     .portfolio {
+         width: auto;
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+         .image {
+             width: 350px;
+             height: 250px;
+             margin: 15px;
+             background-size: cover;
+             border-radius: 5%;
+             background-size: cover;
+             position: relative;
+             z-index: 998;
+             img {
+                 width: 100%;
+                 height: 100%;
+                 object-fit: cover;
+                 border-radius: 5%;
+>>>>>>> 0063708e7b75ebdf711829402fba22c85788d6fb
             }
 
             .overlay-portfolio {
@@ -1074,6 +1399,7 @@ a:hover {
         }
     }
 }
+<<<<<<< HEAD
 
 @media (max-width: 1000px) {
     #our-portfolio {
@@ -1098,6 +1424,32 @@ a:hover {
             img {
                 width: 100%;
                 height: 100%;
+=======
+@media (max-width: 1000px) { 
+    #our-portfolio {
+        .portfolio {
+            padding: 5px;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            .image {
+                width: 280px;
+            }
+        }
+    }  
+    
+}
+
+@media (max-width: 780px) {
+     #our-portfolio {
+         padding: 10px 10px;
+         .portfolio .image {
+             width: 510px;
+             height: 250px;
+             img {
+                 width: 100%;
+                 height: 100%;
+>>>>>>> 0063708e7b75ebdf711829402fba22c85788d6fb
             }
 
             .overlay-portfolio {
@@ -1108,6 +1460,7 @@ a:hover {
     }
 }
 
+<<<<<<< HEAD
 /*--------------------- TERMINA PORTFOLIO -----------------------*/
 /*--------------------- EMPIEZA TESTIMONIALS -----------------------*/
 #testimonials {
@@ -1140,6 +1493,42 @@ a:hover {
                 height: 100%;
                 border-radius: 50%;
                 overflow: hidden;
+=======
+@media (min-width: 1400px) {
+.portfolio {
+    max-width: 1200px; 
+} 
+}
+
+
+/*--------------------- TERMINA PORTFOLIO -----------------------*/
+/*--------------------- EMPIEZA TESTIMONIALS -----------------------*/
+ #testimonials {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: auto;
+     padding-bottom: 50px;
+     background-color: $background-color-section;
+     h2 {
+         margin-bottom: 50px;
+    }
+     box-shadow: $shadow-section;
+     .testimonials {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         .img-testimonials {
+             width: 110px;
+             height: 110px;
+             border-radius: 50%;
+             margin: 20px;
+             img {
+                 width: 100%;
+                 height: 100%;
+                 border-radius: 50%;
+                 overflow: hidden;
+>>>>>>> 0063708e7b75ebdf711829402fba22c85788d6fb
             }
         }
 
@@ -1170,6 +1559,7 @@ a:hover {
         }
     }
 
+<<<<<<< HEAD
     .circles {
         display: flex;
         justify-content: center;
@@ -1186,6 +1576,11 @@ a:hover {
 
         .fas:first-child {
             color: #1868cf;
+=======
+    @media (min-width:1400px) {
+        .testimonials {
+            max-width: 1400px;
+>>>>>>> 0063708e7b75ebdf711829402fba22c85788d6fb
         }
     }
 }
@@ -1193,6 +1588,7 @@ a:hover {
 /*--------------------- TERMINA TESTIMONIALS -----------------------*/
 /*--------------------- EMPIEZA TEAM -----------------------*/
 #team {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1209,6 +1605,20 @@ a:hover {
         font-family: $main-font-family;
         font-size: 15px;
         margin: 10px;
+=======
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 0px 40px 60px 40px;;
+    h5 {
+         width: 40%;
+         text-align: center;
+         color: $color-paragraph;
+         font-family: $main-font-family;
+         font-size: 15px;
+         margin-top: 5px;
+         margin-bottom: 30px;
+>>>>>>> 0063708e7b75ebdf711829402fba22c85788d6fb
     }
 }
 
@@ -1302,6 +1712,7 @@ a:hover {
     opacity: 1;
     visibility: visible;
 }
+<<<<<<< HEAD
 
 @media (max-width: 1000px) {
     .img-container {
@@ -1349,6 +1760,70 @@ a:hover {
                 width: 135px;
                 height: auto;
                 transition: 0.7s ease-out;
+=======
+ @media (max-width: 1000px) {
+     .img-container {
+         display: flex;
+         flex-wrap: wrap;
+         .imagen {
+            width: 330px;
+            height: 330px;
+            background-size: cover;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .img-container {
+        display: flex;
+        flex-wrap: wrap;
+        .imagen {
+            width: 400px;
+            height: 400px;
+            background-size: cover;
+        }
+   }
+}
+
+/*--------------------- TERMINA TEAM -----------------------*/
+/*!-------------------- EMPIEZA CLIENTS ------------------------*/
+ #our-clients {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: #ecf5ff;
+     padding: 0 20px 50px 20px;
+     box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+     h2 {
+         margin-top: 50px;
+     }
+     .our-container {
+         padding: 20px 0px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+    }
+     .empresas {
+         padding: 30px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-wrap: wrap;
+         .logo-clients {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             background-color: #fff;
+             width: 25%;
+             height: 180px;
+             border: 1px solid lightgray;
+             img {
+                 width: 135px;
+                 height: auto;
+                 transition: (0.7s) ease-out;
+>>>>>>> 0063708e7b75ebdf711829402fba22c85788d6fb
             }
 
             img:hover {
@@ -1368,6 +1843,7 @@ a:hover {
 
 /*--------------------- CLIENTS--------------------------------*/
 /*--------------------- EMPIEZA CONTACT US----------------------*/
+<<<<<<< HEAD
 #contact {
     display: flex;
     justify-content: center;
@@ -1391,6 +1867,28 @@ a:hover {
         iframe {
             height: 315px;
             width: 100%;
+=======
+ #contact {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     align-content: space-between;
+     flex-wrap: wrap;
+     background-color: #fff;
+     padding-bottom: 60px;
+     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+     h2 {
+         width: 100%;
+    }
+     .location {
+         display: flex;
+         align-items: center;
+         width: 50%;
+         padding: 20px 15px;
+         iframe {
+             height: 315px;
+             width: 100%;
+>>>>>>> 0063708e7b75ebdf711829402fba22c85788d6fb
         }
     }
 
