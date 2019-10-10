@@ -57,6 +57,8 @@ nav {
   width: 100%;
   padding-inline-start: 0px;
   z-index: 999999999; }
+  nav span {
+    color: #007bff; }
   nav img {
     width: 65px;
     height: auto; }
@@ -89,7 +91,7 @@ nav {
     nav .links-nav .dropdown-content, nav .links-nav .deep-dropdown {
       display: none;
       position: absolute;
-      min-width: 160px;
+      min-width: 200px;
       z-index: 1; }
       nav .links-nav .dropdown-content ul, nav .links-nav .deep-dropdown ul {
         background-color: #fff;
@@ -177,7 +179,7 @@ nav {
 .dropdown-content, .deep-dropdown {
   display: none;
   position: absolute;
-  min-width: 160px;
+  min-width: 200px;
   z-index: 1; }
   .dropdown-content ul, .deep-dropdown ul {
     background-color: #fff;
@@ -219,7 +221,9 @@ a:hover {
       font-size: 22px;
       z-index: 999; }
   .links-nav li {
-    display: none; } }
+    display: none; }
+  .dropdown .dropdown-content li {
+    background-color: rgba(19, 39, 57, 0.8); } }
 
 /*---------------------  TERMINA NAV -----------------------*/
 /*--------------------- EMPIEZA HEADER -----------------------*/

@@ -140,7 +140,11 @@ nav {
 	position: fixed;
 	width: 100%;
 	padding-inline-start: 0px;
-	z-index: 999999999;
+    z-index: 999999999;
+    
+    span {
+        color:$first-button-color;
+    }
 
 	img {
 		width: 65px;
@@ -184,7 +188,7 @@ nav {
 		.dropdown-content, .deep-dropdown {
 			display: none;
 			position: absolute;
-			min-width: 160px;
+			min-width:200px;
 			z-index: 1;
 
 			ul {
@@ -315,9 +319,9 @@ nav {
 	.dropdown-content, .deep-dropdown {
 		display: none;
 		position: absolute;
-		min-width: 160px;
-		z-index: 1;
-
+		min-width:200px;
+        z-index: 1;
+      
 		ul {
 			background-color: $background-color-nav;
 			padding-inline-start: 0px;
@@ -328,11 +332,13 @@ nav {
 		}
 		a {
 			text-decoration: none;
-			display: block;
-		}
+            display: block;
+        
+            }
 					
-	}
-
+    }
+    
+    
 	.dropdown-content, .deep-dropdown a:hover {
 color: $first-button-color;
 }
@@ -340,7 +346,6 @@ color: $first-button-color;
 
 .dropdown:hover .dropdown-content {
 display: block;
-
 }
 
 .drop2:hover .deep-dropdown {
@@ -379,10 +384,13 @@ li:hover {
 
 	.links-nav li {
 		display: none;
-	}
+    }
+
+    .dropdown .dropdown-content li {
+        	background-color: $background-color-menu;
+            }
+    
 }
-
-
 /*---------------------  TERMINA NAV -----------------------*/
 
 /*--------------------- EMPIEZA HEADER -----------------------*/
