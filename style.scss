@@ -470,182 +470,191 @@ li:hover {
     }
 }
 /*--------------------- EMPIEZA ABOUT US -----------------------*/
- #about-us {
-     background-color: $background-color-nav;
-     height: auto;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     h2, h5 {
-         width: 40%;
-    }
-}
- .about-1, .about-2, .about-3 {
-     width: 100%;
-     display: flex;
-     justify-content: center;
-     padding: 10px 20px;
-     .text-about-us {
-         width: 40%;
-         display: flex;
-         flex-direction: column;
-         margin: 15px;
-         h3 {
-             @include secondary-title;
-             font-size: 24px;
-        }
-         p {
-             @include section-text;
-             margin-block-end: 25px;
-        }
-         .contenido {
-             display: flex;
-             align-items: center;
-             justify-content: space-evenly;
-             height: 90%;
-             width: auto;
-             .icon {
-                 display: flex;
-                 justify-content: center;
-                 align-items: center;
-                 width: 8%;
-                 margin: 10px;
-                 .fas, .far {
-                     font-size: 30px;
-                     margin: 0px;
-                     color: $first-button-color;
-                     background-color: $text-color-button;
-                     border: solid 2px $first-button-color;
-                     border-radius: 50%;
-                     padding: 17px;
-                     transition: background-color 0.2s;
-                }
-                 .far:hover {
-                     color: $text-color-button;
-                     background-color: $first-button-color;
-                }
-                 .fas:hover {
-                     color: $text-color-button;
-                     background-color: $first-button-color;
-                }
-            }
-             .text {
-                 width: 80%;
-                 h4 {
-                     @include secondary-title;
-                     margin-block-start: 0;
-                     margin-block-end: 5px;
-                }
-                 h5 {
-                     @include section-text;
-                     font-size: 14px;
-                     text-align: start;
-                     margin-block-start: 0;
-                     margin-block-end: 0;
-                }
-            }
-        }
-    }
-     .image-about-us {
-         width: 520px;
-         ;
-         margin: 15px;
-         display: flex;
-         flex-shrink: 0;
-         img {
-             width: 100%;
-             height: auto;
-             display: flex;
-             flex-shrink: 0;
-        }
-    }
-}
- @media (max-width: 1000px) {
-     #about-us {
-         width: 100%;
-         height: auto;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         h2, h5 {
-            width: 40%;
-        }
-    }
-     .about-1, .about-3 {
-         width: 100%;
-         display: flex;
-         flex-direction: column-reverse;
-         align-items: center;
-         padding: 0px 70px;
-         .image-about-us, .text-about-us {
-             width: 90%;
-        }
-    }
-     .about-2 {
-         width: 100%;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         padding: 0px 70px;
-         .image-about-us, .text-about-us {
-             width: 90%;
-        }
-    }
-}
- @media (max-width: 600px) {
-     #about-us {
-         width: 100%;
-         height: auto;
-         padding: 10px;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         h2, h5 {
-             width: 85%;
-        }
-    }
-     .about-1, .about-3 {
-         width: 100%;
-         display: flex;
-         flex-direction: column-reverse;
-         align-items: center;
-         padding: 10px;
-         .image-about-us, .text-about-us {
-             width: 9 0%;
-             .contenido {
-                 .icon {
-                     width: 10%;
-                     margin: 15px;
-                     .fas, .far {
-                         font-size: 25px;
-                    }
-                }
-            }
-        }
-    }
-     .about-2 {
-         width: 100%;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         padding: 10px;
-         .image-about-us, .text-about-us {
-             width: 90%;
-        }
-    }
-}
+#about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-@media (min-width: 1400px) {
-    #about-us {
+    .about-us {
+        background-color: $background-color-nav;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        .about-1, .about-2, .about-3 {
-            max-width: 1400px;
-            }
-    }
-    
-}
+        h2, h5 {
+            width: 40%;
+       }
+   }
+    .about-1, .about-2, .about-3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 20px;
+        .text-about-us {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+            h3 {
+                @include secondary-title;
+                font-size: 24px;
+           }
+            p {
+                @include section-text;
+                margin-block-end: 25px;
+           }
+            .contenido {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 90%;
+                width: auto;
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 8%;
+                    margin: 10px;
+                    .fas, .far {
+                        font-size: 30px;
+                        margin: 0px;
+                        color: $first-button-color;
+                        background-color: $text-color-button;
+                        border: solid 2px $first-button-color;
+                        border-radius: 50%;
+                        padding: 17px;
+                        transition: background-color 0.2s;
+                   }
+                    .far:hover {
+                        color: $text-color-button;
+                        background-color: $first-button-color;
+                   }
+                    .fas:hover {
+                        color: $text-color-button;
+                        background-color: $first-button-color;
+                   }
+               }
+                .text {
+                    width: 80%;
+                    h4 {
+                        @include secondary-title;
+                        margin-block-start: 0;
+                        margin-block-end: 5px;
+                   }
+                    h5 {
+                        @include section-text;
+                        font-size: 14px;
+                        text-align: start;
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                   }
+               }
+           }
+       }
+        .image-about-us {
+            width: 520px;
+            ;
+            margin: 15px;
+            display: flex;
+            flex-shrink: 0;
+            img {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-shrink: 0;
+           }
+       }
+   }
+    @media (max-width: 1000px) {
+        .about-us {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2, h5 {
+               width: 40%;
+           }
+       }
+        .about-1, .about-3 {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 0px 70px;
+            .image-about-us, .text-about-us {
+                width: 90%;
+           }
+       }
+        .about-2 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 70px;
+            .image-about-us, .text-about-us {
+                width: 90%;
+           }
+       }
+   }
+    @media (max-width: 600px) {
+        .about-us {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2, h5 {
+                width: 85%;
+           }
+       }
+        .about-1, .about-3 {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 10px;
+            .image-about-us, .text-about-us {
+                width: 9 0%;
+                .contenido {
+                    .icon {
+                        width: 10%;
+                        margin: 15px;
+                        .fas, .far {
+                            font-size: 25px;
+                       }
+                   }
+               }
+           }
+       }
+        .about-2 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            .image-about-us, .text-about-us {
+                width: 90%;
+           }
+       }
+   }
+   
+   @media (min-width: 1400px) {
+       .about-us {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           width: 70%;
+       }
+       .about-1, .about-2, .about-3 {
+           max-width: 1400px;
+           }
+       
+   }
+   
+} 
+
 
 
 /*--------------------- TERMINA ABOUT US -----------------------*/
@@ -1014,6 +1023,7 @@ li:hover {
  #testimonials {
      display: flex;
      flex-direction: column;
+     align-items: center;
      height: auto;
      padding-bottom: 50px;
      background-color: $background-color-section;
@@ -1058,6 +1068,12 @@ li:hover {
                  font-size: 14px;
                  color: #444;
             }
+        }
+    }
+
+    @media (min-width:1400px) {
+        .testimonials {
+            max-width: 1400px;
         }
     }
 }
