@@ -173,7 +173,12 @@ nav {
 
             li:hover {
                 color: $text-color-hover;
-                transition: 3s;
+               
+            }
+
+            a:hover {
+                color: $text-color-hover;
+               
             }
 
             .fas {
@@ -1751,7 +1756,8 @@ a:hover {
         padding: 30px;
         width: 180px;
 
-        li, a {
+        li,
+        a {
             line-height: 24px;
             list-style: none;
             color: $main-background-color;
