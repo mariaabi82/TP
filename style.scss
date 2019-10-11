@@ -6,36 +6,23 @@
 /*-------------- FONTS ---------------*/
  $main-font-family: 'Open Sans', sans-serif;
  $secondary-font-family: 'Montserrat', sans-serif;
-/*------------- BUTTONS ---------------*/
- $background-color-button: #1445b3;
- $text-color-button: #fff;
+ /*------------- COLORS ---------------*/
+ $main-background-color:#fff;
+ $secondary-background-color:#1445b3;
  $first-button-color: #007bff;
  $hover-button-color: #e6f1f7;
-/*------------- NAV ---------------*/
- $background-color-nav: #fff;
  $text-color: #031880;
- $text-color-hover: #007bff;
-/*-------------------------- MENU ---------------*/
  $background-color-menu: rgba(19, 39, 57, 0.8);
- $text-color-menu: #ffffff;
  $text-color-hover-responsive: #84b1ec;
-/*------------- HEADER ---------------*/
- $background-color-header: #1445b3;
- $text-color-header: #fff;
-/*------------- SERVICES ---------------*/
  $background-color-services: #ecf5ff;
- $background-color-cards: #fff;
- $h3-hover: #1868cf;
-/*------------- WHY CHOOSE US ---------------*/
+ $text-color-hover: #1868cf;
  $background-color-chooseus:#004a99;
  $background-color-choose-cards:#00458f;
  $background-color-chose-cards-hover: #18337d;
  $text-color-choose-cards:#d8eafe;
  $text-color-choose-numeros: #cce5ff;
-/*--------------------------- TESTIMONIALS ---------------*/
  $background-color-section: #e6f1f7;
  $shadow-section: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-/*------------- TEAM ---------------*/
  $color-paragraph: #556877;
 /*--------------------- MIXIN -----------------------*/
  @mixin style-links-nav {
@@ -131,141 +118,115 @@
 /*--------------------- EMPIEZA NAV -----------------------*/
 
 nav {
-    padding: 20px 0px;
-    height: 80px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: $background-color-nav;
-    box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    padding-inline-start: 0px;
+	padding: 20px 0px;
+	height: 80px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: $main-background-color;
+	box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	width: 100%;
+	padding-inline-start: 0px;
     z-index: 999999999;
-
+    
     span {
-        color: $first-button-color;
+        color:$first-button-color;
     }
 
-    img {
-        width: 65px;
-        height: auto;
-    }
+	img {
+		width: 65px;
+		height: auto;
+	}
 
-    .links-nav {
-        font-family: $secondary-font-family;
-        font-weight: 600px;
-        text-decoration: none;
+	.links-nav {
+		font-family: $secondary-font-family;
+		font-weight: 600px;
+		text-decoration: none;
 
-        ul {
-            display: flex;
-            list-style-type: none;
+		ul {
+			display: flex;
+			list-style-type: none;
 
-            a,
-            li {
-                @include style-links-nav;
+			a,
+			li {
+				@include style-links-nav;
                 color: $text-color;
                 text-decoration: none;
+            }
+
+            li:hover {
+                color: $text-color-hover;
+transition: 3s;
 			}
 
-            a:hover {
-                color: $text-color-hover;
+			.fas {
+				display: none;
+			}
+		}
+
+		.dropdown {
+			position: relative;
+			display: inline-block;
+						
+			.fas {
+				display:inline-block;
+			}
+		  }
+
+		.dropdown-content, .deep-dropdown {
+			display: none;
+			position: absolute;
+			min-width:200px;
+			z-index: 1;
+
+			ul {
+				background-color: $main-background-color;
+				padding-inline-start: 0px;
+				display: flex;
+				flex-direction: column;
+				top: 100px;
+				left: 1010px;
+			}
+			a {
+				text-decoration: none;
+                display: block;
             }
 
-            .fas {
-                display: none;
-            }
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-
-            .fas {
-                display: inline-block;
-            }
         }
 
         .dropdown-content,
-        .deep-dropdown {
-            display: none;
-            position: absolute;
-            min-width: 200px;
-            z-index: 1;
-
-            ul {
-                background-color: $background-color-nav;
-                padding-inline-start: 0px;
-                display: flex;
-                flex-direction: column;
-                top: 100px;
-                left: 1010px;
-            }
-
-            a {
-                text-decoration: none;
-                display: block;
-			}
-						
-		}
-
-		.dropdown-content, .deep-dropdown a:hover {
-        color: $first-button-color;
+        .deep-dropdown a:hover {
+            color: $first-button-color;
         }
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+
+        }
+
+        .drop2:hover .deep-dropdown {
+            display: block;
+            position: absolute;
+            left: 100%;
+
+
+        }
+
+        li:hover {
+            color: $text-color-hover;
+        }
+
     }
-}
-
-
-.dropdown:hover .dropdown-content {
-	display: block;
-	
-}
-
-.drop2:hover .deep-dropdown {
-	display: block;
-	position:absolute;
-    left:100%;
-    
-
-}
-
-.dropdown-content,
-.deep-dropdown {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    z-index: 1;
-
-    ul {
-        background-color: $background-color-nav;
-        padding-inline-start: 0px;
-        display: flex;
-        flex-direction: column;
-        top: 100px;
-        left: 1010px;
-    }
-
-    a {
-        text-decoration: none;
-        display: block;
-    }
-
-
-
-    li:hover {
-        color: $text-color-hover;
-    }
-
-
 
     a:hover {
         color: $text-color-hover;
     }
-
 }
 
 #menu {
-    color: $text-color-menu;
+    color: $main-background-color;
     position: fixed;
     padding: 0px;
     left: -2000px;
@@ -288,13 +249,13 @@ nav {
             top: 10px;
             right: 50px;
             font-family: $secondary-font-family;
-            color: $text-color-button;
+            color: $main-background-color;
             font-size: 28px;
             font-weight: 700;
             z-index: 9999;
 
             a:visited {
-                color: $text-color-button;
+                color: $main-background-color;
             }
         }
 
@@ -310,7 +271,7 @@ nav {
             li {
                 list-style-type: none;
                 font-family: $main-font-family;
-                color: $text-color-menu;
+                color: $main-background-color;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 40px;
@@ -350,11 +311,11 @@ nav {
 .deep-dropdown {
     display: none;
     position: absolute;
-    min-width: 200px;
+    min-width: 160px;
     z-index: 1;
 
     ul {
-        background-color: $background-color-nav;
+        background-color: $main-background-color;
         padding-inline-start: 0px;
         display: flex;
         flex-direction: column;
@@ -365,54 +326,179 @@ nav {
     a {
         text-decoration: none;
         display: block;
-
     }
 
-}
 
 
-.dropdown-content,
-.deep-dropdown a:hover {
-    color: $first-button-color;
+	li:hover {
+            color: $text-color-hover;
+        }
+		
+		
+
+		a:hover {
+			color:  $text-color-hover;
+		}
+	
+    }
+	#menu {
+		color: $main-background-color;
+		position: fixed;
+		padding: 0px;
+		left: -2000px;
+		width: 100%;
+		height: auto;
+		transition: all 1s;
+		overflow: hidden;
+		z-index: 999999999999999999;
+
+		.overlay-menu {
+			background-color: $background-color-menu;
+			width: 100%;
+			height: 900px;
+            z-index: 999999999999999999;
+            opacity: 0;
+            visibility: hidden;
+
+			.cerrar {
+				position: absolute;
+				top: 10px;
+				right: 50px;
+				font-family: $secondary-font-family;
+				color: $main-background-color;
+				font-size: 28px;
+				font-weight: 700;
+				z-index: 9999;
+
+				a:visited {
+					color: $main-background-color;
+				}
+			}
+
+			
+
+			.links-menu {
+				background-color: $background-color-menu;
+				width: 280px;
+				height: 900px;
+				padding: 20px;
+
+				a,
+				li {
+					list-style-type: none;
+					font-family: $main-font-family;
+					color: $main-background-color;
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 40px;
+				}
+			}
+
+			li:hover {
+				color: $text-color-hover;
+			}
+
+			a:hover {
+				color: $text-color-hover;
+			}
+		}
+	}
+
+	#menu:target {
+		left: 0px;
+		top: 0px;
+    }
+    
+    #menu:target .overlay-menu{
+        opacity: 1;
+        visibility: visible;
+	}
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+					
+		.fas {
+			display:inline-block;
+		}
+	  }
+
+	.dropdown-content, .deep-dropdown {
+		display: none;
+		position: absolute;
+		min-width:200px;
+        z-index: 1;
+
+      
+		ul {
+			background-color: $background-color-menu;
+      
+			padding-inline-start: 0px;
+			display: flex;
+			flex-direction: column;
+			top: 100px;
+			left: 1010px;
+		}
+		a {
+			text-decoration: none;
+            display: block;
+        
+            }
+					
+    }
+    
+    
+	.dropdown-content, .deep-dropdown a:hover {
+color:  $text-color-hover;
 }
 
 
 .dropdown:hover .dropdown-content {
 display: block;
-
 }
 
 .drop2:hover .deep-dropdown {
-display: block;
-position: bsolute;
-left: 100%;
+    display: block;
+    position: absolute;
+    left: 100%;
 
 
 }
 
+li:hover {
+    color: $text-color-hover;
+}
+
+
+
+a:hover {
+    color: $text-color-hover;
+}
+
+
 @media (max-width: 1000px) {
-    nav {
-        display: flex;
-        justify-content: space-between;
-        height: 60px;
-        padding: 10px 40px;
+	nav {
+		display: flex;
+		justify-content: space-between;
+		height: 60px;
+		padding: 10px 40px;
 
-        .links-nav ul .fas {
-            display: flex;
-            color: $text-color;
-            font-size: 22px;
-            z-index: 999;
-        }
-    }
+		.links-nav ul .fas {
+			display: flex;
+			color: $text-color;
+			font-size: 22px;
+			z-index: 999;
+		}
+	}
 
-    .links-nav li {
-        display: none;
+	.links-nav li {
+		display: none;
     }
 
     .dropdown .dropdown-content li {
-        background-color: $background-color-menu;
-    }
-
+        	background-color: $background-color-menu;
+            }
+    
 }
 
 /*---------------------  TERMINA NAV -----------------------*/
@@ -423,8 +509,8 @@ left: 100%;
      width: 100%;
      display: flex;
      align-items: center;
-     background-color: $background-color-header;
-     color: $text-color-header;
+     background-color: $secondary-background-color;
+     color: $main-background-color;
      font-family: $main-font-family;
      display: flex;
      justify-content: center;
@@ -455,7 +541,7 @@ left: 100%;
      height: 40px;
      font-size: 14px;
      font-weight: 600;
-     color: $text-color-button;
+     color: $main-background-color;
      font-family: $main-font-family;
      border-radius: 20px;
      display: flex;
@@ -467,13 +553,13 @@ left: 100%;
      padding: 7px 35px;
 }
  .primer-boton:hover {
-     background-color: $background-color-button;
-     border: 2px solid #fff;
+     background-color: $secondary-background-color;
+     border: 2px solid $main-background-color;
      transition: 0.5s;
 }
  .segundo-boton {
-     background-color: $background-color-button;
-     border: 2px solid #fff;
+     background-color: $secondary-background-color;
+     border: 2px solid $main-background-color;
      padding: 7px 32px;
 }
  .segundo-boton:hover {
@@ -508,7 +594,7 @@ left: 100%;
     align-items: center;
 
     .about-us {
-        background-color: $background-color-nav;
+        background-color: $main-background-color;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -551,18 +637,18 @@ left: 100%;
                         font-size: 30px;
                         margin: 0px;
                         color: $first-button-color;
-                        background-color: $text-color-button;
-                        border: solid 2px $first-button-color;
+                        background-color: $main-background-color;
+                        border: solid 2px $main-background-color;
                         border-radius: 50%;
                         padding: 17px;
                         transition: background-color 0.2s;
                    }
                     .far:hover {
-                        color: $text-color-button;
+                        color: $main-background-color;
                         background-color: $first-button-color;
                    }
                     .fas:hover {
-                        color: $text-color-button;
+                        color: $main-background-color;
                         background-color: $first-button-color;
                    }
                }
@@ -715,7 +801,7 @@ left: 100%;
              margin: 20px;
              padding: 10px;
              border-radius: 15px;
-             background-color: $background-color-cards;
+             background-color: $main-background-color;
              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
              transition: 0.3s;
              display: flex;
@@ -746,7 +832,7 @@ left: 100%;
     }
      .card:hover {
          h3 {
-             color: $h3-hover;
+             color: $text-color-hover;
         }
          transform: translateY(-10px);
          transition: 0.20s;
@@ -812,7 +898,7 @@ left: 100%;
      align-items: center;
      padding: 0px 150px 40px 150px;
      background-color: $background-color-chooseus;
-     color: $text-color-menu;
+     color: $main-background-color;
 }
  .choose-us {
      height: auto;
@@ -822,7 +908,7 @@ left: 100%;
      font-size: 15px;
      padding-right: 60px;
      h2 {
-         color: $text-color-header;
+         color: $main-background-color;
          margin-top: 50px;;
     }
      h5 {
@@ -858,7 +944,7 @@ left: 100%;
     }
      a {
          text-decoration: none;
-         color: $text-color-button;
+         color: $main-background-color;
          font-weight: bold;
     }
 }
@@ -942,11 +1028,11 @@ left: 100%;
     }
      #all-button {
          background-color: $first-button-color;
-         color: $text-color-button;
+         color: $main-background-color;
     }
      button:hover {
          background-color: $first-button-color;
-         color: $text-color-button;
+         color: $main-background-color;
     }
      .portfolio {
          width: auto;
@@ -982,7 +1068,7 @@ left: 100%;
                  justify-content: center;
                  transition: all 0.3s;
                  h3, p {
-                     color: #fff;
+                     color:$main-background-color;
                      z-index: 999999;
                      font-family: $secondary-font-family;
                 }
@@ -998,7 +1084,7 @@ left: 100%;
                      font-size: 15px;
                      margin: 10px;
                      border-radius: 50%;
-                     color: #fff;
+                     color: $main-background-color;
                      background-color: $first-button-color;
                      padding: 12px;
                 }
@@ -1129,11 +1215,11 @@ left: 100%;
         }
 
         .fas:hover {
-            color: #1868cf;
+            color:$text-color-hover;
         }
 
         .fas:first-child {
-            color: #1868cf;
+            color: $text-color-hover;
         }
     }
 }
@@ -1176,7 +1262,7 @@ left: 100%;
              text-align: center;
              width: 100%;
              height: 100%;
-             color: #fff;
+             color: $main-background-color;
              @include overlay;
              .overlay-text {
                  transform: translateY(50px);
@@ -1198,7 +1284,7 @@ left: 100%;
                      font-weight: 200;
                 }
                  .fab {
-                     color: #ffffff;
+                     color: $main-background-color;
                      font-weight: 15;
                      margin: 5px;
                 }
@@ -1262,7 +1348,7 @@ left: 100%;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     background-color: #ecf5ff;
+     background-color: $background-color-services;
      padding: 0 20px 50px 20px;
      box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
      h2 {
@@ -1285,7 +1371,7 @@ left: 100%;
              display: flex;
              justify-content: center;
              align-items: center;
-             background-color: #fff;
+             background-color: $main-background-color;
              width: 25%;
              height: 180px;
              border: 1px solid lightgray;
@@ -1314,7 +1400,7 @@ left: 100%;
     align-items: center;
     align-content: space-between;
     flex-wrap: wrap;
-    background-color: #fff;
+    background-color: $main-background-color;
     padding: 10px 0px 60px 0px;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 
@@ -1416,7 +1502,7 @@ left: 100%;
                      width: 160px;
                      height: 40px;
                      background-color: $first-button-color;
-                     color: $text-color-button;
+                     color: $main-background-color;
                      font-size: 14px;
                      line-height: 14px;
                      border-radius: 20px;
@@ -1424,6 +1510,10 @@ left: 100%;
                      border: none;
                      transition: 0.5s;
                      cursor: pointer;
+                }
+
+                input[type="submit"]:hover {
+                    background-color: #0669d3;
                 }
             }
 
@@ -1510,7 +1600,7 @@ left: 100%;
          li, a {
              line-height: 24px;
              list-style: none;
-             color: #fff;
+             color:$main-background-color;
              text-decoration: none;
         }
          ul {
@@ -1531,19 +1621,19 @@ left: 100%;
              font-weight: bold;
         }
          i {
-             color: #fff;
+             color: $main-background-color;
              border-radius: 50%;
+             transition: 0.5;
         }
          .fab {
              padding: 8px;
              margin: 2px;
              border-radius: 50%;
-             background-color: #007bff;
-             color: #fff;
+             background-color: $first-button-color;
+             color: $main-background-color;
         }
          i:hover {
              background-color: #0669d3;
-             transition: 0.5;
         }
     }
      .suscription {
@@ -1562,16 +1652,20 @@ left: 100%;
          padding: 0;
     }
      input[type="submit"] {
-         background: #007bff;
+         background: $first-button-color;
          border: none;
          width: 35%;
          height: 35px;
          text-align: center;
          font-size: 14px;
-         color: #fff;
+         color: $main-background-color;
          transition: 0.5s;
          cursor: pointer;
          padding: 0;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0669d3;
     }
      @media(max-width: 600px) {
          flex-direction: column;
@@ -1586,7 +1680,7 @@ left: 100%;
      padding-top: 10px;
      display: block;
      text-align: center;
-     color: #fff;
+     color: $main-background-color;
      font-size: 12px;
      margin: 0;
      border: 0;
@@ -1606,8 +1700,8 @@ left: 100%;
          padding: 12px;
          margin: 2px;
          border-radius: 50%;
-         background-color: #007bff;
-         color: #fff;
+         background-color: $first-button-color;
+         color: $main-background-color;
          width: 45px;
          height: 45px;
     }

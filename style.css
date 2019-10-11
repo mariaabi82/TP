@@ -4,14 +4,7 @@
   box-sizing: border-box; }
 
 /*-------------- FONTS ---------------*/
-/*------------- BUTTONS ---------------*/
-/*------------- NAV ---------------*/
-/*-------------------------- MENU ---------------*/
-/*------------- HEADER ---------------*/
-/*------------- SERVICES ---------------*/
-/*------------- WHY CHOOSE US ---------------*/
-/*--------------------------- TESTIMONIALS ---------------*/
-/*------------- TEAM ---------------*/
+/*------------- COLORS ---------------*/
 /*--------------------- MIXIN -----------------------*/
 html {
   scroll-behavior: smooth; }
@@ -79,8 +72,9 @@ nav {
         font-weight: 500;
         color: #031880;
         text-decoration: none; }
-      nav .links-nav ul a:hover {
-        color: #007bff; }
+      nav .links-nav ul li:hover {
+        color: #1868cf;
+        transition: 3s; }
       nav .links-nav ul .fas {
         display: none; }
     nav .links-nav .dropdown {
@@ -88,62 +82,37 @@ nav {
       display: inline-block; }
       nav .links-nav .dropdown .fas {
         display: inline-block; }
-    nav .links-nav .dropdown-content,
-    nav .links-nav .deep-dropdown {
+    nav .links-nav .dropdown-content, nav .links-nav .deep-dropdown {
       display: none;
       position: absolute;
       min-width: 200px;
       z-index: 1; }
-      nav .links-nav .dropdown-content ul,
-      nav .links-nav .deep-dropdown ul {
+      nav .links-nav .dropdown-content ul, nav .links-nav .deep-dropdown ul {
         background-color: #fff;
         padding-inline-start: 0px;
         display: flex;
         flex-direction: column;
         top: 100px;
         left: 1010px; }
-      nav .links-nav .dropdown-content a,
-      nav .links-nav .deep-dropdown a {
+      nav .links-nav .dropdown-content a, nav .links-nav .deep-dropdown a {
         text-decoration: none;
         display: block; }
-    nav .links-nav .dropdown-content, nav .links-nav .deep-dropdown a:hover {
+    nav .links-nav .dropdown-content,
+    nav .links-nav .deep-dropdown a:hover {
       color: #007bff; }
-
-.dropdown:hover .dropdown-content {
-  display: block; }
-
-.drop2:hover .deep-dropdown {
-  display: block;
-  position: absolute;
-  left: 100%; }
-
-.dropdown-content,
-.deep-dropdown {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  z-index: 1; }
-  .dropdown-content ul,
-  .deep-dropdown ul {
-    background-color: #fff;
-    padding-inline-start: 0px;
-    display: flex;
-    flex-direction: column;
-    top: 100px;
-    left: 1010px; }
-  .dropdown-content a,
-  .deep-dropdown a {
-    text-decoration: none;
-    display: block; }
-  .dropdown-content li:hover,
-  .deep-dropdown li:hover {
-    color: #007bff; }
-  .dropdown-content a:hover,
-  .deep-dropdown a:hover {
-    color: #007bff; }
+    nav .links-nav .dropdown:hover .dropdown-content {
+      display: block; }
+    nav .links-nav .drop2:hover .deep-dropdown {
+      display: block;
+      position: absolute;
+      left: 100%; }
+    nav .links-nav li:hover {
+      color: #1868cf; }
+  nav a:hover {
+    color: #1868cf; }
 
 #menu {
-  color: #ffffff;
+  color: #fff;
   position: fixed;
   padding: 0px;
   left: -2000px;
@@ -179,14 +148,14 @@ nav {
       #menu .overlay-menu .links-menu li {
         list-style-type: none;
         font-family: "Open Sans", sans-serif;
-        color: #ffffff;
+        color: #fff;
         font-size: 16px;
         font-weight: 500;
         line-height: 40px; }
     #menu .overlay-menu li:hover {
-      color: #007bff; }
+      color: #1868cf; }
     #menu .overlay-menu a:hover {
-      color: #007bff; }
+      color: #1868cf; }
 
 #menu:target {
   left: 0px;
@@ -206,7 +175,7 @@ nav {
 .deep-dropdown {
   display: none;
   position: absolute;
-  min-width: 200px;
+  min-width: 160px;
   z-index: 1; }
   .dropdown-content ul,
   .deep-dropdown ul {
@@ -220,18 +189,105 @@ nav {
   .deep-dropdown a {
     text-decoration: none;
     display: block; }
+  .dropdown-content li:hover,
+  .deep-dropdown li:hover {
+    color: #1868cf; }
+  .dropdown-content a:hover,
+  .deep-dropdown a:hover {
+    color: #1868cf; }
 
-.dropdown-content,
-.deep-dropdown a:hover {
-  color: #007bff; }
+#menu {
+  color: #fff;
+  position: fixed;
+  padding: 0px;
+  left: -2000px;
+  width: 100%;
+  height: auto;
+  transition: all 1s;
+  overflow: hidden;
+  z-index: 999999999999999999; }
+  #menu .overlay-menu {
+    background-color: rgba(19, 39, 57, 0.8);
+    width: 100%;
+    height: 900px;
+    z-index: 999999999999999999;
+    opacity: 0;
+    visibility: hidden; }
+    #menu .overlay-menu .cerrar {
+      position: absolute;
+      top: 10px;
+      right: 50px;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+      font-size: 28px;
+      font-weight: 700;
+      z-index: 9999; }
+      #menu .overlay-menu .cerrar a:visited {
+        color: #fff; }
+    #menu .overlay-menu .links-menu {
+      background-color: rgba(19, 39, 57, 0.8);
+      width: 280px;
+      height: 900px;
+      padding: 20px; }
+      #menu .overlay-menu .links-menu a,
+      #menu .overlay-menu .links-menu li {
+        list-style-type: none;
+        font-family: "Open Sans", sans-serif;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 40px; }
+    #menu .overlay-menu li:hover {
+      color: #1868cf; }
+    #menu .overlay-menu a:hover {
+      color: #1868cf; }
+
+#menu:target {
+  left: 0px;
+  top: 0px; }
+
+#menu:target .overlay-menu {
+  opacity: 1;
+  visibility: visible; }
+
+.dropdown {
+  position: relative;
+  display: inline-block; }
+  .dropdown .fas {
+    display: inline-block; }
+
+.dropdown-content, .deep-dropdown {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  z-index: 1; }
+  .dropdown-content ul, .deep-dropdown ul {
+    background-color: rgba(19, 39, 57, 0.8);
+    padding-inline-start: 0px;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    left: 1010px; }
+  .dropdown-content a, .deep-dropdown a {
+    text-decoration: none;
+    display: block; }
+
+.dropdown-content, .deep-dropdown a:hover {
+  color: #1868cf; }
 
 .dropdown:hover .dropdown-content {
   display: block; }
 
 .drop2:hover .deep-dropdown {
   display: block;
-  position: bsolute;
+  position: absolute;
   left: 100%; }
+
+li:hover {
+  color: #1868cf; }
+
+a:hover {
+  color: #1868cf; }
 
 @media (max-width: 1000px) {
   nav {
@@ -381,7 +437,7 @@ header {
             margin: 0px;
             color: #007bff;
             background-color: #fff;
-            border: solid 2px #007bff;
+            border: solid 2px #fff;
             border-radius: 50%;
             padding: 17px;
             transition: background-color 0.2s; }
@@ -587,7 +643,7 @@ header {
   align-items: center;
   padding: 0px 150px 40px 150px;
   background-color: #004a99;
-  color: #ffffff; }
+  color: #fff; }
 
 .choose-us {
   height: auto;
@@ -902,7 +958,7 @@ a:hover {
           margin-top: 0px;
           font-weight: 200; }
         .img-container .imagen .overlay .overlay-text .fab {
-          color: #ffffff;
+          color: #fff;
           font-weight: 15;
           margin: 5px; }
         .img-container .imagen .overlay .overlay-text .social {
@@ -1094,6 +1150,8 @@ a:hover {
           border: none;
           transition: 0.5s;
           cursor: pointer; }
+        #contact .columna2 .form2 .submit input[type="submit"]:hover {
+          background-color: #0669d3; }
     @media (max-width: 990px) {
       #contact .columna2 {
         flex-direction: column;
@@ -1172,7 +1230,8 @@ a:hover {
       font-weight: bold; }
     #patita .social i {
       color: #fff;
-      border-radius: 50%; }
+      border-radius: 50%;
+      transition: 0.5; }
     #patita .social .fab {
       padding: 8px;
       margin: 2px;
@@ -1180,8 +1239,7 @@ a:hover {
       background-color: #007bff;
       color: #fff; }
     #patita .social i:hover {
-      background-color: #0669d3;
-      transition: 0.5; }
+      background-color: #0669d3; }
   #patita .suscription {
     width: 300px; }
   #patita form {
@@ -1205,6 +1263,8 @@ a:hover {
     transition: 0.5s;
     cursor: pointer;
     padding: 0; }
+  #patita input[type="submit"]:hover {
+    background-color: #0669d3; }
   @media (max-width: 600px) {
     #patita {
       flex-direction: column;
