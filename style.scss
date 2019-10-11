@@ -1486,6 +1486,16 @@ a:hover {
     h2 {
         margin-top: 50px;
     }
+    
+    h5 {
+        width: 40%;
+        text-align: center;
+        color: $color-paragraph;
+        font-family: $main-font-family;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
 
     .our-container {
         padding: 20px 0px;
