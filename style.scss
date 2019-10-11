@@ -1052,53 +1052,62 @@ left: 100%;
 
 /*--------------------- TERMINA PORTFOLIO -----------------------*/
 /*--------------------- EMPIEZA TESTIMONIALS -----------------------*/
- #testimonials {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     height: auto;
-     padding-bottom: 50px;
-     background-color: $background-color-section;
-     h2 {
-         margin-bottom: 50px;
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-bottom: 50px;
+    background-color: $background-color-section;
+
+    h2 {
+        margin-bottom: 50px;
     }
-     box-shadow: $shadow-section;
-     .testimonials {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         .img-testimonials {
-             width: 110px;
-             height: 110px;
-             border-radius: 50%;
-             margin: 20px;
-             img {
-                 width: 100%;
-                 height: 100%;
-                 border-radius: 50%;
-                 overflow: hidden;
+
+    box-shadow: $shadow-section;
+
+    .testimonials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .img-testimonials {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            margin: 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                overflow: hidden;
             }
         }
-         .text-testimonials {
-             width: 46%;
-             height: auto;
-             font-family: $main-font-family;
-             h3 {
-                 font-weight: 700;
-                 font-size: 18px;
-                 margin: 0px;
+
+        .text-testimonials {
+            width: 46%;
+            height: auto;
+            font-family: $main-font-family;
+
+            h3 {
+                font-weight: 700;
+                font-size: 18px;
+                margin: 0px;
             }
-             h6 {
-                 font-weight: 200;
-                 font-size: 14px;
-                 color: #7f858b;
-                 margin: 2px;
+
+            h6 {
+                font-weight: 200;
+                font-size: 14px;
+                color: #7f858b;
+                margin: 2px;
             }
-             p {
-                 font-style: italic;
-                 font-weight: 200;
-                 font-size: 14px;
-                 color: #444;
+
+            p {
+                font-style: italic;
+                font-weight: 200;
+                font-size: 14px;
+                color: #444;
             }
         }
     }
@@ -1106,6 +1115,25 @@ left: 100%;
     @media (min-width:1400px) {
         .testimonials {
             max-width: 1400px;
+        }
+    }
+
+    .circles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .fas {
+            color: lightgrey;
+            padding: 4px;
+        }
+
+        .fas:hover {
+            color: #1868cf;
+        }
+
+        .fas:first-child {
+            color: #1868cf;
         }
     }
 }

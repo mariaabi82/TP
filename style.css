@@ -829,6 +829,17 @@ a:hover {
   @media (min-width: 1400px) {
     #testimonials .testimonials {
       max-width: 1400px; } }
+  #testimonials .circles {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #testimonials .circles .fas {
+      color: lightgrey;
+      padding: 4px; }
+    #testimonials .circles .fas:hover {
+      color: #1868cf; }
+    #testimonials .circles .fas:first-child {
+      color: #1868cf; }
 
 /*--------------------- TERMINA TESTIMONIALS -----------------------*/
 /*--------------------- EMPIEZA TEAM -----------------------*/
