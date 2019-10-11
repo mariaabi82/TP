@@ -1480,7 +1480,7 @@ left: 100%;
      padding: 30px;
      font-size: 14px;
      text-align: justify;
-     background-color: #00428a;
+     background-color: $background-color-chooseus;
      color: #fff;
      font-family: "Montserrat", sans-serif;
      .uno, .dos {
@@ -1582,7 +1582,7 @@ left: 100%;
  #copyright {
      font-family: $secondary-font-family;
      height: 75px;
-     background-color: darkblue;
+     background-color: #00428a;
      padding-top: 10px;
      display: block;
      text-align: center;
