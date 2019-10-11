@@ -1089,7 +1089,7 @@ a:hover {
         align-items: center; }
       #contact .columna2 .lista2 .fas,
       #contact .columna2 .lista2 .far {
-        color: lightskyblue;
+        color: #007bff;
         padding: 8px;
         margin: 2px;
         display: inline-block;
@@ -1186,7 +1186,7 @@ a:hover {
   padding: 30px;
   font-size: 14px;
   text-align: justify;
-  background-color: #00428a;
+  background-color: #004a99;
   color: #fff;
   font-family: "Montserrat", sans-serif; }
   #patita .uno, #patita .dos {
@@ -1274,7 +1274,7 @@ a:hover {
 #copyright {
   font-family: "Montserrat", sans-serif;
   height: 75px;
-  background-color: darkblue;
+  background-color: #00428a;
   padding-top: 10px;
   display: block;
   text-align: center;
