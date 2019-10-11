@@ -1082,6 +1082,14 @@ a:hover {
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
   #our-clients h2 {
     margin-top: 50px; }
+  #our-clients h5 {
+    width: 40%;
+    text-align: center;
+    color: #556877;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 30px; }
   #our-clients .our-container {
     padding: 20px 0px;
     display: flex;
