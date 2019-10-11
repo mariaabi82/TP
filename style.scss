@@ -282,8 +282,7 @@ nav {
             height: 900px;
             padding: 20px;
 
-            a,
-            li {
+            a, li {
                 list-style-type: none;
                 font-family: $main-font-family;
                 color: $main-background-color;
@@ -1216,7 +1215,7 @@ a:hover {
             flex-wrap: wrap;
 
             .image {
-                width: 280px;
+                width: 320px;
             }
         }
     }
@@ -1490,6 +1489,16 @@ a:hover {
 
     h2 {
         margin-top: 50px;
+    }
+    
+    h5 {
+        width: 40%;
+        text-align: center;
+        color: $color-paragraph;
+        font-family: $main-font-family;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 30px;
     }
 
     .our-container {

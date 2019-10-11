@@ -227,8 +227,7 @@ nav a:hover {
   padding: 20px;
 }
 
-#menu .overlay-menu .links-menu a,
-#menu .overlay-menu .links-menu li {
+#menu .overlay-menu .links-menu a, #menu .overlay-menu .links-menu li {
   list-style-type: none;
   font-family: "Open Sans", sans-serif;
   color: #fff;
@@ -1433,7 +1432,7 @@ a:hover {
         flex-wrap: wrap;
   }
   #our-portfolio .portfolio .image {
-    width: 280px;
+    width: 320px;
   }
 }
 
@@ -1763,6 +1762,16 @@ a:hover {
 
 #our-clients h2 {
   margin-top: 50px;
+}
+
+#our-clients h5 {
+  width: 40%;
+  text-align: center;
+  color: #556877;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 #our-clients .our-container {
