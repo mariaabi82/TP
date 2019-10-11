@@ -1775,7 +1775,7 @@ a:hover {
 
 #contact .columna2 .lista2 .fas,
 #contact .columna2 .lista2 .far {
-  color: #007bff;
+  color: #1585fd;
   padding: 8px;
   margin: 2px;
   display: inline-block;
@@ -1874,7 +1874,7 @@ a:hover {
   cursor: pointer;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1000px) {
   #contact .columna2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1915,6 +1915,18 @@ a:hover {
   #contact .columna2 .adicional textarea {
     width: 100%;
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact .columna2 .lista2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 

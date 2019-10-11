@@ -250,13 +250,9 @@ nav {
         display: block;
     }
 
-
-
     li:hover {
         color: $text-color-hover;
     }
-
-
 
     a:hover {
         color: $text-color-hover;
@@ -297,8 +293,6 @@ nav {
                 color: $text-color-button;
             }
         }
-
-
 
         .links-menu {
             background-color: $background-color-menu;
@@ -1358,13 +1352,12 @@ left: 100%;
 
             .fas,
             .far {
-                color: #007bff;
+                color: #1585fd;
                 padding: 8px;
                 margin: 2px;
                 display: inline-block;
                 font-size: 18px;
             }
-
             p {
                 font-family: $secondary-font-family;
                 list-style-type: none;
@@ -1372,8 +1365,6 @@ left: 100%;
                 color: grey;
                 font-size: 14px;
             }
-
-
         }
 
         .form2 {
@@ -1385,7 +1376,6 @@ left: 100%;
                 justify-content: space-around;
                 padding: 10px 0px;
             }
-
 
             .personal input {
                 @include form-style;
@@ -1426,11 +1416,9 @@ left: 100%;
                      cursor: pointer;
                 }
             }
-
-
         }
 
-        @media (max-width: 990px) {
+        @media (max-width: 1000px) {
             flex-direction: column;
             align-content: center;
             padding: 20px;
@@ -1439,35 +1427,34 @@ left: 100%;
             .lista2 {
                 width: 100%;
             }
-
             .form2 {
                 width: 100%;
             }
-
             .personal {
                 flex-direction: column;
                 padding: 0px;
-
                 input {
                     width: 100%;
                     margin-top: 10px;
                 }
             }
-
             .adicional {
                 flex-direction: column;
                 padding: 0;
-
                 input {
                     width: 100%;
                 }
-
                 textarea {
                     width: 100%;
                     margin-top: 10px;
                 }
             }
-
+        }
+        @media(max-width: 768px){
+            .lista2{
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     }
 }
