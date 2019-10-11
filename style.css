@@ -347,14 +347,15 @@ nav a:hover {
   padding: 20px;
 }
 
-#menu .overlay-menu .links-menu a,
-#menu .overlay-menu .links-menu li {
+#menu .overlay-menu .links-menu a, #menu .overlay-menu .links-menu li {
   list-style-type: none;
   font-family: "Open Sans", sans-serif;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
   line-height: 40px;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 #menu .overlay-menu li:hover {
@@ -404,7 +405,7 @@ nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 100px;
+  top: 50px;
   left: 1010px;
 }
 

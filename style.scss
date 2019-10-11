@@ -392,14 +392,14 @@ nav {
             height: 900px;
             padding: 20px;
 
-            a,
-            li {
+            a, li {
                 list-style-type: none;
                 font-family: $main-font-family;
                 color: $main-background-color;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 40px;
+                text-decoration-line: none;
             }
         }
 
@@ -441,11 +441,10 @@ nav {
 
     ul {
         background-color: $background-color-menu;
-
         padding-inline-start: 0px;
         display: flex;
         flex-direction: column;
-        top: 100px;
+        top: 50px;
         left: 1010px;
     }
 
