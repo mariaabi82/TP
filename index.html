@@ -112,6 +112,9 @@
 		</div>
 
 		<div class="imagenheader">
+			<!-- aqui parece que por un error de tipeo quedaron el alt y 
+			la clase juntas. EL alt es MUY importante para hacer que nuestra
+		web sea accesible! -->
 			<img src="img/intro-img.svg" class="img-logoImagen de 3 personas">
 		</div>
 
@@ -169,6 +172,7 @@
 
 			</div>
 			<div class="image-about-us">
+				<!-- El alt es obligatorio en las imagenes para hacerlas accesibles -->
 				<img src="img/about-img.svg">
 			</div>
 
@@ -225,6 +229,9 @@
 
 			<div class="card">
 				<div class="icono">
+					<!-- Nunca debemos poner estilos en el html. Esto siempre debe ir en el css. 
+					La razon es que si en algun momento necesitamos cambiar el color de los iconos, los iremos a 
+					buscar al css, no al html.  -->
 					<i class="fas fa-circle" style="font-size:80px;color:rgb(240, 138, 226);"></i>
 				</div>
 				<div class="texto">
@@ -349,6 +356,9 @@
 	<!-------------------- WHY CHOOSE US? ------------------------>
 
 	<!-------------------- OUR PORTFOLIO ------------------------>
+
+	<!-- Por favor, alt en las imagenes! -->
+
 	<section id="our-portfolio">
 		<h2>Our Portfolio</h2>
 		<div class="buttons">
@@ -563,6 +573,7 @@
 		</div>
 		<div class="empresas">
 
+			<!-- Solo dejamos el alt con comillas vacias cuando son imagenes decorativas -->
 			<div class="logo-clients"><img src="img/client-1.png" alt=""></div>
 			<div class="logo-clients"><img src="img/client-2.png" alt=""></div>
 			<div class="logo-clients"><img src="img/client-3.png" alt=""></div>
@@ -608,6 +619,12 @@
 				<div class="adicional">
 					<input type="text" placeholder="Subject">
 
+
+					<!-- Cuidado aca: recuerden que lo que escribamos entre las dos
+					etiquetas de textarea sera el contenido. 
+					En este caso como hay muchos espacios despues de "message", 
+					el usuario tiene que borrarlos para poder escribir. 
+					Preferible usar placeholder y dejar el contenido de textarea vacio -->
 					<textarea name="" id="" cols="30" rows="8">Message
 
                         </textarea>
